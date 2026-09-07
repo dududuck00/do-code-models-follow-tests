@@ -1,0 +1,11 @@
+quixbugs:
+  root: data/QuixBugs
+  output: data/quixbugs_repair.jsonl
+bugsinpy:
+  root: data/BugsInPy
+  manifest: data/bugsinpy_manifest.jsonl
+conditions:
+  - buggy_only
+  - buggy_failing_test
+  - buggy_failing_test_traceback
+  - buggy_passing_failing_contrast

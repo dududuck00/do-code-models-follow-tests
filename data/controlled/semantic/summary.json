@@ -1,0 +1,9 @@
+{
+  "task_pairs": 120,
+  "semantic_families": 20,
+  "instances_per_family": 6,
+  "visible_tests": 3,
+  "discriminating_hidden_inputs_per_pair": 30,
+  "analysis_cluster": "family_id",
+  "source": "authored paired specifications"
+}

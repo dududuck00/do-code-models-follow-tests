@@ -1,0 +1,10 @@
+{
+  "source_tasks": 717,
+  "eligible_tasks": 710,
+  "excluded_tasks": 7,
+  "by_dataset": {
+    "humanevalplus": 157,
+    "mbppplus": 378,
+    "livecodebench": 175
+  }
+}

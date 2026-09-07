@@ -1,0 +1,13 @@
+{
+  "target_tasks": 180,
+  "eligible_tasks": 180,
+  "by_dataset": {
+    "humanevalplus": 68,
+    "mbppplus": 112
+  },
+  "independent_validation_mean_kill_rate": {
+    "high": 0.9229232804232805,
+    "low": 0.6203835978835979,
+    "random": 0.9131944444444444
+  }
+}

@@ -1,0 +1,18 @@
+dataset: data/humaneval.jsonl
+dataset_name: humaneval
+model_path: Qwen/Qwen2.5-Coder-7B-Instruct
+output_dir: outputs/humaneval_qwen_mvp
+limit: 20
+visible_tests: 3
+conditions:
+  - nl_only
+  - nl_tests
+  - shuffled_tests
+  - irrelevant_tests
+generation:
+  max_new_tokens: 256
+  temperature: 0.0
+  top_p: 1.0
+  collect_states: true
+execution:
+  timeout: 5.0

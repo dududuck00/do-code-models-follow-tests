@@ -1,0 +1,54 @@
+protocol: semantic-tests-1
+models:
+  qwen35: /home/liangyunhao/shared/models/Qwen3.5-9B
+  qwen38: /home/liangyunhao/shared/models/Qwen3.8-27B
+  qwen25: /home/liangyunhao/shared/models/Qwen/Qwen2.5-Coder-7B-Instruct
+  qwen36: /home/liangyunhao/shared/models/Qwen/Qwen3.6-27B
+  deepseek: /home/liangyunhao/shared/models/deepseek-ai/deepseek-coder-6.7b-instruct
+generation:
+  dtype: bfloat16
+  prompt_format: chat
+  thinking: disabled
+  temperature: 0.0
+  seed: 0
+  order_seed: 0
+  max_new_tokens: 8192
+  max_model_len: 16384
+  batch_size: 1024
+  max_num_seqs: 32
+tokenizers:
+  deepseek: data/model_tokenizers/deepseek-coder-6.7b-instruct
+experiments:
+  main:
+    dataset: data/controlled/main/tasks.jsonl
+    models: [qwen25, qwen36, deepseek, qwen35, qwen38]
+    repeats: 3
+    conditions: [nl_only, nl_tests, wrong_tests, inputs_only]
+    primary_contrasts: [[nl_only, nl_tests], [inputs_only, nl_tests], [wrong_tests, nl_tests]]
+    cluster: task_id
+  semantic:
+    dataset: data/controlled/semantic/tasks.jsonl
+    models: [qwen25, qwen36, deepseek, qwen35, qwen38]
+    repeats: 3
+    conditions: [nl_only, inputs_only, tests_a, tests_b, explicit_a, explicit_b]
+    primary_metric: paired_rule_switch
+    cluster: family_id
+  quality:
+    dataset: data/controlled/quality/tasks.jsonl
+    models: [qwen25, qwen36, deepseek, qwen35, qwen38]
+    repeats: 1
+    conditions: [nl_only, quality_random, quality_low, quality_high]
+    primary_contrasts: [[quality_random, quality_high], [quality_low, quality_high]]
+    cluster: task_id
+evaluation:
+  lcb_root: .tmp/LiveCodeBench
+  workers: 8
+  timeout_seconds: 15
+  bootstrap_samples: 5000
+  primary_label: heldout_passed
+
+execution_overrides:
+  main:
+    qwen38:
+      tensor_parallel_size: 2
+      gpu_memory_utilization: 0.60

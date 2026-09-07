@@ -1,0 +1,21 @@
+dataset: data/livecodebench_release_v6_minus_v5.jsonl
+dataset_name: livecodebench_v6_minus_v5
+model_path: Qwen/Qwen2.5-Coder-7B-Instruct
+output_dir: outputs/livecodebench_v6_minus_v5_qwen_mvp
+limit: 50
+visible_tests: null
+conditions:
+  - nl_only
+  - nl_tests
+  - shuffled_tests
+  - irrelevant_tests
+generation:
+  max_new_tokens: 1024
+  temperature: 0.0
+  top_p: 1.0
+  collect_states: true
+evaluation:
+  official_runner: LiveCodeBench custom evaluator
+  custom_outputs:
+    nl_tests: outputs/livecodebench_qwen_mvp/lcb_custom_outputs_nl_tests.json
+    nl_only: outputs/livecodebench_qwen_mvp/lcb_custom_outputs_nl_only.json
