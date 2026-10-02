@@ -136,6 +136,7 @@ def heatmap(families, values):
         ax.set(xlim=(0,4), ylim=(20,0), xticks=np.arange(4)+.5,
                xticklabels=["A", "B", "Switch", "Explicit"], yticks=np.arange(20)+.5)
         ax.xaxis.tick_top()
+        ax.get_xticklabels()[2].set_weight("bold")
         ax.tick_params(axis="x", length=0, pad=4, labelsize=7.3, labelrotation=90)
         ax.tick_params(axis="y", length=0, pad=4, labelsize=7.8)
         ax.set_yticklabels([x[0].upper()+x[1:] for x in families] if m==0 else [])
@@ -150,7 +151,7 @@ def heatmap(families, values):
                 linear = np.where(rgb <= .04045, rgb/12.92, ((rgb+.055)/1.055)**2.4)
                 luminance = float(linear @ np.array([.2126,.7152,.0722]))
                 color = "white" if luminance < .179 else "#111111"
-                ax.text(col+.5, row+.5, f"{v[row,col]:.1f}", ha="center", va="center",
+                ax.text(col+.5, row+.5, f"{v[row,col]:.1f}".rstrip("0").rstrip("."), ha="center", va="center",
                         color=color, fontsize=7.0)
     cax = fig.add_axes([.38, .28/height, .40, .075/height])
     cb = fig.colorbar(mesh, cax=cax, orientation="horizontal", ticks=[0,1,2,3,4,5,6])
@@ -176,7 +177,7 @@ def forest(effects):
         ax.set_title(dataset, fontsize=8.4, weight="bold", pad=10)
         for y in [12.5,9.5,6.5,3.5]:
             ax.axhline(y, color="#E4E4E4", lw=.6, zorder=0)
-        ax.axvline(0, color="#777777", ls=(0,(3,3)), lw=.8, zorder=0)
+        ax.axvline(0, color="#B0B0B0", ls=(0,(3,3)), lw=.7, zorder=0)
         ax.grid(axis="x", color="#EAEAEA", lw=.45, zorder=0)
         for spine in ["top","right","left"]:
             ax.spines[spine].set_visible(False)
@@ -189,9 +190,10 @@ def forest(effects):
                 color, marker = styles[k]
                 ax.plot(val, y, marker=marker, linestyle="none", markersize=4.4,
                         color=color, zorder=3)
-                ax.annotate(f"{val:+.1f}", (val, y), xytext=(5, 0),
-                            textcoords="offset points", va="center", fontsize=6.3,
-                            color=color)
+                ax.annotate(f"{val:+.1f}", (val, y), xytext=(-5 if val >= 25 else 5, 0),
+                            textcoords="offset points", va="center",
+                            ha="right" if val >= 25 else "left", fontsize=8,
+                            color=color, bbox=dict(facecolor="white", edgecolor="none", pad=.15))
     fig.text(.58,.105,"Paired accuracy difference (percentage points)",ha="center",fontsize=8)
     handles=[Line2D([0],[0],color=c,marker=m,lw=0,markersize=3.5) for c,m in styles]
     fig.legend(handles,["Correct − NL-only", "Correct − Inputs-only", "Correct − Wrong I/O"],

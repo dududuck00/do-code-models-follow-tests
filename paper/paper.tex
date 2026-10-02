@@ -121,6 +121,9 @@ Table~\ref{tab:semantic-rules} lists the alternative rules for each family.
 Each family has six realizations with distinct input sets, giving 120 paired instances.
 We sample three visible inputs on which A and B disagree.
 The A-test and B-test prompts contain these same inputs and the corresponding reference outputs.
+Both prompts present the problem description, function signature, and visible assertions in that order, followed by an answer section.
+The final instruction is ``Return a complete Python implementation inside a Python markdown block.''
+The artifact includes the complete prompts used for every instance.
 We also generate programs from NL-only, inputs-only, and descriptions that state A or B explicitly.
 The explicit conditions measure whether the model can implement the rule when it is supplied directly in language.
 They provide the complete distinguishing rule as an oracle clarification, making its implementation directly observable alongside the response to tests.
@@ -337,12 +340,12 @@ The remaining category records unmet rule outputs without inferring program inte
 
 \subsection{Expected Outputs and Benchmark Correctness}
 
-Table~\ref{tab:main} reports held-out pass rates for the four core conditions, averaged over three runs.
-Both Tables~\ref{tab:main} and~\ref{tab:official} use the 157 HumanEval+, 378 MBPP+, and 175 LiveCodeBench tasks described in Section~3.1.
-Table~\ref{tab:unrelated} reports the additional other-task condition on the same tasks and held-out inputs.
-The contrasts in Figure~\ref{fig:main-effects} separate the contribution of expected outputs from the contribution of example inputs and from response to incorrect outputs.
-Each difference compares the same tasks across prompt conditions and averages their paired outcomes over three runs.
-Tables~\ref{tab:official} and~\ref{tab:repeats} report the complete official scores and individual-run effects.
+Expected outputs improve correctness beyond input examples on MBPP+ for all five models, while their benefit varies on HumanEval+ and LiveCodeBench.
+Table~\ref{tab:main} reports mean held-out pass rates over three runs on the same 157 HumanEval+, 378 MBPP+, and 175 LiveCodeBench tasks.
+Figure~\ref{fig:main-effects} contrasts correct I/O with NL-only, inputs-only, and wrong I/O; each difference averages paired task outcomes across the three runs.
+Table~\ref{tab:repeats} retains the individual-run correct-minus-input-only effects.
+Table~\ref{tab:unrelated} adds the other-task condition on the same tasks and held-out inputs.
+Complete official-suite scores are retained in the replication materials.
 
 \input{Tables/main}
 \begin{figure}[!htbp]
@@ -373,7 +376,6 @@ Qwen3.8 loses 29.9 points on HumanEval+ and 32.1 on MBPP+; Qwen3.6 loses 25.3 an
 The same checkpoints that adopt alternative rules relatively often are also sensitive to incorrect expected outputs.
 Outputs can influence generation in a harmful direction when their constraints conflict with the task.
 
-\input{Tables/official}
 \input{Tables/repeats}
 
 
@@ -441,7 +443,7 @@ These variants add 2400 prompt forwards across five models and reuse the origina
 
 For each instance, variant, and layer, different-rule distance averages the A/B distances in the original and variant prompts.
 Same-rule distance averages the original-to-variant distances separately for A and B.
-We average these paired differences arithmetically over the 120 instances at the prespecified final layer, reporting the two variants separately.
+We average these paired differences arithmetically over the 120 instances at the prespecified final layer.
 Table~\ref{tab:wording-control} reports the variants separately; all layers and the secondary equal-weight variant average are retained in the analysis files.
 
 \input{Tables/wording_control}
@@ -469,9 +471,10 @@ For the Qwen models, relative L2 gives similar final-layer relationships.
 The correlations are sensitive to family and length controls, motivating direct evaluation of behavioral prediction on unseen families.
 
 \subsection{Prediction on Unseen Rule Families}
-We predict an instance's mean switching rate using its normalized A/B state-difference vector.
+We use linear ridge regression in kernel form to predict an instance's mean switching rate from its normalized A/B state-difference vector.
 Outer five-fold evaluation holds out four complete families per fold, using the same family splits across models with seed 0.
-Inner four-fold validation on training families selects a layer from 25\%, 50\%, 75\%, or 100\% depth and a regularization coefficient from $\{0.0001,0.01,1,100\}$.
+Inner four-fold validation on training families minimizes MAE to select a layer from 25\%, 50\%, 75\%, or 100\% depth and a regularization coefficient from $\{0.0001,0.01,1,100\}$.
+Ties favor the larger regularization coefficient.
 Kernel centering and scale normalization use training families alone, and predictions are clipped to $[0,1]$.
 A text baseline uses character 2--4-gram TF-IDF features of A/B expected outputs, fitting vocabulary and IDF on training families and selecting regularization through inner validation.
 Constant baselines use the training-family median for MAE and mean for MSE.

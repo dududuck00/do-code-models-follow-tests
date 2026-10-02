@@ -1,6 +1,6 @@
 # Do Code Language Models Follow Tests? Paired Interventions on Program Behavior
 
-Replication artifact for the FSE 2027 submission. The current manuscript is [paper/paper_fse2027.pdf](paper/paper_fse2027.pdf); editable sources, twelve tables, and three figures are in [paper/](paper/).
+Replication artifact for the FSE 2027 submission. The current manuscript is [paper/paper_fse2027.pdf](paper/paper_fse2027.pdf); editable sources, eleven tables, and three figures are in [paper/](paper/).
 
 ## What is included
 
@@ -49,11 +49,13 @@ Open `paper/paper.tex` in Overleaf with XeLaTeX, or compile it locally with XeLa
 | Tables 2–3 and Figure 2: rule adoption, repeats, family profiles | `outputs/controlled/semantic/`, `outputs/analysis/semantic_families.json`, `scripts/analyze_controlled.py`, `scripts/analyze_semantic_families.py` |
 | Visible adherence, default-rule transitions and program examples | `outputs/semantic_visible/`, `outputs/semantic_cases/`, `scripts/semantic_visible/` |
 | Table 4: failed-program diagnoses | `outputs/semantic_representation/behavior_labels.jsonl`, `label_summary.json`, `scripts/label_semantic_representation.py` |
-| Tables 5–8 and Figure 3: matched benchmark conditions, repeats, other-task tests | `outputs/controlled/main/`, `outputs/controlled/unrelated/`, `outputs/analysis/unrelated_results.json`, `data/controlled/unrelated/donor_mapping.jsonl` |
-| Table 9: fixed-size test selection | `data/controlled/quality/`, `outputs/controlled/quality/`, `outputs/analysis/control_audit/quality_detection.json` |
-| Table 10: equivalent wording | `outputs/semantic_surface/analysis.json`, `pair_layer_metrics.csv`, `scripts/analyze_semantic_surface.py` |
-| Table 11: representation–behavior association | `outputs/semantic_representation/representation_analysis.json`, `pair_layer_metrics.csv`, `scripts/analyze_semantic_representation.py` |
-| Table 12: held-out-family prediction | `outputs/semantic_representation/family_probe.json`, `family_probe_predictions.jsonl`, `family_folds.json`, `scripts/probe_semantic_representation.py` |
+| Tables 5–7 and Figure 3: matched benchmark conditions, repeats, other-task tests | `outputs/controlled/main/`, `outputs/controlled/unrelated/`, `outputs/analysis/unrelated_results.json`, `data/controlled/unrelated/donor_mapping.jsonl` |
+| Table 8: fixed-size test selection | `data/controlled/quality/`, `outputs/controlled/quality/`, `outputs/analysis/control_audit/quality_detection.json` |
+| Table 9: equivalent wording | `outputs/semantic_surface/analysis.json`, `pair_layer_metrics.csv`, `scripts/analyze_semantic_surface.py` |
+| Table 10: representation–behavior association | `outputs/semantic_representation/representation_analysis.json`, `pair_layer_metrics.csv`, `scripts/analyze_semantic_representation.py` |
+| Table 11: held-out-family prediction | `outputs/semantic_representation/family_probe.json`, `family_probe_predictions.jsonl`, `family_folds.json`, `scripts/probe_semantic_representation.py` |
+
+The auxiliary official-suite scores are retained in `paper/Tables/official.tex`; per-run semantic adherence is available in the saved evaluations and summaries. The paper presents the primary held-out scores and a compact table of repeated switching rates.
 
 The manuscript's frozen, compact evidence snapshots are also under `paper/Results/`. Original statistical analysis outputs are retained there; the current paper displays point estimates and repeated-run results.
 
