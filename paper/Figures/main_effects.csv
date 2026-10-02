@@ -1,0 +1,46 @@
+model,dataset,contrast,estimate
+Qwen2.5-7B,HumanEval+,Correct - NL,-1.3
+Qwen2.5-7B,HumanEval+,Correct - Inputs,-0.8
+Qwen2.5-7B,HumanEval+,Correct - Wrong,11.5
+Qwen2.5-7B,MBPP+,Correct - NL,7.4
+Qwen2.5-7B,MBPP+,Correct - Inputs,4.7
+Qwen2.5-7B,MBPP+,Correct - Wrong,9.8
+Qwen2.5-7B,LCB v6-new,Correct - NL,-1.5
+Qwen2.5-7B,LCB v6-new,Correct - Inputs,1.3
+Qwen2.5-7B,LCB v6-new,Correct - Wrong,2.5
+Qwen3.5-9B,HumanEval+,Correct - NL,0.8
+Qwen3.5-9B,HumanEval+,Correct - Inputs,1.3
+Qwen3.5-9B,HumanEval+,Correct - Wrong,9.6
+Qwen3.5-9B,MBPP+,Correct - NL,9.9
+Qwen3.5-9B,MBPP+,Correct - Inputs,7.5
+Qwen3.5-9B,MBPP+,Correct - Wrong,14.3
+Qwen3.5-9B,LCB v6-new,Correct - NL,0.6
+Qwen3.5-9B,LCB v6-new,Correct - Inputs,1.1
+Qwen3.5-9B,LCB v6-new,Correct - Wrong,6.5
+Qwen3.6-27B,HumanEval+,Correct - NL,2.5
+Qwen3.6-27B,HumanEval+,Correct - Inputs,1.9
+Qwen3.6-27B,HumanEval+,Correct - Wrong,25.3
+Qwen3.6-27B,MBPP+,Correct - NL,7.5
+Qwen3.6-27B,MBPP+,Correct - Inputs,3.5
+Qwen3.6-27B,MBPP+,Correct - Wrong,31.1
+Qwen3.6-27B,LCB v6-new,Correct - NL,-2.1
+Qwen3.6-27B,LCB v6-new,Correct - Inputs,-2.3
+Qwen3.6-27B,LCB v6-new,Correct - Wrong,3.0
+Qwen3.8-27B,HumanEval+,Correct - NL,4.7
+Qwen3.8-27B,HumanEval+,Correct - Inputs,3.2
+Qwen3.8-27B,HumanEval+,Correct - Wrong,29.9
+Qwen3.8-27B,MBPP+,Correct - NL,8.6
+Qwen3.8-27B,MBPP+,Correct - Inputs,5.0
+Qwen3.8-27B,MBPP+,Correct - Wrong,32.1
+Qwen3.8-27B,LCB v6-new,Correct - NL,1.0
+Qwen3.8-27B,LCB v6-new,Correct - Inputs,1.5
+Qwen3.8-27B,LCB v6-new,Correct - Wrong,10.7
+DeepSeek-6.7B,HumanEval+,Correct - NL,-0.6
+DeepSeek-6.7B,HumanEval+,Correct - Inputs,3.2
+DeepSeek-6.7B,HumanEval+,Correct - Wrong,8.1
+DeepSeek-6.7B,MBPP+,Correct - NL,8.9
+DeepSeek-6.7B,MBPP+,Correct - Inputs,5.3
+DeepSeek-6.7B,MBPP+,Correct - Wrong,8.5
+DeepSeek-6.7B,LCB v6-new,Correct - NL,-0.6
+DeepSeek-6.7B,LCB v6-new,Correct - Inputs,-2.3
+DeepSeek-6.7B,LCB v6-new,Correct - Wrong,1.0

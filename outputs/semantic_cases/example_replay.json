@@ -1,0 +1,51 @@
+[
+  {
+    "family": "interval_boundary",
+    "condition": "nl_only",
+    "output": [
+      -3,
+      -2,
+      -3,
+      -1,
+      -3,
+      -1
+    ]
+  },
+  {
+    "family": "interval_boundary",
+    "condition": "tests_b",
+    "output": [
+      -3,
+      -2,
+      -3,
+      -1,
+      -3,
+      -1
+    ]
+  },
+  {
+    "family": "interval_boundary",
+    "condition": "explicit_b",
+    "output": [
+      -3,
+      -2,
+      -3,
+      -3
+    ]
+  },
+  {
+    "family": "substring_case",
+    "condition": "explicit_b",
+    "output": 6
+  },
+  {
+    "family": "substring_case",
+    "condition": "nl_only",
+    "output": 2
+  },
+  {
+    "family": "substring_case",
+    "condition": "tests_b",
+    "output": 2
+  }
+]

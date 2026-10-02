@@ -1,0 +1,33 @@
+\begin{table}[!htbp]
+\centering
+\caption{Alternative rules used in the semantic intervention. Each pair shares an underspecified description, function signature, and three visible inputs. The explicit conditions add the corresponding rule to the description.}
+\label{tab:semantic-rules}
+\small
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{.18\linewidth}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X@{}}
+\toprule
+Family & Rule A & Rule B \\
+\midrule
+dedup order & Preserve the order of first occurrence. & Return the distinct integers in ascending order. \\
+duplicate policy & Keep the first occurrence of each value. & Keep only values that occur exactly once in the input. \\
+argmax tie & Choose the first such index. & Choose the last such index. \\
+threshold boundary & Include values equal to the threshold. & Include only values strictly greater than the threshold. \\
+interval boundary & Include both bounds. & Include the lower bound and exclude the upper bound. \\
+median choice & For even-length lists choose the lower middle value. & For even-length lists choose the upper middle value. \\
+integer rounding & Round the quotient down toward negative infinity. & Truncate the quotient toward zero. \\
+remainder sign & Use the nonnegative remainder associated with floor division. & Use the signed remainder associated with truncation toward zero. \\
+substring overlap & Count overlapping occurrences. & Count non-overlapping occurrences from left to right. \\
+substring case & Match letters case-sensitively. & Match letters case-insensitively. \\
+space fields & Consecutive spaces separate empty fields; preserve leading and trailing empty fields. & Treat consecutive spaces as one separator and omit empty fields. \\
+normalization & Keep decimal digits as part of the normalized text. & Keep alphabetic letters only. \\
+sort ties & Preserve input order among equal scores. & Sort equal scores by ascending name. \\
+partial chunk & Keep the final chunk even when it is shorter than the requested size. & Return only chunks of the full requested size. \\
+group count & Group consecutive equal values into runs. & Group all occurrences of each value together. \\
+graph direction & Each edge can be traversed from u to v only. & Each edge can be traversed in either direction. \\
+merge touching & Also merge intervals whose endpoints touch. & Merge intervals only when their interiors overlap. \\
+search index & The first position is numbered zero. & The first position is numbered one. \\
+topk ties & Return exactly k values. & Include every value equal to the cutoff, even when the result has more than k elements. \\
+empty segments & Keep entries that are empty after trimming. & Discard entries that are empty after trimming. \\
+\bottomrule
+\end{tabularx}
+
+\end{table}

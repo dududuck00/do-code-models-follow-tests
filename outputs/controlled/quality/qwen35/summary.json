@@ -1,0 +1,220 @@
+[
+  {
+    "model_path": "Qwen/Qwen3.5-9B",
+    "experiment": "quality",
+    "dataset": "mbppplus",
+    "conditions": {
+      "nl_only": {
+        "observations": 112,
+        "tasks": 112,
+        "passed": 0.6160714285714286,
+        "official_passed": 0.6071428571428571,
+        "heldout_passed": 0.6160714285714286
+      },
+      "quality_high": {
+        "observations": 112,
+        "tasks": 112,
+        "passed": 0.6785714285714286,
+        "official_passed": 0.6785714285714286,
+        "heldout_passed": 0.6785714285714286
+      },
+      "quality_low": {
+        "observations": 112,
+        "tasks": 112,
+        "passed": 0.6964285714285714,
+        "official_passed": 0.6964285714285714,
+        "heldout_passed": 0.6964285714285714
+      },
+      "quality_random": {
+        "observations": 112,
+        "tasks": 112,
+        "passed": 0.7053571428571429,
+        "official_passed": 0.6964285714285714,
+        "heldout_passed": 0.7053571428571429
+      }
+    },
+    "contrasts": [
+      {
+        "base": "quality_random",
+        "target": "quality_high",
+        "num_tasks": 112,
+        "num_clusters": 112,
+        "repeats_per_task": 1,
+        "cluster_field": "task_id",
+        "paired_difference": -0.026785714285714284,
+        "ci95": [
+          -0.0625,
+          0.008928571428571428
+        ],
+        "per_repeat": {
+          "0": {
+            "n": 112,
+            "gains": 1,
+            "losses": 4,
+            "base_passed": 79,
+            "target_passed": 76,
+            "exact_mcnemar_p": 0.375,
+            "paired_difference": -0.026785714285714284
+          }
+        }
+      },
+      {
+        "base": "quality_low",
+        "target": "quality_high",
+        "num_tasks": 112,
+        "num_clusters": 112,
+        "repeats_per_task": 1,
+        "cluster_field": "task_id",
+        "paired_difference": -0.017857142857142856,
+        "ci95": [
+          -0.07142857142857142,
+          0.03571428571428571
+        ],
+        "per_repeat": {
+          "0": {
+            "n": 112,
+            "gains": 3,
+            "losses": 5,
+            "base_passed": 78,
+            "target_passed": 76,
+            "exact_mcnemar_p": 0.7265625,
+            "paired_difference": -0.017857142857142856
+          }
+        }
+      },
+      {
+        "base": "nl_only",
+        "target": "quality_high",
+        "num_tasks": 112,
+        "num_clusters": 112,
+        "repeats_per_task": 1,
+        "cluster_field": "task_id",
+        "paired_difference": 0.0625,
+        "ci95": [
+          0.017857142857142856,
+          0.11607142857142858
+        ],
+        "per_repeat": {
+          "0": {
+            "n": 112,
+            "gains": 8,
+            "losses": 1,
+            "base_passed": 69,
+            "target_passed": 76,
+            "exact_mcnemar_p": 0.0390625,
+            "paired_difference": 0.0625
+          }
+        }
+      }
+    ]
+  },
+  {
+    "model_path": "Qwen/Qwen3.5-9B",
+    "experiment": "quality",
+    "dataset": "humanevalplus",
+    "conditions": {
+      "nl_only": {
+        "observations": 68,
+        "tasks": 68,
+        "passed": 0.8235294117647058,
+        "official_passed": 0.7941176470588235,
+        "heldout_passed": 0.8235294117647058
+      },
+      "quality_high": {
+        "observations": 68,
+        "tasks": 68,
+        "passed": 0.8235294117647058,
+        "official_passed": 0.7941176470588235,
+        "heldout_passed": 0.8235294117647058
+      },
+      "quality_low": {
+        "observations": 68,
+        "tasks": 68,
+        "passed": 0.8088235294117647,
+        "official_passed": 0.7941176470588235,
+        "heldout_passed": 0.8088235294117647
+      },
+      "quality_random": {
+        "observations": 68,
+        "tasks": 68,
+        "passed": 0.7941176470588235,
+        "official_passed": 0.7794117647058824,
+        "heldout_passed": 0.7941176470588235
+      }
+    },
+    "contrasts": [
+      {
+        "base": "quality_random",
+        "target": "quality_high",
+        "num_tasks": 68,
+        "num_clusters": 68,
+        "repeats_per_task": 1,
+        "cluster_field": "task_id",
+        "paired_difference": 0.029411764705882353,
+        "ci95": [
+          -0.029411764705882353,
+          0.08823529411764706
+        ],
+        "per_repeat": {
+          "0": {
+            "n": 68,
+            "gains": 3,
+            "losses": 1,
+            "base_passed": 54,
+            "target_passed": 56,
+            "exact_mcnemar_p": 0.625,
+            "paired_difference": 0.029411764705882353
+          }
+        }
+      },
+      {
+        "base": "quality_low",
+        "target": "quality_high",
+        "num_tasks": 68,
+        "num_clusters": 68,
+        "repeats_per_task": 1,
+        "cluster_field": "task_id",
+        "paired_difference": 0.014705882352941176,
+        "ci95": [
+          -0.058823529411764705,
+          0.08823529411764706
+        ],
+        "per_repeat": {
+          "0": {
+            "n": 68,
+            "gains": 4,
+            "losses": 3,
+            "base_passed": 55,
+            "target_passed": 56,
+            "exact_mcnemar_p": 1.0,
+            "paired_difference": 0.014705882352941176
+          }
+        }
+      },
+      {
+        "base": "nl_only",
+        "target": "quality_high",
+        "num_tasks": 68,
+        "num_clusters": 68,
+        "repeats_per_task": 1,
+        "cluster_field": "task_id",
+        "paired_difference": 0.0,
+        "ci95": [
+          -0.07352941176470588,
+          0.07352941176470588
+        ],
+        "per_repeat": {
+          "0": {
+            "n": 68,
+            "gains": 4,
+            "losses": 4,
+            "base_passed": 56,
+            "target_passed": 56,
+            "exact_mcnemar_p": 1.0,
+            "paired_difference": 0.0
+          }
+        }
+      }
+    ]
+  }
+]

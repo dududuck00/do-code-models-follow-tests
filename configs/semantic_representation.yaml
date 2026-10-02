@@ -1,0 +1,119 @@
+status: complete
+protocol: semantic-representation-1
+dataset: data/controlled/semantic/tasks.jsonl
+models:
+- qwen25
+- qwen36
+- qwen35
+- qwen38
+- deepseek
+model_paths_from: configs/controlled.yaml
+conditions:
+- tests_a
+- tests_b
+behavior:
+  generations: outputs/controlled/semantic/{model}/generations.jsonl
+  evaluations: outputs/controlled/semantic/{model}/eval_results.jsonl
+  repeats:
+  - 0
+  - 1
+  - 2
+  unit: task_id
+  cluster: family_id
+collection:
+  unique_key:
+  - model
+  - task_id
+  - condition
+  - prompt_token_hash
+  tasks_per_model: 120
+  prompts_per_model: 240
+  total_unique_prompts: 1200
+  backend: transformers
+  dtype: bfloat16
+  prompt_format: chat
+  thinking: disabled
+  position: final_prompt_token
+  layers: all
+  save_dtype: float32
+  output_dir: outputs/semantic_representation/{model}
+labels:
+  mutually_exclusive_outcomes:
+  - target_rule
+  - alternative_rule
+  - neither_rule
+  execution_diagnostics: separate_axis
+  neither_rule_is_not_automatically_implementation_failure: true
+  pair_outcome: both_assigned_rules_pass_in_same_repeat
+  aggregate_repeats_within_task: true
+analysis:
+  primary: within_model_layerwise_ab_difference_and_behavior_association
+  distances:
+  - cosine_distance
+  - relative_l2
+  summaries:
+  - all_pairs
+  - per_family
+  - association_with_mean_paired_switching
+  inference_cluster: family_id
+  bootstrap_samples: 5000
+  seed: 0
+  cross_model_comparison: layerwise_patterns_and_associations
+  primary_summary_layer: final
+  within_family_centered_association: true
+  cosine_distance_definition: 1-cos(h_A,h_B)
+  relative_l2_definition: norm(h_B-h_A)/((norm(h_A)+norm(h_B))/2)
+  nuisance_features:
+  - mean_prompt_token_count
+  - absolute_prompt_token_count_difference
+  reported_associations:
+  - pooled_spearman
+  - within_family_spearman
+  - within_family_length_adjusted_correlation
+probe:
+  status: enabled
+  target: three_run_mean_paired_switching
+  outer_group: family_id
+  outer_folds: 5
+  keep_all_task_conditions_and_repeats_together: true
+  fit_preprocessing_on_training_families_only: true
+  select_hyperparameters_and_layers_within_training_families: true
+  ab_prompt_label_is_not_a_rule_adoption_label: true
+  estimator: kernel_form_linear_ridge
+  representation: relative_hidden_difference
+  layer_depth_candidates:
+  - 0.25
+  - 0.5
+  - 0.75
+  - 1.0
+  alpha_candidates:
+  - 0.0001
+  - 0.01
+  - 1.0
+  - 100.0
+  inner_folds: 4
+  baselines:
+  - training_family_mean
+  - training_family_median
+  - expected_output_text_tfidf_char_2_4
+  metric: out_of_family_mean_absolute_error
+  prediction_clip:
+  - 0
+  - 1
+  uncertainty: bootstrap held-out family predictions; models not refit inside bootstrap
+  seed: 0
+  mae_matched_constant_baseline: training_family_median
+  mse_matched_constant_baseline: training_family_mean
+  kernel_centering_and_scale: fit on training families; normalize by centered training-kernel
+    mean diagonal
+scope:
+  activation_interventions: false
+  new_code_generations: 0
+  manuscript_path: paper/paper.tex
+  manuscript_note: Current FSE source is included in paper/.
+
+extension:
+  model: deepseek
+  role: cross_model_family_validation
+  fixed_protocol: semantic-representation-1
+  existing_four_model_audit: outputs/semantic_representation/deepseek_extension_audit.json

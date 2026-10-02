@@ -1,0 +1,208 @@
+{
+  "source": "Existing semantic generation and evaluation records; three families selected because Qwen3.8 has zero paired switching. No new model generations.",
+  "selected_families": [
+    "interval_boundary",
+    "merge_touching",
+    "substring_case"
+  ],
+  "instances": 18,
+  "runs_per_instance": 3,
+  "qwen38": {
+    "nl_only_A": 54,
+    "B_tests_A": 51,
+    "B_tests_B": 0,
+    "B_tests_neither": 3,
+    "explicit_B_passed": 54
+  },
+  "aggregate_target_failure_composition": {
+    "qwen36": {
+      "other": 139,
+      "neither": 7,
+      "other_percent": 95.20547945205479
+    },
+    "qwen38": {
+      "other": 119,
+      "neither": 4,
+      "other_percent": 96.7479674796748
+    }
+  },
+  "examples": [
+    {
+      "family": "interval_boundary",
+      "instance": 0,
+      "repeat": 0,
+      "records": [
+        {
+          "task_id": "semantic::interval_boundary::0",
+          "condition": "nl_only",
+          "repeat": 0,
+          "candidate_code": "def solve(data):\n    values, lo, hi = data\n    return [x for x in values if lo <= x <= hi]\n",
+          "prompt": "### Problem\ndata contains an integer list and two bounds lo and hi with lo < hi. Return the values in that interval in input order.\nThe argument data is the three-element Python list [values, lo, hi], where values is a list of integers.\n\n### Function Signature\n```python\ndef solve(data):\n```\n\n### Answer\nReturn a complete Python implementation inside a Python markdown block.\n```python\n",
+          "prompt_tests": [],
+          "evaluation": {
+            "family_id": "interval_boundary",
+            "rule_a_passed": true,
+            "rule_b_passed": false,
+            "common_passed": true,
+            "execution_status": "ok",
+            "passed": true
+          }
+        },
+        {
+          "task_id": "semantic::interval_boundary::0",
+          "condition": "tests_b",
+          "repeat": 0,
+          "candidate_code": "def solve(data):\n    values, lo, hi = data\n    return [x for x in values if lo <= x <= hi]\n",
+          "prompt": "### Problem\ndata contains an integer list and two bounds lo and hi with lo < hi. Return the values in that interval in input order.\nThe argument data is the three-element Python list [values, lo, hi], where values is a list of integers.\n\n### Function Signature\n```python\ndef solve(data):\n```\n\n### Visible Test Cases\nTest 1\nassert solve([[3, 1, -1, -3, -1, -3, 3, -2, 0, -2, -3, 3, -1, -1, 2], -1, 2]) == [1, -1, -1, 0, -1, -1]\n\nTest 2\nassert solve([[-3, -2, 1, -3, -1, -3, -1], -3, -1]) == [-3, -2, -3, -3]\n\nTest 3\nassert solve([[1, 0, 2, 3, 1, 0, -2, 2, -1, -1, -1, 2, 0, 3], 0, 3]) == [1, 0, 2, 1, 0, 2, 2, 0]\n\n### Answer\nReturn a complete Python implementation inside a Python markdown block.\n```python\n",
+          "prompt_tests": [
+            "assert solve([[3, 1, -1, -3, -1, -3, 3, -2, 0, -2, -3, 3, -1, -1, 2], -1, 2]) == [1, -1, -1, 0, -1, -1]",
+            "assert solve([[-3, -2, 1, -3, -1, -3, -1], -3, -1]) == [-3, -2, -3, -3]",
+            "assert solve([[1, 0, 2, 3, 1, 0, -2, 2, -1, -1, -1, 2, 0, 3], 0, 3]) == [1, 0, 2, 1, 0, 2, 2, 0]"
+          ],
+          "evaluation": {
+            "family_id": "interval_boundary",
+            "rule_a_passed": true,
+            "rule_b_passed": false,
+            "common_passed": true,
+            "execution_status": "ok",
+            "passed": false
+          }
+        },
+        {
+          "task_id": "semantic::interval_boundary::0",
+          "condition": "explicit_b",
+          "repeat": 0,
+          "candidate_code": "def solve(data):\n    values, lo, hi = data\n    return [x for x in values if lo <= x < hi]\n",
+          "prompt": "### Problem\ndata contains an integer list and two bounds lo and hi with lo < hi. Return the values in that interval in input order.\nThe argument data is the three-element Python list [values, lo, hi], where values is a list of integers.\nInclude the lower bound and exclude the upper bound.\n\n### Function Signature\n```python\ndef solve(data):\n```\n\n### Answer\nReturn a complete Python implementation inside a Python markdown block.\n```python\n",
+          "prompt_tests": [],
+          "evaluation": {
+            "family_id": "interval_boundary",
+            "rule_a_passed": false,
+            "rule_b_passed": true,
+            "common_passed": true,
+            "execution_status": "ok",
+            "passed": true
+          }
+        }
+      ]
+    },
+    {
+      "family": "merge_touching",
+      "instance": 0,
+      "repeat": 0,
+      "records": [
+        {
+          "task_id": "semantic::merge_touching::0",
+          "condition": "nl_only",
+          "repeat": 0,
+          "candidate_code": "def solve(data):\n    \"\"\"\n    Merge overlapping intervals.\n    \n    Args:\n        data: A list of intervals, where each interval is [start, end] with start < end.\n        \n    Returns:\n        A sorted list of merged non-overlapping intervals.\n    \"\"\"\n    if not data:\n        return []\n    \n    # Sort intervals by start time\n    data.sort(key=lambda x: x[0])\n    \n    merged = [data[0][:]]  # Start with the first interval (copy it)\n    \n    for i in range(1, len(data)):\n        current_start, current_end = data[i]\n        last_start, last_end = merged[-1]\n        \n        # Check if the current interval overlaps with the last merged interval\n        if current_start <= last_end:\n            # They overlap, so merge them\n            merged[-1][1] = max(last_end, current_end)\n        else:\n            # No overlap, add the current interval as a new merged interval\n            merged.append([current_start, current_end])\n    \n    return merged\n",
+          "prompt": "### Problem\nReturn the sorted merged intervals from data. Each interval is [start, end] with start < end; overlapping intervals are combined.\n\n### Function Signature\n```python\ndef solve(data):\n```\n\n### Answer\nReturn a complete Python implementation inside a Python markdown block.\n```python\n",
+          "prompt_tests": [],
+          "evaluation": {
+            "family_id": "merge_touching",
+            "rule_a_passed": true,
+            "rule_b_passed": false,
+            "common_passed": true,
+            "execution_status": "ok",
+            "passed": true
+          }
+        },
+        {
+          "task_id": "semantic::merge_touching::0",
+          "condition": "tests_b",
+          "repeat": 0,
+          "candidate_code": "def solve(data):\n    \"\"\"\n    Merge overlapping intervals.\n    \n    Args:\n        data: List of intervals, each interval is [start, end]\n    \n    Returns:\n        List of merged, sorted intervals\n    \"\"\"\n    if not data:\n        return []\n    \n    # Sort intervals by start time\n    data.sort(key=lambda x: x[0])\n    \n    merged = []\n    for interval in data:\n        if not merged:\n            merged.append(interval[:])\n        else:\n            last = merged[-1]\n            # Check if current interval overlaps with the last merged interval\n            # Overlap condition: current start <= last end\n            if interval[0] <= last[1]:\n                # Merge: extend the end if needed\n                last[1] = max(last[1], interval[1])\n            else:\n                merged.append(interval[:])\n    \n    return merged\n",
+          "prompt": "### Problem\nReturn the sorted merged intervals from data. Each interval is [start, end] with start < end; overlapping intervals are combined.\n\n### Function Signature\n```python\ndef solve(data):\n```\n\n### Visible Test Cases\nTest 1\nassert solve([[-3, -1], [3, 7], [-1, 3], [3, 7], [2, 5], [2, 3], [0, 3], [1, 2], [3, 7], [-1, 0], [1, 5], [1, 5], [-1, 2], [-3, -1], [0, 2]]) == [[-3, -1], [-1, 7]]\n\nTest 2\nassert solve([[1, 2], [-3, -1], [-3, -1], [-3, 0], [2, 3]]) == [[-3, 0], [1, 2], [2, 3]]\n\nTest 3\nassert solve([[2, 3], [-2, 1], [1, 5], [0, 1], [-1, 0]]) == [[-2, 1], [1, 5]]\n\n### Answer\nReturn a complete Python implementation inside a Python markdown block.\n```python\n",
+          "prompt_tests": [
+            "assert solve([[-3, -1], [3, 7], [-1, 3], [3, 7], [2, 5], [2, 3], [0, 3], [1, 2], [3, 7], [-1, 0], [1, 5], [1, 5], [-1, 2], [-3, -1], [0, 2]]) == [[-3, -1], [-1, 7]]",
+            "assert solve([[1, 2], [-3, -1], [-3, -1], [-3, 0], [2, 3]]) == [[-3, 0], [1, 2], [2, 3]]",
+            "assert solve([[2, 3], [-2, 1], [1, 5], [0, 1], [-1, 0]]) == [[-2, 1], [1, 5]]"
+          ],
+          "evaluation": {
+            "family_id": "merge_touching",
+            "rule_a_passed": true,
+            "rule_b_passed": false,
+            "common_passed": true,
+            "execution_status": "ok",
+            "passed": false
+          }
+        },
+        {
+          "task_id": "semantic::merge_touching::0",
+          "condition": "explicit_b",
+          "repeat": 0,
+          "candidate_code": "def solve(data):\n    \"\"\"\n    Merge overlapping intervals.\n    \n    Intervals are merged only when their interiors overlap.\n    Two intervals [a, b] and [c, d] have overlapping interiors if:\n    a < d and c < b (strict inequality for interior overlap)\n    \n    This means [1, 3] and [3, 5] do NOT overlap (interiors are (1,3) and (3,5), which don't overlap)\n    But [1, 4] and [3, 5] DO overlap (interiors (1,4) and (3,5) overlap in (3,4))\n    \n    Args:\n        data: List of intervals, each interval is [start, end] with start < end\n        \n    Returns:\n        Sorted list of merged intervals\n    \"\"\"\n    if not data:\n        return []\n    \n    # Sort by start, then by end\n    data = sorted(data, key=lambda x: (x[0], x[1]))\n    \n    merged = []\n    for interval in data:\n        start, end = interval\n        \n        if not merged:\n            merged.append([start, end])\n        else:\n            last = merged[-1]\n            last_start, last_end = last\n            \n            # Check if interiors overlap\n            # Interior of [a, b] is (a, b), interior of [c, d] is (c, d)\n            # They overlap if a < d and c < b\n            if start < last_end and last_start < end:\n                # Merge: extend the last interval\n                last[1] = max(last_end, end)\n            else:\n                # No interior overlap, add new interval\n                merged.append([start, end])\n    \n    return merged\n",
+          "prompt": "### Problem\nReturn the sorted merged intervals from data. Each interval is [start, end] with start < end; overlapping intervals are combined.\nMerge intervals only when their interiors overlap.\n\n### Function Signature\n```python\ndef solve(data):\n```\n\n### Answer\nReturn a complete Python implementation inside a Python markdown block.\n```python\n",
+          "prompt_tests": [],
+          "evaluation": {
+            "family_id": "merge_touching",
+            "rule_a_passed": false,
+            "rule_b_passed": true,
+            "common_passed": true,
+            "execution_status": "ok",
+            "passed": true
+          }
+        }
+      ]
+    },
+    {
+      "family": "substring_case",
+      "instance": 0,
+      "repeat": 0,
+      "records": [
+        {
+          "task_id": "semantic::substring_case::0",
+          "condition": "explicit_b",
+          "repeat": 0,
+          "candidate_code": "def solve(data):\n    \"\"\"\n    Count non-overlapping occurrences of a substring in a text, case-insensitively.\n    \n    Args:\n        data: A two-element list [text, substring]\n        \n    Returns:\n        The number of non-overlapping occurrences of substring in text (case-insensitive)\n    \"\"\"\n    text, substring = data\n    \n    # Convert both to lowercase for case-insensitive matching\n    text_lower = text.lower()\n    substring_lower = substring.lower()\n    \n    # Handle edge case: empty substring\n    if not substring_lower:\n        return 0\n    \n    count = 0\n    start = 0\n    len_sub = len(substring_lower)\n    \n    while start <= len(text_lower) - len_sub:\n        # Find the next occurrence starting from 'start'\n        idx = text_lower.find(substring_lower, start)\n        if idx == -1:\n            break\n        count += 1\n        # Move start to after the found occurrence (non-overlapping)\n        start = idx + len_sub\n    \n    return count\n",
+          "prompt": "### Problem\ndata contains an ASCII string and a nonempty substring. Count non-overlapping occurrences of the substring.\nThe argument data is a two-element Python list [text, substring], both elements being strings.\nMatch letters case-insensitively.\n\n### Function Signature\n```python\ndef solve(data):\n```\n\n### Answer\nReturn a complete Python implementation inside a Python markdown block.\n```python\n",
+          "prompt_tests": [],
+          "evaluation": {
+            "family_id": "substring_case",
+            "rule_a_passed": false,
+            "rule_b_passed": true,
+            "common_passed": true,
+            "execution_status": "ok",
+            "passed": true
+          }
+        },
+        {
+          "task_id": "semantic::substring_case::0",
+          "condition": "nl_only",
+          "repeat": 0,
+          "candidate_code": "def solve(data):\n    \"\"\"\n    Count non-overlapping occurrences of a substring in a text.\n    \n    Args:\n        data: A two-element list [text, substring]\n        \n    Returns:\n        The number of non-overlapping occurrences of substring in text.\n    \"\"\"\n    text, substring = data\n    \n    if not substring:\n        return 0\n    \n    count = 0\n    start = 0\n    while True:\n        pos = text.find(substring, start)\n        if pos == -1:\n            break\n        count += 1\n        start = pos + len(substring)\n    \n    return count\n",
+          "prompt": "### Problem\ndata contains an ASCII string and a nonempty substring. Count non-overlapping occurrences of the substring.\nThe argument data is a two-element Python list [text, substring], both elements being strings.\n\n### Function Signature\n```python\ndef solve(data):\n```\n\n### Answer\nReturn a complete Python implementation inside a Python markdown block.\n```python\n",
+          "prompt_tests": [],
+          "evaluation": {
+            "family_id": "substring_case",
+            "rule_a_passed": true,
+            "rule_b_passed": false,
+            "common_passed": true,
+            "execution_status": "ok",
+            "passed": true
+          }
+        },
+        {
+          "task_id": "semantic::substring_case::0",
+          "condition": "tests_b",
+          "repeat": 0,
+          "candidate_code": "def solve(data):\n    text, substring = data[0], data[1]\n    if not substring:\n        return 0\n    \n    count = 0\n    start = 0\n    while True:\n        idx = text.find(substring, start)\n        if idx == -1:\n            break\n        count += 1\n        start = idx + len(substring)\n    \n    return count\n",
+          "prompt": "### Problem\ndata contains an ASCII string and a nonempty substring. Count non-overlapping occurrences of the substring.\nThe argument data is a two-element Python list [text, substring], both elements being strings.\n\n### Function Signature\n```python\ndef solve(data):\n```\n\n### Visible Test Cases\nTest 1\nassert solve(['CATcatCATCATcatcatCATcat', 'cat']) == 8\n\nTest 2\nassert solve(['HELLOhelloHellohelloHelloHELLOHELLO', 'Hello']) == 7\n\nTest 3\nassert solve(['AbABAbababAB', 'Ab']) == 6\n\n### Answer\nReturn a complete Python implementation inside a Python markdown block.\n```python\n",
+          "prompt_tests": [
+            "assert solve(['CATcatCATCATcatcatCATcat', 'cat']) == 8",
+            "assert solve(['HELLOhelloHellohelloHelloHELLOHELLO', 'Hello']) == 7",
+            "assert solve(['AbABAbababAB', 'Ab']) == 6"
+          ],
+          "evaluation": {
+            "family_id": "substring_case",
+            "rule_a_passed": true,
+            "rule_b_passed": false,
+            "common_passed": true,
+            "execution_status": "ok",
+            "passed": false
+          }
+        }
+      ]
+    }
+  ]
+}

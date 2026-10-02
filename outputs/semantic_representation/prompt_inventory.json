@@ -1,0 +1,42 @@
+{
+  "qwen25": {
+    "unique_prompts": 240,
+    "behavior_observations": 720,
+    "model_path": "Qwen/Qwen2.5-Coder-7B-Instruct",
+    "generation_model_paths": [
+      "Qwen/Qwen2.5-Coder-7B-Instruct"
+    ]
+  },
+  "qwen36": {
+    "unique_prompts": 240,
+    "behavior_observations": 720,
+    "model_path": "Qwen/Qwen3.6-27B",
+    "generation_model_paths": [
+      "Qwen/Qwen3.6-27B"
+    ]
+  },
+  "qwen35": {
+    "unique_prompts": 240,
+    "behavior_observations": 720,
+    "model_path": "Qwen/Qwen3.5-9B",
+    "generation_model_paths": [
+      "Qwen/Qwen3.5-9B"
+    ]
+  },
+  "qwen38": {
+    "unique_prompts": 240,
+    "behavior_observations": 720,
+    "model_path": "Qwen/Qwen3.8-27B",
+    "generation_model_paths": [
+      "Qwen/Qwen3.8-27B"
+    ]
+  },
+  "deepseek": {
+    "unique_prompts": 240,
+    "behavior_observations": 720,
+    "model_path": "deepseek-ai/deepseek-coder-6.7b-instruct",
+    "generation_model_paths": [
+      "deepseek-ai/deepseek-coder-6.7b-instruct"
+    ]
+  }
+}

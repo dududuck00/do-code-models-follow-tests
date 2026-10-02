@@ -1,0 +1,69 @@
+{
+  "main/qwen25": {
+    "rows": 8520,
+    "tasks": 710,
+    "repeats": 3,
+    "prompt_mismatches": 0,
+    "finish_reasons": {
+      "stop": 8494,
+      "length": 26
+    }
+  },
+  "main/deepseek": {
+    "rows": 8520,
+    "tasks": 710,
+    "repeats": 3,
+    "prompt_mismatches": 0,
+    "finish_reasons": {
+      "stop": 8509,
+      "length": 11
+    }
+  },
+  "main/qwen36": {
+    "rows": 8520,
+    "tasks": 710,
+    "repeats": 3,
+    "prompt_mismatches": 0,
+    "finish_reasons": {
+      "stop": 8416,
+      "length": 104
+    }
+  },
+  "semantic/qwen25": {
+    "rows": 720,
+    "tasks": 120,
+    "repeats": 1,
+    "prompt_mismatches": 0,
+    "finish_reasons": {
+      "stop": 720
+    }
+  },
+  "semantic/qwen36": {
+    "rows": 720,
+    "tasks": 120,
+    "repeats": 1,
+    "prompt_mismatches": 0,
+    "finish_reasons": {
+      "stop": 720
+    }
+  },
+  "quality/qwen25": {
+    "rows": 720,
+    "tasks": 180,
+    "repeats": 1,
+    "prompt_mismatches": 0,
+    "finish_reasons": {
+      "stop": 719,
+      "length": 1
+    }
+  },
+  "quality/qwen36": {
+    "rows": 720,
+    "tasks": 180,
+    "repeats": 1,
+    "prompt_mismatches": 0,
+    "finish_reasons": {
+      "stop": 720
+    }
+  }
+}

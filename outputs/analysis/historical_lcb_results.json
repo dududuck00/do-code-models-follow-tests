@@ -1,0 +1,521 @@
+{
+  "complete": true,
+  "runs": [
+    {
+      "model": "Qwen2.5-Coder-7B",
+      "test_source": "Original",
+      "output_dir": "outputs/livecodebench_v6_minus_v5_qwen_full_fixed",
+      "tasks": 175,
+      "counts": {
+        "nl_only": 23,
+        "nl_tests": 26,
+        "shuffled_tests": 24,
+        "irrelevant_tests": 27
+      },
+      "effects_vs_nl": {
+        "nl_tests": {
+          "base": "nl_only",
+          "target": "nl_tests",
+          "num_tasks": 175,
+          "num_clusters": 175,
+          "repeats_per_task": 1,
+          "cluster_field": "task_id",
+          "paired_difference": 0.017142857142857144,
+          "ci95": [
+            -0.017142857142857144,
+            0.05142857142857143
+          ],
+          "per_repeat": {
+            "0": {
+              "n": 175,
+              "gains": 6,
+              "losses": 3,
+              "base_passed": 23,
+              "target_passed": 26,
+              "exact_mcnemar_p": 0.5078125,
+              "paired_difference": 0.017142857142857144
+            }
+          }
+        },
+        "shuffled_tests": {
+          "base": "nl_only",
+          "target": "shuffled_tests",
+          "num_tasks": 175,
+          "num_clusters": 175,
+          "repeats_per_task": 1,
+          "cluster_field": "task_id",
+          "paired_difference": 0.005714285714285714,
+          "ci95": [
+            -0.022857142857142857,
+            0.03428571428571429
+          ],
+          "per_repeat": {
+            "0": {
+              "n": 175,
+              "gains": 4,
+              "losses": 3,
+              "base_passed": 23,
+              "target_passed": 24,
+              "exact_mcnemar_p": 1.0,
+              "paired_difference": 0.005714285714285714
+            }
+          }
+        },
+        "irrelevant_tests": {
+          "base": "nl_only",
+          "target": "irrelevant_tests",
+          "num_tasks": 175,
+          "num_clusters": 175,
+          "repeats_per_task": 1,
+          "cluster_field": "task_id",
+          "paired_difference": 0.022857142857142857,
+          "ci95": [
+            -0.011428571428571429,
+            0.05714285714285714
+          ],
+          "per_repeat": {
+            "0": {
+              "n": 175,
+              "gains": 7,
+              "losses": 3,
+              "base_passed": 23,
+              "target_passed": 27,
+              "exact_mcnemar_p": 0.34375,
+              "paired_difference": 0.022857142857142857
+            }
+          }
+        }
+      }
+    },
+    {
+      "model": "Qwen2.5-Coder-7B",
+      "test_source": "Synthetic high3",
+      "output_dir": "outputs/livecodebench_v6_new_qwen_synthetic_high3",
+      "tasks": 175,
+      "counts": {
+        "nl_only": 23,
+        "nl_tests": 25,
+        "shuffled_tests": 23,
+        "irrelevant_tests": 26
+      },
+      "effects_vs_nl": {
+        "nl_tests": {
+          "base": "nl_only",
+          "target": "nl_tests",
+          "num_tasks": 175,
+          "num_clusters": 175,
+          "repeats_per_task": 1,
+          "cluster_field": "task_id",
+          "paired_difference": 0.011428571428571429,
+          "ci95": [
+            -0.017142857142857144,
+            0.04
+          ],
+          "per_repeat": {
+            "0": {
+              "n": 175,
+              "gains": 4,
+              "losses": 2,
+              "base_passed": 23,
+              "target_passed": 25,
+              "exact_mcnemar_p": 0.6875,
+              "paired_difference": 0.011428571428571429
+            }
+          }
+        },
+        "shuffled_tests": {
+          "base": "nl_only",
+          "target": "shuffled_tests",
+          "num_tasks": 175,
+          "num_clusters": 175,
+          "repeats_per_task": 1,
+          "cluster_field": "task_id",
+          "paired_difference": 0.0,
+          "ci95": [
+            -0.02857142857142857,
+            0.02857142857142857
+          ],
+          "per_repeat": {
+            "0": {
+              "n": 175,
+              "gains": 3,
+              "losses": 3,
+              "base_passed": 23,
+              "target_passed": 23,
+              "exact_mcnemar_p": 1.0,
+              "paired_difference": 0.0
+            }
+          }
+        },
+        "irrelevant_tests": {
+          "base": "nl_only",
+          "target": "irrelevant_tests",
+          "num_tasks": 175,
+          "num_clusters": 175,
+          "repeats_per_task": 1,
+          "cluster_field": "task_id",
+          "paired_difference": 0.017142857142857144,
+          "ci95": [
+            -0.017142857142857144,
+            0.05714285714285714
+          ],
+          "per_repeat": {
+            "0": {
+              "n": 175,
+              "gains": 7,
+              "losses": 4,
+              "base_passed": 23,
+              "target_passed": 26,
+              "exact_mcnemar_p": 0.548828125,
+              "paired_difference": 0.017142857142857144
+            }
+          }
+        }
+      }
+    },
+    {
+      "model": "Qwen2.5-Coder-7B",
+      "test_source": "Synthetic high5",
+      "output_dir": "outputs/livecodebench_v6_new_qwen_synthetic_high5",
+      "tasks": 175,
+      "counts": {
+        "nl_only": 23,
+        "nl_tests": 25,
+        "shuffled_tests": 24,
+        "irrelevant_tests": 27
+      },
+      "effects_vs_nl": {
+        "nl_tests": {
+          "base": "nl_only",
+          "target": "nl_tests",
+          "num_tasks": 175,
+          "num_clusters": 175,
+          "repeats_per_task": 1,
+          "cluster_field": "task_id",
+          "paired_difference": 0.011428571428571429,
+          "ci95": [
+            -0.022857142857142857,
+            0.045714285714285714
+          ],
+          "per_repeat": {
+            "0": {
+              "n": 175,
+              "gains": 6,
+              "losses": 4,
+              "base_passed": 23,
+              "target_passed": 25,
+              "exact_mcnemar_p": 0.75390625,
+              "paired_difference": 0.011428571428571429
+            }
+          }
+        },
+        "shuffled_tests": {
+          "base": "nl_only",
+          "target": "shuffled_tests",
+          "num_tasks": 175,
+          "num_clusters": 175,
+          "repeats_per_task": 1,
+          "cluster_field": "task_id",
+          "paired_difference": 0.005714285714285714,
+          "ci95": [
+            -0.017142857142857144,
+            0.03428571428571429
+          ],
+          "per_repeat": {
+            "0": {
+              "n": 175,
+              "gains": 3,
+              "losses": 2,
+              "base_passed": 23,
+              "target_passed": 24,
+              "exact_mcnemar_p": 1.0,
+              "paired_difference": 0.005714285714285714
+            }
+          }
+        },
+        "irrelevant_tests": {
+          "base": "nl_only",
+          "target": "irrelevant_tests",
+          "num_tasks": 175,
+          "num_clusters": 175,
+          "repeats_per_task": 1,
+          "cluster_field": "task_id",
+          "paired_difference": 0.022857142857142857,
+          "ci95": [
+            -0.011428571428571429,
+            0.05714285714285714
+          ],
+          "per_repeat": {
+            "0": {
+              "n": 175,
+              "gains": 7,
+              "losses": 3,
+              "base_passed": 23,
+              "target_passed": 27,
+              "exact_mcnemar_p": 0.34375,
+              "paired_difference": 0.022857142857142857
+            }
+          }
+        }
+      }
+    },
+    {
+      "model": "Qwen3.6-27B",
+      "test_source": "Original",
+      "output_dir": "outputs/livecodebench_v6_new_qwen36_27b_nothink",
+      "tasks": 175,
+      "counts": {
+        "nl_only": 69,
+        "nl_tests": 74,
+        "shuffled_tests": 78,
+        "irrelevant_tests": 68
+      },
+      "effects_vs_nl": {
+        "nl_tests": {
+          "base": "nl_only",
+          "target": "nl_tests",
+          "num_tasks": 175,
+          "num_clusters": 175,
+          "repeats_per_task": 1,
+          "cluster_field": "task_id",
+          "paired_difference": 0.02857142857142857,
+          "ci95": [
+            -0.02857142857142857,
+            0.08571428571428572
+          ],
+          "per_repeat": {
+            "0": {
+              "n": 175,
+              "gains": 17,
+              "losses": 12,
+              "base_passed": 69,
+              "target_passed": 74,
+              "exact_mcnemar_p": 0.45825831964612007,
+              "paired_difference": 0.02857142857142857
+            }
+          }
+        },
+        "shuffled_tests": {
+          "base": "nl_only",
+          "target": "shuffled_tests",
+          "num_tasks": 175,
+          "num_clusters": 175,
+          "repeats_per_task": 1,
+          "cluster_field": "task_id",
+          "paired_difference": 0.05142857142857143,
+          "ci95": [
+            -0.017142857142857144,
+            0.12
+          ],
+          "per_repeat": {
+            "0": {
+              "n": 175,
+              "gains": 23,
+              "losses": 14,
+              "base_passed": 69,
+              "target_passed": 78,
+              "exact_mcnemar_p": 0.18774155899882317,
+              "paired_difference": 0.05142857142857143
+            }
+          }
+        },
+        "irrelevant_tests": {
+          "base": "nl_only",
+          "target": "irrelevant_tests",
+          "num_tasks": 175,
+          "num_clusters": 175,
+          "repeats_per_task": 1,
+          "cluster_field": "task_id",
+          "paired_difference": -0.005714285714285714,
+          "ci95": [
+            -0.06857142857142857,
+            0.05714285714285714
+          ],
+          "per_repeat": {
+            "0": {
+              "n": 175,
+              "gains": 17,
+              "losses": 18,
+              "base_passed": 69,
+              "target_passed": 68,
+              "exact_mcnemar_p": 1.0,
+              "paired_difference": -0.005714285714285714
+            }
+          }
+        }
+      }
+    },
+    {
+      "model": "Qwen3.6-27B",
+      "test_source": "Synthetic high3",
+      "output_dir": "outputs/livecodebench_v6_new_qwen36_27b_synth_high3_nothink",
+      "tasks": 175,
+      "counts": {
+        "nl_only": 72,
+        "nl_tests": 70,
+        "shuffled_tests": 81,
+        "irrelevant_tests": 69
+      },
+      "effects_vs_nl": {
+        "nl_tests": {
+          "base": "nl_only",
+          "target": "nl_tests",
+          "num_tasks": 175,
+          "num_clusters": 175,
+          "repeats_per_task": 1,
+          "cluster_field": "task_id",
+          "paired_difference": -0.011428571428571429,
+          "ci95": [
+            -0.06857142857142857,
+            0.045714285714285714
+          ],
+          "per_repeat": {
+            "0": {
+              "n": 175,
+              "gains": 11,
+              "losses": 13,
+              "base_passed": 72,
+              "target_passed": 70,
+              "exact_mcnemar_p": 0.8388197422027588,
+              "paired_difference": -0.011428571428571429
+            }
+          }
+        },
+        "shuffled_tests": {
+          "base": "nl_only",
+          "target": "shuffled_tests",
+          "num_tasks": 175,
+          "num_clusters": 175,
+          "repeats_per_task": 1,
+          "cluster_field": "task_id",
+          "paired_difference": 0.05142857142857143,
+          "ci95": [
+            -0.005714285714285714,
+            0.10857142857142857
+          ],
+          "per_repeat": {
+            "0": {
+              "n": 175,
+              "gains": 17,
+              "losses": 8,
+              "base_passed": 72,
+              "target_passed": 81,
+              "exact_mcnemar_p": 0.10775214433670044,
+              "paired_difference": 0.05142857142857143
+            }
+          }
+        },
+        "irrelevant_tests": {
+          "base": "nl_only",
+          "target": "irrelevant_tests",
+          "num_tasks": 175,
+          "num_clusters": 175,
+          "repeats_per_task": 1,
+          "cluster_field": "task_id",
+          "paired_difference": -0.017142857142857144,
+          "ci95": [
+            -0.08,
+            0.045714285714285714
+          ],
+          "per_repeat": {
+            "0": {
+              "n": 175,
+              "gains": 15,
+              "losses": 18,
+              "base_passed": 72,
+              "target_passed": 69,
+              "exact_mcnemar_p": 0.7283324808813632,
+              "paired_difference": -0.017142857142857144
+            }
+          }
+        }
+      }
+    },
+    {
+      "model": "Qwen3.6-27B",
+      "test_source": "Synthetic high5",
+      "output_dir": "outputs/livecodebench_v6_new_qwen36_27b_synth_high5_nothink",
+      "tasks": 175,
+      "counts": {
+        "nl_only": 73,
+        "nl_tests": 76,
+        "shuffled_tests": 77,
+        "irrelevant_tests": 71
+      },
+      "effects_vs_nl": {
+        "nl_tests": {
+          "base": "nl_only",
+          "target": "nl_tests",
+          "num_tasks": 175,
+          "num_clusters": 175,
+          "repeats_per_task": 1,
+          "cluster_field": "task_id",
+          "paired_difference": 0.017142857142857144,
+          "ci95": [
+            -0.04,
+            0.07428571428571429
+          ],
+          "per_repeat": {
+            "0": {
+              "n": 175,
+              "gains": 15,
+              "losses": 12,
+              "base_passed": 73,
+              "target_passed": 76,
+              "exact_mcnemar_p": 0.7011080384254456,
+              "paired_difference": 0.017142857142857144
+            }
+          }
+        },
+        "shuffled_tests": {
+          "base": "nl_only",
+          "target": "shuffled_tests",
+          "num_tasks": 175,
+          "num_clusters": 175,
+          "repeats_per_task": 1,
+          "cluster_field": "task_id",
+          "paired_difference": 0.022857142857142857,
+          "ci95": [
+            -0.04,
+            0.08571428571428572
+          ],
+          "per_repeat": {
+            "0": {
+              "n": 175,
+              "gains": 17,
+              "losses": 13,
+              "base_passed": 73,
+              "target_passed": 77,
+              "exact_mcnemar_p": 0.5846647117286922,
+              "paired_difference": 0.022857142857142857
+            }
+          }
+        },
+        "irrelevant_tests": {
+          "base": "nl_only",
+          "target": "irrelevant_tests",
+          "num_tasks": 175,
+          "num_clusters": 175,
+          "repeats_per_task": 1,
+          "cluster_field": "task_id",
+          "paired_difference": -0.011428571428571429,
+          "ci95": [
+            -0.08,
+            0.05714285714285714
+          ],
+          "per_repeat": {
+            "0": {
+              "n": 175,
+              "gains": 18,
+              "losses": 20,
+              "base_passed": 73,
+              "target_passed": 71,
+              "exact_mcnemar_p": 0.8714146793645341,
+              "paired_difference": -0.011428571428571429
+            }
+          }
+        }
+      }
+    }
+  ]
+}

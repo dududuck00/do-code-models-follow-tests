@@ -1,0 +1,491 @@
+[
+  {
+    "model_path": "deepseek-ai/deepseek-coder-6.7b-instruct",
+    "experiment": "main",
+    "dataset": "mbppplus",
+    "conditions": {
+      "inputs_only": {
+        "observations": 1134,
+        "tasks": 378,
+        "passed": 0.6402116402116402,
+        "official_passed": 0.6340388007054674,
+        "heldout_passed": 0.6402116402116402
+      },
+      "nl_only": {
+        "observations": 1134,
+        "tasks": 378,
+        "passed": 0.6040564373897708,
+        "official_passed": 0.6014109347442681,
+        "heldout_passed": 0.6040564373897708
+      },
+      "nl_tests": {
+        "observations": 1134,
+        "tasks": 378,
+        "passed": 0.6931216931216931,
+        "official_passed": 0.6869488536155203,
+        "heldout_passed": 0.6931216931216931
+      },
+      "wrong_tests": {
+        "observations": 1134,
+        "tasks": 378,
+        "passed": 0.6084656084656085,
+        "official_passed": 0.6014109347442681,
+        "heldout_passed": 0.6084656084656085
+      }
+    },
+    "contrasts": [
+      {
+        "base": "nl_only",
+        "target": "nl_tests",
+        "num_tasks": 378,
+        "num_clusters": 378,
+        "repeats_per_task": 3,
+        "cluster_field": "task_id",
+        "paired_difference": 0.08906525573192241,
+        "ci95": [
+          0.049360670194003524,
+          0.13051146384479717
+        ],
+        "per_repeat": {
+          "0": {
+            "n": 378,
+            "gains": 51,
+            "losses": 17,
+            "base_passed": 228,
+            "target_passed": 262,
+            "exact_mcnemar_p": 4.453448771493584e-05,
+            "paired_difference": 0.08994708994708994
+          },
+          "1": {
+            "n": 378,
+            "gains": 49,
+            "losses": 15,
+            "base_passed": 229,
+            "target_passed": 263,
+            "exact_mcnemar_p": 2.436457216293327e-05,
+            "paired_difference": 0.08994708994708994
+          },
+          "2": {
+            "n": 378,
+            "gains": 51,
+            "losses": 18,
+            "base_passed": 228,
+            "target_passed": 261,
+            "exact_mcnemar_p": 8.768662462846019e-05,
+            "paired_difference": 0.0873015873015873
+          }
+        }
+      },
+      {
+        "base": "inputs_only",
+        "target": "nl_tests",
+        "num_tasks": 378,
+        "num_clusters": 378,
+        "repeats_per_task": 3,
+        "cluster_field": "task_id",
+        "paired_difference": 0.05291005291005291,
+        "ci95": [
+          0.018518518518518517,
+          0.08818342151675486
+        ],
+        "per_repeat": {
+          "0": {
+            "n": 378,
+            "gains": 34,
+            "losses": 15,
+            "base_passed": 243,
+            "target_passed": 262,
+            "exact_mcnemar_p": 0.009399241523873059,
+            "paired_difference": 0.05026455026455026
+          },
+          "1": {
+            "n": 378,
+            "gains": 33,
+            "losses": 12,
+            "base_passed": 242,
+            "target_passed": 263,
+            "exact_mcnemar_p": 0.002458900322096724,
+            "paired_difference": 0.05555555555555555
+          },
+          "2": {
+            "n": 378,
+            "gains": 33,
+            "losses": 13,
+            "base_passed": 241,
+            "target_passed": 261,
+            "exact_mcnemar_p": 0.004533861582189047,
+            "paired_difference": 0.05291005291005291
+          }
+        }
+      },
+      {
+        "base": "wrong_tests",
+        "target": "nl_tests",
+        "num_tasks": 378,
+        "num_clusters": 378,
+        "repeats_per_task": 3,
+        "cluster_field": "task_id",
+        "paired_difference": 0.08465608465608465,
+        "ci95": [
+          0.05291005291005291,
+          0.1164021164021164
+        ],
+        "per_repeat": {
+          "0": {
+            "n": 378,
+            "gains": 39,
+            "losses": 6,
+            "base_passed": 229,
+            "target_passed": 262,
+            "exact_mcnemar_p": 5.417768988991156e-07,
+            "paired_difference": 0.0873015873015873
+          },
+          "1": {
+            "n": 378,
+            "gains": 37,
+            "losses": 5,
+            "base_passed": 231,
+            "target_passed": 263,
+            "exact_mcnemar_p": 4.4337048166198656e-07,
+            "paired_difference": 0.08465608465608465
+          },
+          "2": {
+            "n": 378,
+            "gains": 39,
+            "losses": 8,
+            "base_passed": 230,
+            "target_passed": 261,
+            "exact_mcnemar_p": 5.539621596994947e-06,
+            "paired_difference": 0.082010582010582
+          }
+        }
+      }
+    ]
+  },
+  {
+    "model_path": "deepseek-ai/deepseek-coder-6.7b-instruct",
+    "experiment": "main",
+    "dataset": "humanevalplus",
+    "conditions": {
+      "inputs_only": {
+        "observations": 471,
+        "tasks": 157,
+        "passed": 0.6900212314225053,
+        "official_passed": 0.6878980891719745,
+        "heldout_passed": 0.6900212314225053
+      },
+      "nl_only": {
+        "observations": 471,
+        "tasks": 157,
+        "passed": 0.7282377919320594,
+        "official_passed": 0.721868365180467,
+        "heldout_passed": 0.7282377919320594
+      },
+      "nl_tests": {
+        "observations": 471,
+        "tasks": 157,
+        "passed": 0.721868365180467,
+        "official_passed": 0.721868365180467,
+        "heldout_passed": 0.721868365180467
+      },
+      "wrong_tests": {
+        "observations": 471,
+        "tasks": 157,
+        "passed": 0.6411889596602972,
+        "official_passed": 0.6411889596602972,
+        "heldout_passed": 0.6411889596602972
+      }
+    },
+    "contrasts": [
+      {
+        "base": "nl_only",
+        "target": "nl_tests",
+        "num_tasks": 157,
+        "num_clusters": 157,
+        "repeats_per_task": 3,
+        "cluster_field": "task_id",
+        "paired_difference": -0.006369426751592357,
+        "ci95": [
+          -0.06157112526539279,
+          0.050955414012738856
+        ],
+        "per_repeat": {
+          "0": {
+            "n": 157,
+            "gains": 10,
+            "losses": 12,
+            "base_passed": 115,
+            "target_passed": 113,
+            "exact_mcnemar_p": 0.8318119049072266,
+            "paired_difference": -0.012738853503184714
+          },
+          "1": {
+            "n": 157,
+            "gains": 10,
+            "losses": 10,
+            "base_passed": 115,
+            "target_passed": 115,
+            "exact_mcnemar_p": 1.0,
+            "paired_difference": 0.0
+          },
+          "2": {
+            "n": 157,
+            "gains": 11,
+            "losses": 12,
+            "base_passed": 113,
+            "target_passed": 112,
+            "exact_mcnemar_p": 1.0,
+            "paired_difference": -0.006369426751592357
+          }
+        }
+      },
+      {
+        "base": "inputs_only",
+        "target": "nl_tests",
+        "num_tasks": 157,
+        "num_clusters": 157,
+        "repeats_per_task": 3,
+        "cluster_field": "task_id",
+        "paired_difference": 0.03184713375796178,
+        "ci95": [
+          -0.01698513800424628,
+          0.08280254777070065
+        ],
+        "per_repeat": {
+          "0": {
+            "n": 157,
+            "gains": 12,
+            "losses": 7,
+            "base_passed": 108,
+            "target_passed": 113,
+            "exact_mcnemar_p": 0.359283447265625,
+            "paired_difference": 0.03184713375796178
+          },
+          "1": {
+            "n": 157,
+            "gains": 11,
+            "losses": 5,
+            "base_passed": 109,
+            "target_passed": 115,
+            "exact_mcnemar_p": 0.210113525390625,
+            "paired_difference": 0.03821656050955414
+          },
+          "2": {
+            "n": 157,
+            "gains": 11,
+            "losses": 7,
+            "base_passed": 108,
+            "target_passed": 112,
+            "exact_mcnemar_p": 0.480682373046875,
+            "paired_difference": 0.025477707006369428
+          }
+        }
+      },
+      {
+        "base": "wrong_tests",
+        "target": "nl_tests",
+        "num_tasks": 157,
+        "num_clusters": 157,
+        "repeats_per_task": 3,
+        "cluster_field": "task_id",
+        "paired_difference": 0.08067940552016986,
+        "ci95": [
+          0.029723991507430998,
+          0.13588110403397027
+        ],
+        "per_repeat": {
+          "0": {
+            "n": 157,
+            "gains": 18,
+            "losses": 5,
+            "base_passed": 100,
+            "target_passed": 113,
+            "exact_mcnemar_p": 0.010622024536132812,
+            "paired_difference": 0.08280254777070063
+          },
+          "1": {
+            "n": 157,
+            "gains": 17,
+            "losses": 2,
+            "base_passed": 100,
+            "target_passed": 115,
+            "exact_mcnemar_p": 0.000728607177734375,
+            "paired_difference": 0.09554140127388536
+          },
+          "2": {
+            "n": 157,
+            "gains": 16,
+            "losses": 6,
+            "base_passed": 102,
+            "target_passed": 112,
+            "exact_mcnemar_p": 0.052478790283203125,
+            "paired_difference": 0.06369426751592357
+          }
+        }
+      }
+    ]
+  },
+  {
+    "model_path": "deepseek-ai/deepseek-coder-6.7b-instruct",
+    "experiment": "main",
+    "dataset": "livecodebench",
+    "conditions": {
+      "inputs_only": {
+        "observations": 525,
+        "tasks": 175,
+        "passed": 0.16380952380952382,
+        "official_passed": 0.16,
+        "heldout_passed": 0.16380952380952382
+      },
+      "nl_only": {
+        "observations": 525,
+        "tasks": 175,
+        "passed": 0.14666666666666667,
+        "official_passed": 0.14285714285714285,
+        "heldout_passed": 0.14666666666666667
+      },
+      "nl_tests": {
+        "observations": 525,
+        "tasks": 175,
+        "passed": 0.14095238095238094,
+        "official_passed": 0.13714285714285715,
+        "heldout_passed": 0.14095238095238094
+      },
+      "wrong_tests": {
+        "observations": 525,
+        "tasks": 175,
+        "passed": 0.13142857142857142,
+        "official_passed": 0.12571428571428572,
+        "heldout_passed": 0.13142857142857142
+      }
+    },
+    "contrasts": [
+      {
+        "base": "nl_only",
+        "target": "nl_tests",
+        "num_tasks": 175,
+        "num_clusters": 175,
+        "repeats_per_task": 3,
+        "cluster_field": "task_id",
+        "paired_difference": -0.005714285714285717,
+        "ci95": [
+          -0.039999999999999994,
+          0.026666666666666665
+        ],
+        "per_repeat": {
+          "0": {
+            "n": 175,
+            "gains": 5,
+            "losses": 6,
+            "base_passed": 26,
+            "target_passed": 25,
+            "exact_mcnemar_p": 1.0,
+            "paired_difference": -0.005714285714285714
+          },
+          "1": {
+            "n": 175,
+            "gains": 4,
+            "losses": 6,
+            "base_passed": 26,
+            "target_passed": 24,
+            "exact_mcnemar_p": 0.75390625,
+            "paired_difference": -0.011428571428571429
+          },
+          "2": {
+            "n": 175,
+            "gains": 4,
+            "losses": 4,
+            "base_passed": 25,
+            "target_passed": 25,
+            "exact_mcnemar_p": 1.0,
+            "paired_difference": 0.0
+          }
+        }
+      },
+      {
+        "base": "inputs_only",
+        "target": "nl_tests",
+        "num_tasks": 175,
+        "num_clusters": 175,
+        "repeats_per_task": 3,
+        "cluster_field": "task_id",
+        "paired_difference": -0.022857142857142857,
+        "ci95": [
+          -0.05714285714285714,
+          0.009523809523809523
+        ],
+        "per_repeat": {
+          "0": {
+            "n": 175,
+            "gains": 3,
+            "losses": 7,
+            "base_passed": 29,
+            "target_passed": 25,
+            "exact_mcnemar_p": 0.34375,
+            "paired_difference": -0.022857142857142857
+          },
+          "1": {
+            "n": 175,
+            "gains": 2,
+            "losses": 6,
+            "base_passed": 28,
+            "target_passed": 24,
+            "exact_mcnemar_p": 0.2890625,
+            "paired_difference": -0.022857142857142857
+          },
+          "2": {
+            "n": 175,
+            "gains": 3,
+            "losses": 7,
+            "base_passed": 29,
+            "target_passed": 25,
+            "exact_mcnemar_p": 0.34375,
+            "paired_difference": -0.022857142857142857
+          }
+        }
+      },
+      {
+        "base": "wrong_tests",
+        "target": "nl_tests",
+        "num_tasks": 175,
+        "num_clusters": 175,
+        "repeats_per_task": 3,
+        "cluster_field": "task_id",
+        "paired_difference": 0.009523809523809525,
+        "ci95": [
+          -0.011428571428571429,
+          0.03428571428571429
+        ],
+        "per_repeat": {
+          "0": {
+            "n": 175,
+            "gains": 3,
+            "losses": 1,
+            "base_passed": 23,
+            "target_passed": 25,
+            "exact_mcnemar_p": 0.625,
+            "paired_difference": 0.011428571428571429
+          },
+          "1": {
+            "n": 175,
+            "gains": 3,
+            "losses": 2,
+            "base_passed": 23,
+            "target_passed": 24,
+            "exact_mcnemar_p": 1.0,
+            "paired_difference": 0.005714285714285714
+          },
+          "2": {
+            "n": 175,
+            "gains": 3,
+            "losses": 1,
+            "base_passed": 23,
+            "target_passed": 25,
+            "exact_mcnemar_p": 0.625,
+            "paired_difference": 0.011428571428571429
+          }
+        }
+      }
+    ]
+  }
+]

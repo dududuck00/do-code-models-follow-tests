@@ -1,0 +1,40 @@
+{
+  "tasks": 180,
+  "suites": {
+    "high": {
+      "selection_kill_rate": 0.9889351851851852,
+      "validation_kill_rate": 0.9229232804232804,
+      "characters": 123.9888888888889
+    },
+    "low": {
+      "selection_kill_rate": 0.4382142857142857,
+      "validation_kill_rate": 0.6203835978835979,
+      "characters": 118.25555555555556
+    },
+    "random": {
+      "selection_kill_rate": 0.9263558201058201,
+      "validation_kill_rate": 0.9131944444444444,
+      "characters": 123.88888888888889
+    }
+  },
+  "high_minus_low": {
+    "difference": 0.30253968253968255,
+    "ci95": [
+      0.25296147486772486,
+      0.35323544973544974
+    ],
+    "positive_tasks": 115,
+    "tied_tasks": 50,
+    "negative_tasks": 15
+  },
+  "high_minus_random": {
+    "difference": 0.009728835978835976,
+    "ci95": [
+      -0.015092592592592593,
+      0.03489120370370365
+    ],
+    "positive_tasks": 27,
+    "tied_tasks": 128,
+    "negative_tasks": 25
+  }
+}

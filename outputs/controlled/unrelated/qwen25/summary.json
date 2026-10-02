@@ -1,0 +1,47 @@
+[
+  {
+    "model_path": "Qwen/Qwen2.5-Coder-7B-Instruct",
+    "experiment": "unrelated",
+    "dataset": "mbppplus",
+    "conditions": {
+      "unrelated_tests": {
+        "observations": 1134,
+        "tasks": 378,
+        "passed": 0.5388007054673721,
+        "official_passed": 0.5361552028218695,
+        "heldout_passed": 0.5388007054673721
+      }
+    },
+    "contrasts": []
+  },
+  {
+    "model_path": "Qwen/Qwen2.5-Coder-7B-Instruct",
+    "experiment": "unrelated",
+    "dataset": "humanevalplus",
+    "conditions": {
+      "unrelated_tests": {
+        "observations": 471,
+        "tasks": 157,
+        "passed": 0.7197452229299363,
+        "official_passed": 0.7133757961783439,
+        "heldout_passed": 0.7197452229299363
+      }
+    },
+    "contrasts": []
+  },
+  {
+    "model_path": "Qwen/Qwen2.5-Coder-7B-Instruct",
+    "experiment": "unrelated",
+    "dataset": "livecodebench",
+    "conditions": {
+      "unrelated_tests": {
+        "observations": 525,
+        "tasks": 175,
+        "passed": 0.20952380952380953,
+        "official_passed": 0.2019047619047619,
+        "heldout_passed": 0.20952380952380953
+      }
+    },
+    "contrasts": []
+  }
+]

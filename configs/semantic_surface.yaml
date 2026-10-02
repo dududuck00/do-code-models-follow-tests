@@ -1,0 +1,25 @@
+status: complete
+protocol: semantic-surface-1
+dataset: data/controlled/semantic/tasks.jsonl
+models: [qwen25, qwen36, qwen35, qwen38, deepseek]
+variants: [parenthesized, reverse_order]
+original_states: outputs/semantic_representation/{model}/replay/generations.jsonl
+new_prompts_per_model: 480
+new_code_generations: 0
+position: final_prompt_token
+layers: all
+primary_summary_layer: final
+dtype: bfloat16
+prompt_format: chat
+thinking: disabled
+analysis:
+  metrics: [cosine_distance, relative_l2]
+  same_rule: mean(distance(A_original,A_variant), distance(B_original,B_variant))
+  different_rule: mean(distance(A_original,B_original), distance(A_variant,B_variant))
+  contrast: different_rule minus same_rule
+  variants: report separately; equal-weight average is secondary
+  unit: task_id
+  cluster: family_id
+  bootstrap_samples: 5000
+  seed: 0
+interpretation: contrast of the specified textual transformations, not a decomposition of semantic information

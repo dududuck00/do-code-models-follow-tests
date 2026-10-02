@@ -14,7 +14,16 @@ observations=sum(c['observations'] for key,r in report['results'].items() if key
 config=yaml.safe_load((root/'configs/controlled.yaml').read_text())
 expected=sum(sum(1 for line in (root/spec['dataset']).open() if line.strip())*len(spec['models'])*len(spec['conditions'])*spec['repeats'] for spec in config['experiments'].values())
 if observations!=expected:raise SystemExit(f'Expected {expected} completed observations, found {observations}')
-target=root/'artifacts/tdd_results_20260907.tar.xz'
+extension_path=root/'configs/unrelated.yaml'
+extension_count=0
+if extension_path.exists():
+    extension=yaml.safe_load(extension_path.read_text())
+    extra=json.loads((root/'outputs/analysis/unrelated_results.json').read_text())
+    extension_count=sum(sum(1 for line in (root/spec['dataset']).open() if line.strip())*len(spec['models'])*len(spec['conditions'])*spec['repeats'] for spec in extension['experiments'].values())
+    if not extra['complete'] or extra['added_generations']!=extension_count or extra['added_evaluations']!=extension_count:
+        raise SystemExit('Complete the other-task test control before packaging.')
+    config['experiments'].update(extension['experiments'])
+target=root/'artifacts/tdd_results_20260908.tar.xz'
 
 paths=set()
 skip={'.git','__pycache__','.pytest_cache','.DS_Store'}
@@ -67,6 +76,8 @@ outputs/analysis 中保留论文使用的历史分析；新的主结果位于 ou
 
 MANIFEST.json 列出了归档中的项目文件及其未压缩大小。
 '''
+if extension_count:
+    readme += f'\n补充条件：来自其他任务的测试，新增 {extension_count:,} 条生成及评测，总计 {observations+extension_count:,} 条生成及对应评测。结果见 outputs/analysis/unrelated_report.md 与 unrelated_results.json。\n'
 partial=root/'.tmp/package_results/archive.tar.xz.partial'
 print(json.dumps({'source_files':len(records),'source_bytes':manifest['source_bytes'],'target':str(target)}),flush=True)
 with partial.open('wb') as out:

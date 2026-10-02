@@ -105,6 +105,22 @@ def main():
     extra.append('')
     index=lines.index('## 对照审计与评测')
     lines[index:index]=extra
+    extension_path=source.parent/'unrelated_results.json'
+    if extension_path.exists():
+        extension=json.loads(extension_path.read_text())
+        if extension['complete']:
+            added=extension['added_generations']
+            lines=[line.replace('总计 57,000 次。',f'原三组条件合计 57,000 次；主实验新增来自其他任务的测试条件 {added:,} 次，合计 {57000+added:,} 次生成及对应评测。') for line in lines]
+            extra=['## 主实验补充：来自其他任务的测试','',
+                   '五个模型各运行三次，复用原主实验四个条件与同一隐藏评测。来源测试保留来源任务的正确输出，并匹配调用接口、测试数量及尽可能接近的类型和长度。', '',
+                   '| 模型 | 数据集 | 来自其他任务（%） | 正确 − 无关及 95% 区间 | 无关 − NL 及 95% 区间 |',
+                   '|---|---|---:|---|---|']
+            for model in models_for('main'):
+                for dataset,label in DATASETS.items():
+                    r=extension['results'][f'{model}/{dataset}']
+                    extra.append('| '+' | '.join([MODELS[model],label,f"{100*r['rates']['unrelated_tests']:.1f}"]+[effect(c) for c in r['contrasts']])+' |')
+            extra+=['','来源匹配、参考实现审计和逐次运行结果见 `unrelated_report.md`、`unrelated_control_audit.json` 和 `unrelated_results.json`。','']
+            index=lines.index('## 对照审计与评测');lines[index:index]=extra
     expected = sum(len([line for line in (ROOT / spec['dataset']).read_text().splitlines() if line.strip()]) * len(spec['models']) * len(spec['conditions']) * spec['repeats'] for spec in config['experiments'].values())
     if sum(totals.values()) != expected:raise ValueError(f'Unexpected completed generation count: {totals}')
     (source.parent / 'controlled_report.md').write_text('\n'.join(lines))

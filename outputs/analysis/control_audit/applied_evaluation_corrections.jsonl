@@ -1,0 +1,8 @@
+{"experiment": "quality", "model": "qwen25", "task_id": "mbppplus::599", "condition": "quality_high", "repeat": 0, "before": true, "after": true}
+{"experiment": "quality", "model": "qwen25", "task_id": "mbppplus::599", "condition": "quality_low", "repeat": 0, "before": true, "after": true}
+{"experiment": "quality", "model": "qwen25", "task_id": "mbppplus::599", "condition": "nl_only", "repeat": 0, "before": true, "after": true}
+{"experiment": "quality", "model": "qwen25", "task_id": "mbppplus::599", "condition": "quality_random", "repeat": 0, "before": true, "after": true}
+{"experiment": "quality", "model": "qwen36", "task_id": "mbppplus::599", "condition": "quality_high", "repeat": 0, "before": true, "after": true}
+{"experiment": "quality", "model": "qwen36", "task_id": "mbppplus::599", "condition": "quality_low", "repeat": 0, "before": true, "after": true}
+{"experiment": "quality", "model": "qwen36", "task_id": "mbppplus::599", "condition": "nl_only", "repeat": 0, "before": true, "after": true}
+{"experiment": "quality", "model": "qwen36", "task_id": "mbppplus::599", "condition": "quality_random", "repeat": 0, "before": true, "after": true}

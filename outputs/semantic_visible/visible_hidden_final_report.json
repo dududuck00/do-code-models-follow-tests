@@ -1,0 +1,879 @@
+{
+  "protocol": {
+    "models": [
+      "qwen25",
+      "qwen35",
+      "qwen36",
+      "qwen38",
+      "deepseek"
+    ],
+    "tasks": 120,
+    "families": 20,
+    "instances_per_family": 6,
+    "runs": 3,
+    "visible_tests_per_prompt": 3,
+    "visible_programs_evaluated": 3600,
+    "unit": "task-run; repeated runs remain grouped within task; intervals resample the 20 rule families"
+  },
+  "checks": {
+    "all_10800_saved_generation_prompts_match_task_definitions": true,
+    "all_7200_test_condition_prompt_test_lists_match_task_definitions": true,
+    "all_3600_test_programs_completed_evaluation": true,
+    "visible_timeout_threshold_seconds": 15,
+    "matches_original_semantic_evaluator_default_timeout": true,
+    "visible_python": "3.12.14",
+    "original_evaluator_python": "3.12.13",
+    "hidden_results_reused_without_rerun": true,
+    "model_completions_regenerated": 0
+  },
+  "results": {
+    "qwen25": {
+      "directions": {
+        "tests_a": {
+          "n_task_runs": 360,
+          "counts": {
+            "visible_pass": 266,
+            "hidden_target_pass": 266,
+            "both_pass": 266,
+            "visible_only": 0,
+            "hidden_only": 0,
+            "neither_target": 94,
+            "other_rule_hidden": 43,
+            "visible_pass_and_other_rule_hidden": 0,
+            "visible_assertion_failures": 94,
+            "assertion_failures": 94,
+            "other_runtime_failures": 0,
+            "visible_timeouts": 0
+          },
+          "family_macro_percent": {
+            "visible": 73.9,
+            "hidden": 73.9,
+            "both": 73.9,
+            "visible_only": 0.0,
+            "hidden_only": 0.0,
+            "neither": 26.1,
+            "other_hidden": 11.9
+          },
+          "family_bootstrap_95_ci_percent": {
+            "visible": [
+              55.0,
+              90.3
+            ],
+            "hidden": [
+              55.0,
+              90.3
+            ],
+            "both": [
+              55.3,
+              90.0
+            ],
+            "visible_only": [
+              0.0,
+              0.0
+            ],
+            "hidden_only": [
+              0.0,
+              0.0
+            ],
+            "neither": [
+              9.7,
+              44.7
+            ],
+            "other_hidden": [
+              1.9,
+              24.7
+            ]
+          }
+        },
+        "tests_b": {
+          "n_task_runs": 360,
+          "counts": {
+            "visible_pass": 90,
+            "hidden_target_pass": 76,
+            "both_pass": 76,
+            "visible_only": 14,
+            "hidden_only": 0,
+            "neither_target": 270,
+            "other_rule_hidden": 234,
+            "visible_pass_and_other_rule_hidden": 0,
+            "visible_assertion_failures": 270,
+            "assertion_failures": 270,
+            "other_runtime_failures": 0,
+            "visible_timeouts": 0
+          },
+          "family_macro_percent": {
+            "visible": 25.0,
+            "hidden": 21.1,
+            "both": 21.1,
+            "visible_only": 3.9,
+            "hidden_only": 0.0,
+            "neither": 75.0,
+            "other_hidden": 65.0
+          },
+          "family_bootstrap_95_ci_percent": {
+            "visible": [
+              9.2,
+              42.5
+            ],
+            "hidden": [
+              7.5,
+              36.9
+            ],
+            "both": [
+              7.5,
+              36.9
+            ],
+            "visible_only": [
+              0.0,
+              11.7
+            ],
+            "hidden_only": [
+              0.0,
+              0.0
+            ],
+            "neither": [
+              57.5,
+              90.8
+            ],
+            "other_hidden": [
+              45.8,
+              83.3
+            ]
+          }
+        }
+      },
+      "NL_only_default_counts": {
+        "neither": 69,
+        "A": 255,
+        "B": 36
+      },
+      "NL_A_to_B_adoption_under_B_tests": {
+        "numerator": 54,
+        "denominator": 255,
+        "percent": 21.2,
+        "family_bootstrap_95_ci_percent": [
+          5.5,
+          39.6
+        ]
+      },
+      "explicit_B_rule_passed": 234,
+      "explicit_B_n": 360,
+      "explicit_B_percent": 65.0,
+      "paired_switch": 40,
+      "paired_switch_n": 360,
+      "paired_switch_percent": 11.1,
+      "NL_default_to_test_behavior_transitions": {
+        "tests_a": {
+          "A": {
+            "A": 233,
+            "B": 22
+          },
+          "B": {
+            "A": 18,
+            "B": 18
+          },
+          "both": {},
+          "neither": {
+            "neither": 51,
+            "A": 15,
+            "B": 3
+          }
+        },
+        "tests_b": {
+          "A": {
+            "A": 201,
+            "B": 54
+          },
+          "B": {
+            "A": 18,
+            "B": 18
+          },
+          "both": {},
+          "neither": {
+            "neither": 50,
+            "A": 15,
+            "B": 4
+          }
+        }
+      }
+    },
+    "qwen35": {
+      "directions": {
+        "tests_a": {
+          "n_task_runs": 360,
+          "counts": {
+            "visible_pass": 320,
+            "hidden_target_pass": 317,
+            "both_pass": 317,
+            "visible_only": 3,
+            "hidden_only": 0,
+            "neither_target": 40,
+            "other_rule_hidden": 3,
+            "visible_pass_and_other_rule_hidden": 0,
+            "visible_assertion_failures": 40,
+            "assertion_failures": 40,
+            "other_runtime_failures": 0,
+            "visible_timeouts": 0
+          },
+          "family_macro_percent": {
+            "visible": 88.9,
+            "hidden": 88.1,
+            "both": 88.1,
+            "visible_only": 0.8,
+            "hidden_only": 0.0,
+            "neither": 11.1,
+            "other_hidden": 0.8
+          },
+          "family_bootstrap_95_ci_percent": {
+            "visible": [
+              77.2,
+              98.3
+            ],
+            "hidden": [
+              75.3,
+              98.3
+            ],
+            "both": [
+              75.3,
+              98.3
+            ],
+            "visible_only": [
+              0.0,
+              2.5
+            ],
+            "hidden_only": [
+              0.0,
+              0.0
+            ],
+            "neither": [
+              1.7,
+              22.8
+            ],
+            "other_hidden": [
+              0.0,
+              2.5
+            ]
+          }
+        },
+        "tests_b": {
+          "n_task_runs": 360,
+          "counts": {
+            "visible_pass": 117,
+            "hidden_target_pass": 117,
+            "both_pass": 117,
+            "visible_only": 0,
+            "hidden_only": 0,
+            "neither_target": 243,
+            "other_rule_hidden": 230,
+            "visible_pass_and_other_rule_hidden": 0,
+            "visible_assertion_failures": 243,
+            "assertion_failures": 243,
+            "other_runtime_failures": 0,
+            "visible_timeouts": 0
+          },
+          "family_macro_percent": {
+            "visible": 32.5,
+            "hidden": 32.5,
+            "both": 32.5,
+            "visible_only": 0.0,
+            "hidden_only": 0.0,
+            "neither": 67.5,
+            "other_hidden": 63.9
+          },
+          "family_bootstrap_95_ci_percent": {
+            "visible": [
+              15.6,
+              50.8
+            ],
+            "hidden": [
+              15.6,
+              50.8
+            ],
+            "both": [
+              15.6,
+              51.1
+            ],
+            "visible_only": [
+              0.0,
+              0.0
+            ],
+            "hidden_only": [
+              0.0,
+              0.0
+            ],
+            "neither": [
+              48.9,
+              84.4
+            ],
+            "other_hidden": [
+              44.4,
+              81.7
+            ]
+          }
+        }
+      },
+      "NL_only_default_counts": {
+        "A": 321,
+        "neither": 18,
+        "B": 21
+      },
+      "NL_A_to_B_adoption_under_B_tests": {
+        "numerator": 91,
+        "denominator": 321,
+        "percent": 28.3,
+        "family_bootstrap_95_ci_percent": [
+          11.6,
+          47.2
+        ]
+      },
+      "explicit_B_rule_passed": 319,
+      "explicit_B_n": 360,
+      "explicit_B_percent": 88.6,
+      "paired_switch": 87,
+      "paired_switch_n": 360,
+      "paired_switch_percent": 24.2,
+      "NL_default_to_test_behavior_transitions": {
+        "tests_a": {
+          "A": {
+            "A": 310,
+            "neither": 8,
+            "B": 3
+          },
+          "B": {
+            "neither": 15,
+            "A": 6
+          },
+          "both": {},
+          "neither": {
+            "neither": 17,
+            "A": 1
+          }
+        },
+        "tests_b": {
+          "A": {
+            "B": 91,
+            "A": 230
+          },
+          "B": {
+            "B": 21
+          },
+          "both": {},
+          "neither": {
+            "B": 5,
+            "neither": 13
+          }
+        }
+      }
+    },
+    "qwen36": {
+      "directions": {
+        "tests_a": {
+          "n_task_runs": 360,
+          "counts": {
+            "visible_pass": 333,
+            "hidden_target_pass": 333,
+            "both_pass": 333,
+            "visible_only": 0,
+            "hidden_only": 0,
+            "neither_target": 27,
+            "other_rule_hidden": 24,
+            "visible_pass_and_other_rule_hidden": 0,
+            "visible_assertion_failures": 27,
+            "assertion_failures": 26,
+            "other_runtime_failures": 1,
+            "visible_timeouts": 0
+          },
+          "family_macro_percent": {
+            "visible": 92.5,
+            "hidden": 92.5,
+            "both": 92.5,
+            "visible_only": 0.0,
+            "hidden_only": 0.0,
+            "neither": 7.5,
+            "other_hidden": 6.7
+          },
+          "family_bootstrap_95_ci_percent": {
+            "visible": [
+              81.1,
+              99.7
+            ],
+            "hidden": [
+              81.1,
+              99.7
+            ],
+            "both": [
+              81.1,
+              99.7
+            ],
+            "visible_only": [
+              0.0,
+              0.0
+            ],
+            "hidden_only": [
+              0.0,
+              0.0
+            ],
+            "neither": [
+              0.3,
+              18.9
+            ],
+            "other_hidden": [
+              0.0,
+              18.3
+            ]
+          }
+        },
+        "tests_b": {
+          "n_task_runs": 360,
+          "counts": {
+            "visible_pass": 244,
+            "hidden_target_pass": 241,
+            "both_pass": 241,
+            "visible_only": 3,
+            "hidden_only": 0,
+            "neither_target": 116,
+            "other_rule_hidden": 115,
+            "visible_pass_and_other_rule_hidden": 0,
+            "visible_assertion_failures": 116,
+            "assertion_failures": 116,
+            "other_runtime_failures": 0,
+            "visible_timeouts": 0
+          },
+          "family_macro_percent": {
+            "visible": 67.8,
+            "hidden": 66.9,
+            "both": 66.9,
+            "visible_only": 0.8,
+            "hidden_only": 0.0,
+            "neither": 32.2,
+            "other_hidden": 31.9
+          },
+          "family_bootstrap_95_ci_percent": {
+            "visible": [
+              51.1,
+              82.8
+            ],
+            "hidden": [
+              50.8,
+              81.9
+            ],
+            "both": [
+              50.8,
+              81.9
+            ],
+            "visible_only": [
+              0.0,
+              2.5
+            ],
+            "hidden_only": [
+              0.0,
+              0.0
+            ],
+            "neither": [
+              17.2,
+              48.6
+            ],
+            "other_hidden": [
+              16.9,
+              48.6
+            ]
+          }
+        }
+      },
+      "NL_only_default_counts": {
+        "A": 252,
+        "neither": 18,
+        "B": 90
+      },
+      "NL_A_to_B_adoption_under_B_tests": {
+        "numerator": 143,
+        "denominator": 252,
+        "percent": 56.7,
+        "family_bootstrap_95_ci_percent": [
+          36.3,
+          76.7
+        ]
+      },
+      "explicit_B_rule_passed": 360,
+      "explicit_B_n": 360,
+      "explicit_B_percent": 100.0,
+      "paired_switch": 218,
+      "paired_switch_n": 360,
+      "paired_switch_percent": 60.6,
+      "NL_default_to_test_behavior_transitions": {
+        "tests_a": {
+          "A": {
+            "A": 251,
+            "neither": 1
+          },
+          "B": {
+            "B": 24,
+            "A": 66
+          },
+          "both": {},
+          "neither": {
+            "A": 16,
+            "neither": 2
+          }
+        },
+        "tests_b": {
+          "A": {
+            "B": 143,
+            "A": 106,
+            "neither": 3
+          },
+          "B": {
+            "B": 81,
+            "A": 9
+          },
+          "both": {},
+          "neither": {
+            "B": 17,
+            "neither": 1
+          }
+        }
+      }
+    },
+    "qwen38": {
+      "directions": {
+        "tests_a": {
+          "n_task_runs": 360,
+          "counts": {
+            "visible_pass": 344,
+            "hidden_target_pass": 344,
+            "both_pass": 344,
+            "visible_only": 0,
+            "hidden_only": 0,
+            "neither_target": 16,
+            "other_rule_hidden": 15,
+            "visible_pass_and_other_rule_hidden": 0,
+            "visible_assertion_failures": 16,
+            "assertion_failures": 16,
+            "other_runtime_failures": 0,
+            "visible_timeouts": 0
+          },
+          "family_macro_percent": {
+            "visible": 95.6,
+            "hidden": 95.6,
+            "both": 95.6,
+            "visible_only": 0.0,
+            "hidden_only": 0.0,
+            "neither": 4.4,
+            "other_hidden": 4.2
+          },
+          "family_bootstrap_95_ci_percent": {
+            "visible": [
+              88.1,
+              100.0
+            ],
+            "hidden": [
+              88.1,
+              100.0
+            ],
+            "both": [
+              88.3,
+              100.0
+            ],
+            "visible_only": [
+              0.0,
+              0.0
+            ],
+            "hidden_only": [
+              0.0,
+              0.0
+            ],
+            "neither": [
+              0.0,
+              11.9
+            ],
+            "other_hidden": [
+              0.0,
+              11.7
+            ]
+          }
+        },
+        "tests_b": {
+          "n_task_runs": 360,
+          "counts": {
+            "visible_pass": 253,
+            "hidden_target_pass": 253,
+            "both_pass": 253,
+            "visible_only": 0,
+            "hidden_only": 0,
+            "neither_target": 107,
+            "other_rule_hidden": 104,
+            "visible_pass_and_other_rule_hidden": 0,
+            "visible_assertion_failures": 107,
+            "assertion_failures": 107,
+            "other_runtime_failures": 0,
+            "visible_timeouts": 0
+          },
+          "family_macro_percent": {
+            "visible": 70.3,
+            "hidden": 70.3,
+            "both": 70.3,
+            "visible_only": 0.0,
+            "hidden_only": 0.0,
+            "neither": 29.7,
+            "other_hidden": 28.9
+          },
+          "family_bootstrap_95_ci_percent": {
+            "visible": [
+              52.2,
+              86.9
+            ],
+            "hidden": [
+              51.7,
+              86.7
+            ],
+            "both": [
+              52.2,
+              86.9
+            ],
+            "visible_only": [
+              0.0,
+              0.0
+            ],
+            "hidden_only": [
+              0.0,
+              0.0
+            ],
+            "neither": [
+              13.1,
+              47.8
+            ],
+            "other_hidden": [
+              12.8,
+              46.7
+            ]
+          }
+        }
+      },
+      "NL_only_default_counts": {
+        "A": 293,
+        "neither": 14,
+        "B": 53
+      },
+      "NL_A_to_B_adoption_under_B_tests": {
+        "numerator": 189,
+        "denominator": 293,
+        "percent": 64.5,
+        "family_bootstrap_95_ci_percent": [
+          43.3,
+          84.4
+        ]
+      },
+      "explicit_B_rule_passed": 360,
+      "explicit_B_n": 360,
+      "explicit_B_percent": 100.0,
+      "paired_switch": 237,
+      "paired_switch_n": 360,
+      "paired_switch_percent": 65.8,
+      "NL_default_to_test_behavior_transitions": {
+        "tests_a": {
+          "A": {
+            "A": 292,
+            "neither": 1
+          },
+          "B": {
+            "A": 38,
+            "B": 15
+          },
+          "both": {},
+          "neither": {
+            "A": 14
+          }
+        },
+        "tests_b": {
+          "A": {
+            "B": 189,
+            "A": 101,
+            "neither": 3
+          },
+          "B": {
+            "A": 3,
+            "B": 50
+          },
+          "both": {},
+          "neither": {
+            "B": 14
+          }
+        }
+      }
+    },
+    "deepseek": {
+      "directions": {
+        "tests_a": {
+          "n_task_runs": 360,
+          "counts": {
+            "visible_pass": 238,
+            "hidden_target_pass": 235,
+            "both_pass": 235,
+            "visible_only": 3,
+            "hidden_only": 0,
+            "neither_target": 122,
+            "other_rule_hidden": 66,
+            "visible_pass_and_other_rule_hidden": 0,
+            "visible_assertion_failures": 122,
+            "assertion_failures": 119,
+            "other_runtime_failures": 0,
+            "visible_timeouts": 3
+          },
+          "family_macro_percent": {
+            "visible": 66.1,
+            "hidden": 65.3,
+            "both": 65.3,
+            "visible_only": 0.8,
+            "hidden_only": 0.0,
+            "neither": 33.9,
+            "other_hidden": 18.3
+          },
+          "family_bootstrap_95_ci_percent": {
+            "visible": [
+              46.9,
+              84.2
+            ],
+            "hidden": [
+              45.6,
+              83.3
+            ],
+            "both": [
+              45.8,
+              83.3
+            ],
+            "visible_only": [
+              0.0,
+              2.5
+            ],
+            "hidden_only": [
+              0.0,
+              0.0
+            ],
+            "neither": [
+              15.8,
+              53.1
+            ],
+            "other_hidden": [
+              3.9,
+              35.6
+            ]
+          }
+        },
+        "tests_b": {
+          "n_task_runs": 360,
+          "counts": {
+            "visible_pass": 126,
+            "hidden_target_pass": 114,
+            "both_pass": 114,
+            "visible_only": 12,
+            "hidden_only": 0,
+            "neither_target": 234,
+            "other_rule_hidden": 193,
+            "visible_pass_and_other_rule_hidden": 0,
+            "visible_assertion_failures": 234,
+            "assertion_failures": 226,
+            "other_runtime_failures": 0,
+            "visible_timeouts": 8
+          },
+          "family_macro_percent": {
+            "visible": 35.0,
+            "hidden": 31.7,
+            "both": 31.7,
+            "visible_only": 3.3,
+            "hidden_only": 0.0,
+            "neither": 65.0,
+            "other_hidden": 53.6
+          },
+          "family_bootstrap_95_ci_percent": {
+            "visible": [
+              16.7,
+              54.2
+            ],
+            "hidden": [
+              15.0,
+              50.0
+            ],
+            "both": [
+              15.0,
+              50.0
+            ],
+            "visible_only": [
+              0.0,
+              10.0
+            ],
+            "hidden_only": [
+              0.0,
+              0.0
+            ],
+            "neither": [
+              45.8,
+              82.5
+            ],
+            "other_hidden": [
+              33.6,
+              73.3
+            ]
+          }
+        }
+      },
+      "NL_only_default_counts": {
+        "neither": 87,
+        "A": 252,
+        "B": 21
+      },
+      "NL_A_to_B_adoption_under_B_tests": {
+        "numerator": 63,
+        "denominator": 252,
+        "percent": 25.0,
+        "family_bootstrap_95_ci_percent": [
+          5.1,
+          47.9
+        ]
+      },
+      "explicit_B_rule_passed": 156,
+      "explicit_B_n": 360,
+      "explicit_B_percent": 43.3,
+      "paired_switch": 40,
+      "paired_switch_n": 360,
+      "paired_switch_percent": 11.1,
+      "NL_default_to_test_behavior_transitions": {
+        "tests_a": {
+          "A": {
+            "A": 207,
+            "neither": 9,
+            "B": 36
+          },
+          "B": {
+            "B": 11,
+            "A": 4,
+            "neither": 6
+          },
+          "both": {},
+          "neither": {
+            "A": 24,
+            "neither": 44,
+            "B": 19
+          }
+        },
+        "tests_b": {
+          "A": {
+            "A": 184,
+            "neither": 5,
+            "B": 63
+          },
+          "B": {
+            "B": 16,
+            "neither": 5
+          },
+          "both": {},
+          "neither": {
+            "neither": 43,
+            "B": 35,
+            "A": 9
+          }
+        }
+      }
+    }
+  },
+  "interpretation": "Visible pass with hidden-target failure is an operational finite-suite pattern; it is not by itself evidence of hardcoding or model intent. A visible pass can only be treated as sample compliance; hidden target adherence remains the semantic generalization outcome."
+}

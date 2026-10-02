@@ -1,0 +1,31 @@
+\begin{table}[!htbp]
+\centering
+\caption{Complete official-suite pass rates (\%), averaged over three runs. These include public inputs and are secondary to held-out performance.}
+\label{tab:official}
+\small
+\begin{tabular}{clrrrr}
+\toprule
+Model & Dataset & NL-only & Correct I/O & Wrong I/O & Inputs-only \\
+\midrule
+\multirow{3}{*}{Qwen2.5-7B} & HumanEval+ & 82.8 & 81.5 & 69.4 & 82.4 \\
+& MBPP+ & 66.0 & 73.5 & 63.4 & 68.8 \\
+& LCB v6-new & 22.3 & 21.3 & 18.9 & 20.0 \\
+\addlinespace[2pt]
+\multirow{3}{*}{Qwen3.5-9B} & HumanEval+ & 82.2 & 83.7 & 72.6 & 81.7 \\
+& MBPP+ & 65.8 & 75.8 & 61.6 & 68.1 \\
+& LCB v6-new & 39.2 & 39.8 & 33.1 & 38.9 \\
+\addlinespace[2pt]
+\multirow{3}{*}{Qwen3.6-27B} & HumanEval+ & 91.5 & 94.1 & 66.7 & 92.1 \\
+& MBPP+ & 72.2 & 79.7 & 48.2 & 76.2 \\
+& LCB v6-new & 55.4 & 53.3 & 50.5 & 56.2 \\
+\addlinespace[2pt]
+\multirow{3}{*}{Qwen3.8-27B} & HumanEval+ & 89.6 & 94.3 & 64.3 & 91.1 \\
+& MBPP+ & 70.8 & 79.5 & 46.2 & 74.1 \\
+& LCB v6-new & 52.8 & 53.7 & 42.9 & 52.6 \\
+\addlinespace[2pt]
+\multirow{3}{*}{DeepSeek-6.7B} & HumanEval+ & 72.2 & 72.2 & 64.1 & 68.8 \\
+& MBPP+ & 60.1 & 68.7 & 60.1 & 63.4 \\
+& LCB v6-new & 14.3 & 13.7 & 12.6 & 16.0 \\
+\bottomrule
+\end{tabular}
+\end{table}

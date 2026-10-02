@@ -1,0 +1,42 @@
+{
+  "title": "Do Code Language Models Follow Tests? Paired Interventions on Program Behavior",
+  "release": "FSE 2027 submission artifact",
+  "generation_counts": {
+    "main": {
+      "qwen25": 8520,
+      "qwen35": 8520,
+      "qwen36": 8520,
+      "qwen38": 8520,
+      "deepseek": 8520
+    },
+    "semantic": {
+      "qwen25": 2160,
+      "qwen35": 2160,
+      "qwen36": 2160,
+      "qwen38": 2160,
+      "deepseek": 2160
+    },
+    "quality": {
+      "qwen25": 720,
+      "qwen35": 720,
+      "qwen36": 720,
+      "qwen38": 720,
+      "deepseek": 720
+    },
+    "unrelated": {
+      "qwen25": 2130,
+      "qwen35": 2130,
+      "qwen36": 2130,
+      "qwen38": 2130,
+      "deepseek": 2130
+    }
+  },
+  "total_generations": 67650,
+  "included": "Frozen tasks, generation records in gzip, task-level evaluations, derived results, analysis code, and current paper sources.",
+  "excluded": [
+    "Model weights",
+    "Activation tensors and state caches",
+    "Runtime logs and temporary environments"
+  ],
+  "sanitization": "Machine-specific model paths replaced by public model identifiers; local filesystem prefixes redacted in provenance strings. Numerical outcomes, program text, prompts, and task identifiers are otherwise retained."
+}

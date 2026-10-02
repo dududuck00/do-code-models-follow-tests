@@ -1,0 +1,12 @@
+{
+  "source": "Independent local recomputation from downloaded pair_layer_metrics.csv and comparison with analysis.json",
+  "numeric_checks": 4500,
+  "largest_mean_absolute_error": 8.326672684688674e-17,
+  "models": 5,
+  "families_per_model": 20,
+  "instances_per_model": 120,
+  "bootstrap_resamples": 5000,
+  "seed": 0,
+  "all_layer_means_and_ci_match": true,
+  "csv_rows": 108000
+}

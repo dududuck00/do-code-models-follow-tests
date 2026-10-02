@@ -1,0 +1,19 @@
+{
+  "tasks": 120,
+  "families": 20,
+  "variants": [
+    "parenthesized",
+    "reverse_order"
+  ],
+  "prompts_per_model": 480,
+  "models": [
+    "qwen25",
+    "qwen36",
+    "qwen35",
+    "qwen38",
+    "deepseek"
+  ],
+  "parentheses_ast_identical": true,
+  "reference_verdicts_preserved": true,
+  "order_audit": "All 20 families use per-call reference functions with literal inputs and no persistent cross-call state."
+}

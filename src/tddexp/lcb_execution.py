@@ -16,12 +16,14 @@ import sys
 MEMORY_LIMIT_BYTES = 4 * 1024**3
 
 
-def grade(sample: dict, code: str, root: str, timeout: int = 15) -> dict:
+def grade(sample: dict, code: str, root: str, timeout: int = 15,
+          memory_limit_bytes: int | None = MEMORY_LIMIT_BYTES) -> dict:
     tmp = Path(__file__).resolve().parents[2] / '.tmp'
     env = dict(os.environ, TMPDIR=str(tmp), TMP=str(tmp), TEMP=str(tmp),
                OPENBLAS_NUM_THREADS='1', OMP_NUM_THREADS='1', MKL_NUM_THREADS='1')
     count = len(json.loads(sample['input_output'])['inputs'])
-    payload = dict(sample=sample, code=code, root=str(Path(root).resolve()), timeout=timeout)
+    payload = dict(sample=sample, code=code, root=str(Path(root).resolve()), timeout=timeout,
+                   memory_limit_bytes=memory_limit_bytes)
     try:
         proc = subprocess.run([sys.executable, '-B', __file__, '--worker'],
                               input=json.dumps(payload), text=True, capture_output=True,
@@ -44,7 +46,9 @@ def worker():
     sys.path.insert(0, job['root'])
     from lcb_runner.evaluation.testing_util import run_test
     import resource
-    resource.setrlimit(resource.RLIMIT_AS, (MEMORY_LIMIT_BYTES, MEMORY_LIMIT_BYTES))
+    memory_limit = job.get('memory_limit_bytes', MEMORY_LIMIT_BYTES)
+    if memory_limit is not None:
+        resource.setrlimit(resource.RLIMIT_AS, (memory_limit, memory_limit))
     sys.stderr.write('LCB_CHECKER_STARTED\n')
     sys.stderr.flush()
     sys.set_int_max_str_digits(50000)

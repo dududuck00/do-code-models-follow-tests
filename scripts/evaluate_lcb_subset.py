@@ -26,6 +26,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--num-process-evaluate", type=int, default=8)
     parser.add_argument("--timeout", type=int, default=10)
     parser.add_argument("--debug", action="store_true")
+    parser.add_argument("--pipe-workers", action="store_true",
+                        help="Use pipe-connected workers with the same official scoring function.")
     return parser.parse_args()
 
 
@@ -54,14 +56,17 @@ def main() -> None:
     samples = [problem.get_evaluation_sample() for problem in problems]
     generations = [[row["candidate_code"]] for row in gen_rows]
 
-    metrics = codegen_metrics(
-        samples,
-        generations,
-        k_list=[1],
-        num_process_evaluate=args.num_process_evaluate,
-        timeout=args.timeout,
-        debug=args.debug,
-    )
+    if args.pipe_workers:
+        metrics = pipe_metrics(samples, generations, args)
+    else:
+        metrics = codegen_metrics(
+            samples,
+            generations,
+            k_list=[1],
+            num_process_evaluate=args.num_process_evaluate,
+            timeout=args.timeout,
+            debug=args.debug,
+        )
     graded = extract_instance_results(metrics[1])
     metadata = metrics[2]
 
@@ -113,6 +118,30 @@ def add_lcb_to_path(livecodebench_root: str) -> None:
     if not (root / "lcb_runner").exists():
         raise SystemExit(f"LiveCodeBench root does not contain lcb_runner: {root}")
     sys.path.insert(0, str(root))
+
+
+def pipe_metrics(samples, generations, args):
+    from concurrent.futures import ThreadPoolExecutor, as_completed
+    from tddexp.lcb_execution import grade
+    from lcb_runner.evaluation.pass_k_utils import compute_metrics_from_results
+    results = {}
+    metadata = {}
+    with ThreadPoolExecutor(max_workers=args.num_process_evaluate) as pool:
+        futures = {pool.submit(grade, sample, code[0], args.livecodebench_root,
+                               args.timeout, memory_limit_bytes=None): i
+                   for i, (sample, code) in enumerate(zip(samples, generations))}
+        for future in as_completed(futures):
+            i = futures[future]
+            result = future.result()
+            scores = result.get('scores')
+            if scores is None:
+                scores = [-1] if result['status'] == 'timeout' else [-2]
+            results[i] = [scores]
+            metadata[i] = [json.dumps(result.get('metadata', result), default=str)]
+            print(f"Evaluated {len(results)}/{len(samples)}", flush=True)
+    results = dict(sorted(results.items()))
+    return [compute_metrics_from_results(results, k_list=[1]), results,
+            [metadata[i] for i in sorted(metadata)]]
 
 
 def official_problem_fields(row: dict) -> dict:

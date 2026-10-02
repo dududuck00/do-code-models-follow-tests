@@ -1,0 +1,64 @@
+{
+  "complete": true,
+  "original_four_model_verification": {
+    "complete": true,
+    "unique_prompt_states": 960,
+    "behavior_records": 2880,
+    "task_model_pairs": 480,
+    "models": {
+      "qwen25": {
+        "states": 240,
+        "state_shape": [
+          29,
+          3584
+        ],
+        "original_behavior_links": 720,
+        "held_out_predictions": 120,
+        "family_disjoint_folds": 5,
+        "metrics_recomputed": true
+      },
+      "qwen36": {
+        "states": 240,
+        "state_shape": [
+          65,
+          5120
+        ],
+        "original_behavior_links": 720,
+        "held_out_predictions": 120,
+        "family_disjoint_folds": 5,
+        "metrics_recomputed": true
+      },
+      "qwen35": {
+        "states": 240,
+        "state_shape": [
+          33,
+          4096
+        ],
+        "original_behavior_links": 720,
+        "held_out_predictions": 120,
+        "family_disjoint_folds": 5,
+        "metrics_recomputed": true
+      },
+      "qwen38": {
+        "states": 240,
+        "state_shape": [
+          65,
+          5120
+        ],
+        "original_behavior_links": 720,
+        "held_out_predictions": 120,
+        "family_disjoint_folds": 5,
+        "metrics_recomputed": true
+      }
+    }
+  },
+  "original_four_layer_results_exactly_unchanged": true,
+  "original_four_probe_results_exactly_unchanged": true,
+  "family_folds_exactly_unchanged": true,
+  "extension_model": "deepseek",
+  "extension_unique_prompts": 240,
+  "extension_existing_behavior_records": 720,
+  "new_code_generations": 0,
+  "tokenizer": "data/model_tokenizers/deepseek-coder-6.7b-instruct",
+  "all_extension_prompt_tokens_match_original_generation": true
+}

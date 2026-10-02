@@ -1,0 +1,21 @@
+{
+  "model": "Qwen3.6-27B",
+  "source": "Synthetic high3",
+  "tasks": 175,
+  "solved": {
+    "nl_only": 72,
+    "relevant": 70,
+    "shuffled": 81,
+    "irrelevant": 69
+  },
+  "relevant_minus_nl": {
+    "solved": -2,
+    "percentage_points": -1.1,
+    "paired_ci_95": [
+      -6.9,
+      4.6
+    ],
+    "paired_test_p": 0.839
+  },
+  "provenance": "Author-provided summary in conversation on 2026-09-08; task-level records not supplied for this addition. Interval and p-value transcribed, not recomputed."
+}

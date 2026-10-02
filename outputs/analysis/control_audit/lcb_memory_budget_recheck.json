@@ -1,0 +1,295 @@
+{
+  "qwen25": {
+    "official_checker": "LiveCodeBench run_test",
+    "memory_limit_bytes": 4294967296,
+    "per_test_timeout_seconds": 15,
+    "lcb_rows": 2100,
+    "previously_evaluated_rows": 2097,
+    "heldout_label_changes": [
+      {
+        "task_id": "livecodebench::3778",
+        "condition": "nl_only",
+        "repeat": 1,
+        "before": false,
+        "after": true
+      },
+      {
+        "task_id": "livecodebench::3753",
+        "condition": "inputs_only",
+        "repeat": 1,
+        "before": false,
+        "after": true
+      },
+      {
+        "task_id": "livecodebench::abc397_a",
+        "condition": "nl_only",
+        "repeat": 1,
+        "before": false,
+        "after": true
+      },
+      {
+        "task_id": "livecodebench::arc195_a",
+        "condition": "wrong_tests",
+        "repeat": 2,
+        "before": true,
+        "after": false
+      }
+    ]
+  },
+  "deepseek": {
+    "official_checker": "LiveCodeBench run_test",
+    "memory_limit_bytes": 4294967296,
+    "per_test_timeout_seconds": 15,
+    "lcb_rows": 2100,
+    "previously_evaluated_rows": 1664,
+    "heldout_label_changes": [
+      {
+        "task_id": "livecodebench::3736",
+        "condition": "nl_only",
+        "repeat": 1,
+        "before": false,
+        "after": true
+      }
+    ]
+  },
+  "qwen36": {
+    "official_checker": "LiveCodeBench run_test",
+    "memory_limit_bytes": 4294967296,
+    "per_test_timeout_seconds": 15,
+    "lcb_rows": 2100,
+    "previously_evaluated_rows": 2100,
+    "heldout_label_changes": [
+      {
+        "task_id": "livecodebench::abc390_d",
+        "condition": "inputs_only",
+        "repeat": 0,
+        "before": true,
+        "after": false
+      },
+      {
+        "task_id": "livecodebench::abc390_d",
+        "condition": "nl_only",
+        "repeat": 0,
+        "before": false,
+        "after": true
+      },
+      {
+        "task_id": "livecodebench::abc390_d",
+        "condition": "inputs_only",
+        "repeat": 1,
+        "before": false,
+        "after": true
+      },
+      {
+        "task_id": "livecodebench::abc393_e",
+        "condition": "nl_only",
+        "repeat": 1,
+        "before": false,
+        "after": true
+      },
+      {
+        "task_id": "livecodebench::abc390_f",
+        "condition": "nl_tests",
+        "repeat": 1,
+        "before": false,
+        "after": true
+      },
+      {
+        "task_id": "livecodebench::3801",
+        "condition": "wrong_tests",
+        "repeat": 1,
+        "before": false,
+        "after": true
+      },
+      {
+        "task_id": "livecodebench::3786",
+        "condition": "nl_only",
+        "repeat": 1,
+        "before": false,
+        "after": true
+      },
+      {
+        "task_id": "livecodebench::3751",
+        "condition": "nl_tests",
+        "repeat": 1,
+        "before": false,
+        "after": true
+      },
+      {
+        "task_id": "livecodebench::3720",
+        "condition": "wrong_tests",
+        "repeat": 1,
+        "before": false,
+        "after": true
+      },
+      {
+        "task_id": "livecodebench::abc387_f",
+        "condition": "inputs_only",
+        "repeat": 1,
+        "before": false,
+        "after": true
+      },
+      {
+        "task_id": "livecodebench::abc389_e",
+        "condition": "nl_only",
+        "repeat": 1,
+        "before": false,
+        "after": true
+      },
+      {
+        "task_id": "livecodebench::abc390_d",
+        "condition": "wrong_tests",
+        "repeat": 1,
+        "before": false,
+        "after": true
+      },
+      {
+        "task_id": "livecodebench::3733",
+        "condition": "wrong_tests",
+        "repeat": 1,
+        "before": false,
+        "after": true
+      },
+      {
+        "task_id": "livecodebench::abc390_d",
+        "condition": "nl_only",
+        "repeat": 1,
+        "before": false,
+        "after": true
+      },
+      {
+        "task_id": "livecodebench::abc391_f",
+        "condition": "nl_tests",
+        "repeat": 2,
+        "before": false,
+        "after": true
+      },
+      {
+        "task_id": "livecodebench::3793",
+        "condition": "wrong_tests",
+        "repeat": 1,
+        "before": false,
+        "after": true
+      },
+      {
+        "task_id": "livecodebench::abc393_e",
+        "condition": "inputs_only",
+        "repeat": 1,
+        "before": false,
+        "after": true
+      },
+      {
+        "task_id": "livecodebench::3720",
+        "condition": "inputs_only",
+        "repeat": 2,
+        "before": false,
+        "after": true
+      },
+      {
+        "task_id": "livecodebench::abc388_d",
+        "condition": "inputs_only",
+        "repeat": 2,
+        "before": false,
+        "after": true
+      },
+      {
+        "task_id": "livecodebench::abc396_f",
+        "condition": "wrong_tests",
+        "repeat": 2,
+        "before": false,
+        "after": true
+      },
+      {
+        "task_id": "livecodebench::abc390_d",
+        "condition": "inputs_only",
+        "repeat": 2,
+        "before": false,
+        "after": true
+      },
+      {
+        "task_id": "livecodebench::abc391_g",
+        "condition": "nl_tests",
+        "repeat": 2,
+        "before": false,
+        "after": true
+      },
+      {
+        "task_id": "livecodebench::abc389_d",
+        "condition": "inputs_only",
+        "repeat": 2,
+        "before": false,
+        "after": true
+      },
+      {
+        "task_id": "livecodebench::abc393_e",
+        "condition": "wrong_tests",
+        "repeat": 1,
+        "before": false,
+        "after": true
+      },
+      {
+        "task_id": "livecodebench::3793",
+        "condition": "wrong_tests",
+        "repeat": 2,
+        "before": false,
+        "after": true
+      },
+      {
+        "task_id": "livecodebench::3720",
+        "condition": "wrong_tests",
+        "repeat": 2,
+        "before": false,
+        "after": true
+      },
+      {
+        "task_id": "livecodebench::abc393_e",
+        "condition": "wrong_tests",
+        "repeat": 2,
+        "before": false,
+        "after": true
+      },
+      {
+        "task_id": "livecodebench::abc390_d",
+        "condition": "nl_tests",
+        "repeat": 2,
+        "before": false,
+        "after": true
+      },
+      {
+        "task_id": "livecodebench::3770",
+        "condition": "nl_only",
+        "repeat": 2,
+        "before": false,
+        "after": true
+      },
+      {
+        "task_id": "livecodebench::3793",
+        "condition": "inputs_only",
+        "repeat": 2,
+        "before": false,
+        "after": true
+      },
+      {
+        "task_id": "livecodebench::abc393_e",
+        "condition": "inputs_only",
+        "repeat": 2,
+        "before": false,
+        "after": true
+      },
+      {
+        "task_id": "livecodebench::abc390_d",
+        "condition": "nl_only",
+        "repeat": 2,
+        "before": false,
+        "after": true
+      },
+      {
+        "task_id": "livecodebench::abc393_e",
+        "condition": "nl_tests",
+        "repeat": 2,
+        "before": false,
+        "after": true
+      }
+    ]
+  }
+}

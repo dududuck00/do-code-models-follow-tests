@@ -1,0 +1,18 @@
+\begin{table}[!htbp]
+\centering
+\caption{Cosine-distance summaries for 120 instances per model. Peak is the layer with the largest median distance relative to total depth. Final-layer correlations relate distance to mean paired switching. Adjusted controls family and prompt length.}
+\label{tab:representation-association}
+\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{ccrrr}
+\toprule
+Model & Peak & Overall & Within family & Adjusted \\
+\midrule
+Qwen2.5-7B & 28/28 & $0.222$ & $0.053$ & $0.051$ \\
+Qwen3.5-9B & 30/32 & $0.295$ & $0.079$ & $0.027$ \\
+Qwen3.6-27B & 64/64 & $0.263$ & $0.183$ & $0.160$ \\
+Qwen3.8-27B & 60/64 & $0.165$ & $0.194$ & $0.162$ \\
+DeepSeek-6.7B & 17/32 & $0.123$ & $0.089$ & $0.100$ \\
+\bottomrule
+\end{tabular}
+\end{table}

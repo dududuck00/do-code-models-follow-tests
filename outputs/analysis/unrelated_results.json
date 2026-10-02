@@ -1,0 +1,1486 @@
+{
+  "complete": true,
+  "added_generations": 10650,
+  "added_evaluations": 10650,
+  "baseline_generations_reused": 42600,
+  "dataset": {
+    "tasks": 710,
+    "conditions": [
+      "unrelated_tests"
+    ],
+    "repeats": 3,
+    "models": 5,
+    "expected_generations": 10650,
+    "tests": 2062,
+    "input_profile_matched": 1817,
+    "output_profile_matched": 1715,
+    "supplemental_targets": [
+      "livecodebench::3743",
+      "mbppplus::306"
+    ],
+    "evaluation_input_overlap": 0,
+    "source": "Other benchmark tasks plus two authored four-argument donor tasks; original main evaluators retained.",
+    "length_ratio_median": 1.0,
+    "length_within_15_percent": 1729
+  },
+  "control_audit": {
+    "source_function_assertions_validated": 690,
+    "source_function_tasks": 339,
+    "function_targets": 535,
+    "recipient_suites_all_correct": 11,
+    "recipient_assertions_correct": 189,
+    "recipient_error_types": {
+      "TypeError": 54,
+      "AssertionError": 1271,
+      "ValueError": 31,
+      "KeyError": 3,
+      "IndexError": 18,
+      "AttributeError": 16,
+      "ZeroDivisionError": 2
+    },
+    "recipient_suites_with_runtime_error_or_timeout": 68,
+    "recipient_timeouts": 5
+  },
+  "results": {
+    "qwen25/humanevalplus": {
+      "tasks": 157,
+      "rates": {
+        "nl_only": 0.8280254777070064,
+        "nl_tests": 0.8152866242038217,
+        "wrong_tests": 0.7006369426751592,
+        "inputs_only": 0.8237791932059448,
+        "unrelated_tests": 0.7197452229299363
+      },
+      "contrasts": [
+        {
+          "base": "unrelated_tests",
+          "target": "nl_tests",
+          "num_tasks": 157,
+          "num_clusters": 157,
+          "repeats_per_task": 3,
+          "cluster_field": "task_id",
+          "paired_difference": 0.09554140127388536,
+          "ci95": [
+            0.046709129511677286,
+            0.1464968152866242
+          ],
+          "per_repeat": {
+            "0": {
+              "n": 157,
+              "gains": 17,
+              "losses": 2,
+              "base_passed": 113,
+              "target_passed": 128,
+              "exact_mcnemar_p": 0.000728607177734375,
+              "paired_difference": 0.09554140127388536
+            },
+            "1": {
+              "n": 157,
+              "gains": 16,
+              "losses": 2,
+              "base_passed": 113,
+              "target_passed": 127,
+              "exact_mcnemar_p": 0.001312255859375,
+              "paired_difference": 0.08917197452229299
+            },
+            "2": {
+              "n": 157,
+              "gains": 17,
+              "losses": 1,
+              "base_passed": 113,
+              "target_passed": 129,
+              "exact_mcnemar_p": 0.00014495849609375,
+              "paired_difference": 0.10191082802547771
+            }
+          }
+        },
+        {
+          "base": "nl_only",
+          "target": "unrelated_tests",
+          "num_tasks": 157,
+          "num_clusters": 157,
+          "repeats_per_task": 3,
+          "cluster_field": "task_id",
+          "paired_difference": -0.10828025477707007,
+          "ci95": [
+            -0.1592356687898089,
+            -0.05732484076433121
+          ],
+          "per_repeat": {
+            "0": {
+              "n": 157,
+              "gains": 1,
+              "losses": 18,
+              "base_passed": 130,
+              "target_passed": 113,
+              "exact_mcnemar_p": 7.62939453125e-05,
+              "paired_difference": -0.10828025477707007
+            },
+            "1": {
+              "n": 157,
+              "gains": 1,
+              "losses": 18,
+              "base_passed": 130,
+              "target_passed": 113,
+              "exact_mcnemar_p": 7.62939453125e-05,
+              "paired_difference": -0.10828025477707007
+            },
+            "2": {
+              "n": 157,
+              "gains": 1,
+              "losses": 18,
+              "base_passed": 130,
+              "target_passed": 113,
+              "exact_mcnemar_p": 7.62939453125e-05,
+              "paired_difference": -0.10828025477707007
+            }
+          }
+        }
+      ]
+    },
+    "qwen25/mbppplus": {
+      "tasks": 378,
+      "rates": {
+        "nl_only": 0.6631393298059964,
+        "nl_tests": 0.7372134038800705,
+        "wrong_tests": 0.6393298059964727,
+        "inputs_only": 0.6904761904761905,
+        "unrelated_tests": 0.5388007054673721
+      },
+      "contrasts": [
+        {
+          "base": "unrelated_tests",
+          "target": "nl_tests",
+          "num_tasks": 378,
+          "num_clusters": 378,
+          "repeats_per_task": 3,
+          "cluster_field": "task_id",
+          "paired_difference": 0.1984126984126984,
+          "ci95": [
+            0.15432098765432098,
+            0.24250440917107582
+          ],
+          "per_repeat": {
+            "0": {
+              "n": 378,
+              "gains": 82,
+              "losses": 7,
+              "base_passed": 204,
+              "target_passed": 279,
+              "exact_mcnemar_p": 2.428370408743998e-17,
+              "paired_difference": 0.1984126984126984
+            },
+            "1": {
+              "n": 378,
+              "gains": 83,
+              "losses": 8,
+              "base_passed": 203,
+              "target_passed": 278,
+              "exact_mcnemar_p": 7.576841438713428e-17,
+              "paired_difference": 0.1984126984126984
+            },
+            "2": {
+              "n": 378,
+              "gains": 82,
+              "losses": 7,
+              "base_passed": 204,
+              "target_passed": 279,
+              "exact_mcnemar_p": 2.428370408743998e-17,
+              "paired_difference": 0.1984126984126984
+            }
+          }
+        },
+        {
+          "base": "nl_only",
+          "target": "unrelated_tests",
+          "num_tasks": 378,
+          "num_clusters": 378,
+          "repeats_per_task": 3,
+          "cluster_field": "task_id",
+          "paired_difference": -0.12433862433862433,
+          "ci95": [
+            -0.1693121693121693,
+            -0.08112874779541446
+          ],
+          "per_repeat": {
+            "0": {
+              "n": 378,
+              "gains": 16,
+              "losses": 63,
+              "base_passed": 251,
+              "target_passed": 204,
+              "exact_mcnemar_p": 9.439221273488043e-08,
+              "paired_difference": -0.12433862433862433
+            },
+            "1": {
+              "n": 378,
+              "gains": 16,
+              "losses": 63,
+              "base_passed": 250,
+              "target_passed": 203,
+              "exact_mcnemar_p": 9.439221273488043e-08,
+              "paired_difference": -0.12433862433862433
+            },
+            "2": {
+              "n": 378,
+              "gains": 17,
+              "losses": 64,
+              "base_passed": 251,
+              "target_passed": 204,
+              "exact_mcnemar_p": 1.4266367729635823e-07,
+              "paired_difference": -0.12433862433862433
+            }
+          }
+        }
+      ]
+    },
+    "qwen25/livecodebench": {
+      "tasks": 175,
+      "rates": {
+        "nl_only": 0.2342857142857143,
+        "nl_tests": 0.21904761904761905,
+        "wrong_tests": 0.19428571428571428,
+        "inputs_only": 0.2057142857142857,
+        "unrelated_tests": 0.20952380952380953
+      },
+      "contrasts": [
+        {
+          "base": "unrelated_tests",
+          "target": "nl_tests",
+          "num_tasks": 175,
+          "num_clusters": 175,
+          "repeats_per_task": 3,
+          "cluster_field": "task_id",
+          "paired_difference": 0.009523809523809525,
+          "ci95": [
+            -0.022857142857142857,
+            0.043809523809523805
+          ],
+          "per_repeat": {
+            "0": {
+              "n": 175,
+              "gains": 5,
+              "losses": 5,
+              "base_passed": 39,
+              "target_passed": 39,
+              "exact_mcnemar_p": 1.0,
+              "paired_difference": 0.0
+            },
+            "1": {
+              "n": 175,
+              "gains": 7,
+              "losses": 3,
+              "base_passed": 35,
+              "target_passed": 39,
+              "exact_mcnemar_p": 0.34375,
+              "paired_difference": 0.022857142857142857
+            },
+            "2": {
+              "n": 175,
+              "gains": 5,
+              "losses": 4,
+              "base_passed": 36,
+              "target_passed": 37,
+              "exact_mcnemar_p": 1.0,
+              "paired_difference": 0.005714285714285714
+            }
+          }
+        },
+        {
+          "base": "nl_only",
+          "target": "unrelated_tests",
+          "num_tasks": 175,
+          "num_clusters": 175,
+          "repeats_per_task": 3,
+          "cluster_field": "task_id",
+          "paired_difference": -0.02476190476190476,
+          "ci95": [
+            -0.06285714285714286,
+            0.013333333333333332
+          ],
+          "per_repeat": {
+            "0": {
+              "n": 175,
+              "gains": 6,
+              "losses": 8,
+              "base_passed": 41,
+              "target_passed": 39,
+              "exact_mcnemar_p": 0.79052734375,
+              "paired_difference": -0.011428571428571429
+            },
+            "1": {
+              "n": 175,
+              "gains": 3,
+              "losses": 8,
+              "base_passed": 40,
+              "target_passed": 35,
+              "exact_mcnemar_p": 0.2265625,
+              "paired_difference": -0.02857142857142857
+            },
+            "2": {
+              "n": 175,
+              "gains": 4,
+              "losses": 10,
+              "base_passed": 42,
+              "target_passed": 36,
+              "exact_mcnemar_p": 0.1795654296875,
+              "paired_difference": -0.03428571428571429
+            }
+          }
+        }
+      ]
+    },
+    "qwen36/humanevalplus": {
+      "tasks": 157,
+      "rates": {
+        "nl_only": 0.9150743099787686,
+        "nl_tests": 0.940552016985138,
+        "wrong_tests": 0.6878980891719745,
+        "inputs_only": 0.921443736730361,
+        "unrelated_tests": 0.7643312101910829
+      },
+      "contrasts": [
+        {
+          "base": "unrelated_tests",
+          "target": "nl_tests",
+          "num_tasks": 157,
+          "num_clusters": 157,
+          "repeats_per_task": 3,
+          "cluster_field": "task_id",
+          "paired_difference": 0.1762208067940552,
+          "ci95": [
+            0.11040339702760084,
+            0.2484076433121019
+          ],
+          "per_repeat": {
+            "0": {
+              "n": 157,
+              "gains": 34,
+              "losses": 4,
+              "base_passed": 118,
+              "target_passed": 148,
+              "exact_mcnemar_p": 6.038535502739251e-07,
+              "paired_difference": 0.1910828025477707
+            },
+            "1": {
+              "n": 157,
+              "gains": 31,
+              "losses": 5,
+              "base_passed": 121,
+              "target_passed": 147,
+              "exact_mcnemar_p": 1.2913485988974571e-05,
+              "paired_difference": 0.16560509554140126
+            },
+            "2": {
+              "n": 157,
+              "gains": 31,
+              "losses": 4,
+              "base_passed": 121,
+              "target_passed": 148,
+              "exact_mcnemar_p": 3.4654513001441956e-06,
+              "paired_difference": 0.17197452229299362
+            }
+          }
+        },
+        {
+          "base": "nl_only",
+          "target": "unrelated_tests",
+          "num_tasks": 157,
+          "num_clusters": 157,
+          "repeats_per_task": 3,
+          "cluster_field": "task_id",
+          "paired_difference": -0.15074309978768577,
+          "ci95": [
+            -0.21656050955414013,
+            -0.0870488322717622
+          ],
+          "per_repeat": {
+            "0": {
+              "n": 157,
+              "gains": 4,
+              "losses": 30,
+              "base_passed": 144,
+              "target_passed": 118,
+              "exact_mcnemar_p": 6.16488978266716e-06,
+              "paired_difference": -0.16560509554140126
+            },
+            "1": {
+              "n": 157,
+              "gains": 4,
+              "losses": 27,
+              "base_passed": 144,
+              "target_passed": 121,
+              "exact_mcnemar_p": 3.39532271027565e-05,
+              "paired_difference": -0.1464968152866242
+            },
+            "2": {
+              "n": 157,
+              "gains": 5,
+              "losses": 27,
+              "base_passed": 143,
+              "target_passed": 121,
+              "exact_mcnemar_p": 0.00011307420209050179,
+              "paired_difference": -0.14012738853503184
+            }
+          }
+        }
+      ]
+    },
+    "qwen36/mbppplus": {
+      "tasks": 378,
+      "rates": {
+        "nl_only": 0.7222222222222222,
+        "nl_tests": 0.7971781305114638,
+        "wrong_tests": 0.4858906525573192,
+        "inputs_only": 0.7619047619047619,
+        "unrelated_tests": 0.43033509700176364
+      },
+      "contrasts": [
+        {
+          "base": "unrelated_tests",
+          "target": "nl_tests",
+          "num_tasks": 378,
+          "num_clusters": 378,
+          "repeats_per_task": 3,
+          "cluster_field": "task_id",
+          "paired_difference": 0.36684303350970016,
+          "ci95": [
+            0.31657848324514987,
+            0.4171075837742504
+          ],
+          "per_repeat": {
+            "0": {
+              "n": 378,
+              "gains": 148,
+              "losses": 8,
+              "base_passed": 161,
+              "target_passed": 301,
+              "exact_mcnemar_p": 1.6764239361333992e-34,
+              "paired_difference": 0.37037037037037035
+            },
+            "1": {
+              "n": 378,
+              "gains": 145,
+              "losses": 9,
+              "base_passed": 165,
+              "target_passed": 301,
+              "exact_mcnemar_p": 9.869750689670393e-33,
+              "paired_difference": 0.35978835978835977
+            },
+            "2": {
+              "n": 378,
+              "gains": 148,
+              "losses": 8,
+              "base_passed": 162,
+              "target_passed": 302,
+              "exact_mcnemar_p": 1.6764239361333992e-34,
+              "paired_difference": 0.37037037037037035
+            }
+          }
+        },
+        {
+          "base": "nl_only",
+          "target": "unrelated_tests",
+          "num_tasks": 378,
+          "num_clusters": 378,
+          "repeats_per_task": 3,
+          "cluster_field": "task_id",
+          "paired_difference": -0.29188712522045857,
+          "ci95": [
+            -0.3447971781305114,
+            -0.24162257495590828
+          ],
+          "per_repeat": {
+            "0": {
+              "n": 378,
+              "gains": 12,
+              "losses": 124,
+              "base_passed": 273,
+              "target_passed": 161,
+              "exact_mcnemar_p": 1.2868059091640347e-24,
+              "paired_difference": -0.2962962962962963
+            },
+            "1": {
+              "n": 378,
+              "gains": 13,
+              "losses": 121,
+              "base_passed": 273,
+              "target_passed": 165,
+              "exact_mcnemar_p": 4.0594773352756886e-23,
+              "paired_difference": -0.2857142857142857
+            },
+            "2": {
+              "n": 378,
+              "gains": 14,
+              "losses": 125,
+              "base_passed": 273,
+              "target_passed": 162,
+              "exact_mcnemar_p": 1.8892488299339866e-23,
+              "paired_difference": -0.29365079365079366
+            }
+          }
+        }
+      ]
+    },
+    "qwen36/livecodebench": {
+      "tasks": 175,
+      "rates": {
+        "nl_only": 0.5638095238095238,
+        "nl_tests": 0.5428571428571428,
+        "wrong_tests": 0.5123809523809524,
+        "inputs_only": 0.5657142857142857,
+        "unrelated_tests": 0.5371428571428571
+      },
+      "contrasts": [
+        {
+          "base": "unrelated_tests",
+          "target": "nl_tests",
+          "num_tasks": 175,
+          "num_clusters": 175,
+          "repeats_per_task": 3,
+          "cluster_field": "task_id",
+          "paired_difference": 0.005714285714285715,
+          "ci95": [
+            -0.03619047619047618,
+            0.045714285714285714
+          ],
+          "per_repeat": {
+            "0": {
+              "n": 175,
+              "gains": 14,
+              "losses": 10,
+              "base_passed": 88,
+              "target_passed": 92,
+              "exact_mcnemar_p": 0.5412561893463135,
+              "paired_difference": 0.022857142857142857
+            },
+            "1": {
+              "n": 175,
+              "gains": 11,
+              "losses": 10,
+              "base_passed": 98,
+              "target_passed": 99,
+              "exact_mcnemar_p": 1.0,
+              "paired_difference": 0.005714285714285714
+            },
+            "2": {
+              "n": 175,
+              "gains": 14,
+              "losses": 16,
+              "base_passed": 96,
+              "target_passed": 94,
+              "exact_mcnemar_p": 0.8555355519056321,
+              "paired_difference": -0.011428571428571429
+            }
+          }
+        },
+        {
+          "base": "nl_only",
+          "target": "unrelated_tests",
+          "num_tasks": 175,
+          "num_clusters": 175,
+          "repeats_per_task": 3,
+          "cluster_field": "task_id",
+          "paired_difference": -0.026666666666666665,
+          "ci95": [
+            -0.06285714285714286,
+            0.011428571428571429
+          ],
+          "per_repeat": {
+            "0": {
+              "n": 175,
+              "gains": 6,
+              "losses": 20,
+              "base_passed": 102,
+              "target_passed": 88,
+              "exact_mcnemar_p": 0.009355306625366211,
+              "paired_difference": -0.08
+            },
+            "1": {
+              "n": 175,
+              "gains": 8,
+              "losses": 9,
+              "base_passed": 99,
+              "target_passed": 98,
+              "exact_mcnemar_p": 1.0,
+              "paired_difference": -0.005714285714285714
+            },
+            "2": {
+              "n": 175,
+              "gains": 12,
+              "losses": 11,
+              "base_passed": 95,
+              "target_passed": 96,
+              "exact_mcnemar_p": 1.0,
+              "paired_difference": 0.005714285714285714
+            }
+          }
+        }
+      ]
+    },
+    "deepseek/humanevalplus": {
+      "tasks": 157,
+      "rates": {
+        "nl_only": 0.7282377919320594,
+        "nl_tests": 0.721868365180467,
+        "wrong_tests": 0.6411889596602972,
+        "inputs_only": 0.6900212314225053,
+        "unrelated_tests": 0.5902335456475584
+      },
+      "contrasts": [
+        {
+          "base": "unrelated_tests",
+          "target": "nl_tests",
+          "num_tasks": 157,
+          "num_clusters": 157,
+          "repeats_per_task": 3,
+          "cluster_field": "task_id",
+          "paired_difference": 0.1316348195329087,
+          "ci95": [
+            0.07218683651804671,
+            0.19320594479830147
+          ],
+          "per_repeat": {
+            "0": {
+              "n": 157,
+              "gains": 24,
+              "losses": 4,
+              "base_passed": 93,
+              "target_passed": 113,
+              "exact_mcnemar_p": 0.00017999112606048584,
+              "paired_difference": 0.12738853503184713
+            },
+            "1": {
+              "n": 157,
+              "gains": 25,
+              "losses": 3,
+              "base_passed": 93,
+              "target_passed": 115,
+              "exact_mcnemar_p": 2.744048833847046e-05,
+              "paired_difference": 0.14012738853503184
+            },
+            "2": {
+              "n": 157,
+              "gains": 25,
+              "losses": 5,
+              "base_passed": 92,
+              "target_passed": 112,
+              "exact_mcnemar_p": 0.0003249142318964005,
+              "paired_difference": 0.12738853503184713
+            }
+          }
+        },
+        {
+          "base": "nl_only",
+          "target": "unrelated_tests",
+          "num_tasks": 157,
+          "num_clusters": 157,
+          "repeats_per_task": 3,
+          "cluster_field": "task_id",
+          "paired_difference": -0.13800424628450106,
+          "ci95": [
+            -0.20806794055201697,
+            -0.07218683651804671
+          ],
+          "per_repeat": {
+            "0": {
+              "n": 157,
+              "gains": 6,
+              "losses": 28,
+              "base_passed": 115,
+              "target_passed": 93,
+              "exact_mcnemar_p": 0.00019512558355927467,
+              "paired_difference": -0.14012738853503184
+            },
+            "1": {
+              "n": 157,
+              "gains": 6,
+              "losses": 28,
+              "base_passed": 115,
+              "target_passed": 93,
+              "exact_mcnemar_p": 0.00019512558355927467,
+              "paired_difference": -0.14012738853503184
+            },
+            "2": {
+              "n": 157,
+              "gains": 6,
+              "losses": 27,
+              "base_passed": 113,
+              "target_passed": 92,
+              "exact_mcnemar_p": 0.0003240634687244892,
+              "paired_difference": -0.1337579617834395
+            }
+          }
+        }
+      ]
+    },
+    "deepseek/mbppplus": {
+      "tasks": 378,
+      "rates": {
+        "nl_only": 0.6040564373897708,
+        "nl_tests": 0.6931216931216931,
+        "wrong_tests": 0.6084656084656085,
+        "inputs_only": 0.6402116402116402,
+        "unrelated_tests": 0.5343915343915344
+      },
+      "contrasts": [
+        {
+          "base": "unrelated_tests",
+          "target": "nl_tests",
+          "num_tasks": 378,
+          "num_clusters": 378,
+          "repeats_per_task": 3,
+          "cluster_field": "task_id",
+          "paired_difference": 0.15873015873015872,
+          "ci95": [
+            0.11199294532627867,
+            0.2072310405643739
+          ],
+          "per_repeat": {
+            "0": {
+              "n": 378,
+              "gains": 79,
+              "losses": 18,
+              "base_passed": 201,
+              "target_passed": 262,
+              "exact_mcnemar_p": 2.72054329522114e-10,
+              "paired_difference": 0.16137566137566137
+            },
+            "1": {
+              "n": 378,
+              "gains": 79,
+              "losses": 18,
+              "base_passed": 202,
+              "target_passed": 263,
+              "exact_mcnemar_p": 2.72054329522114e-10,
+              "paired_difference": 0.16137566137566137
+            },
+            "2": {
+              "n": 378,
+              "gains": 77,
+              "losses": 19,
+              "base_passed": 203,
+              "target_passed": 261,
+              "exact_mcnemar_p": 1.8621521769948975e-09,
+              "paired_difference": 0.15343915343915343
+            }
+          }
+        },
+        {
+          "base": "nl_only",
+          "target": "unrelated_tests",
+          "num_tasks": 378,
+          "num_clusters": 378,
+          "repeats_per_task": 3,
+          "cluster_field": "task_id",
+          "paired_difference": -0.06966490299823634,
+          "ci95": [
+            -0.11552028218694886,
+            -0.024669312169312486
+          ],
+          "per_repeat": {
+            "0": {
+              "n": 378,
+              "gains": 29,
+              "losses": 56,
+              "base_passed": 228,
+              "target_passed": 201,
+              "exact_mcnemar_p": 0.004511640408355218,
+              "paired_difference": -0.07142857142857142
+            },
+            "1": {
+              "n": 378,
+              "gains": 28,
+              "losses": 55,
+              "base_passed": 229,
+              "target_passed": 202,
+              "exact_mcnemar_p": 0.004039208886669413,
+              "paired_difference": -0.07142857142857142
+            },
+            "2": {
+              "n": 378,
+              "gains": 30,
+              "losses": 55,
+              "base_passed": 228,
+              "target_passed": 203,
+              "exact_mcnemar_p": 0.008836205876094518,
+              "paired_difference": -0.06613756613756613
+            }
+          }
+        }
+      ]
+    },
+    "deepseek/livecodebench": {
+      "tasks": 175,
+      "rates": {
+        "nl_only": 0.14666666666666667,
+        "nl_tests": 0.14095238095238094,
+        "wrong_tests": 0.13142857142857142,
+        "inputs_only": 0.16380952380952382,
+        "unrelated_tests": 0.15428571428571428
+      },
+      "contrasts": [
+        {
+          "base": "unrelated_tests",
+          "target": "nl_tests",
+          "num_tasks": 175,
+          "num_clusters": 175,
+          "repeats_per_task": 3,
+          "cluster_field": "task_id",
+          "paired_difference": -0.013333333333333334,
+          "ci95": [
+            -0.04952380952380953,
+            0.02095238095238095
+          ],
+          "per_repeat": {
+            "0": {
+              "n": 175,
+              "gains": 4,
+              "losses": 6,
+              "base_passed": 27,
+              "target_passed": 25,
+              "exact_mcnemar_p": 0.75390625,
+              "paired_difference": -0.011428571428571429
+            },
+            "1": {
+              "n": 175,
+              "gains": 3,
+              "losses": 6,
+              "base_passed": 27,
+              "target_passed": 24,
+              "exact_mcnemar_p": 0.5078125,
+              "paired_difference": -0.017142857142857144
+            },
+            "2": {
+              "n": 175,
+              "gains": 4,
+              "losses": 6,
+              "base_passed": 27,
+              "target_passed": 25,
+              "exact_mcnemar_p": 0.75390625,
+              "paired_difference": -0.011428571428571429
+            }
+          }
+        },
+        {
+          "base": "nl_only",
+          "target": "unrelated_tests",
+          "num_tasks": 175,
+          "num_clusters": 175,
+          "repeats_per_task": 3,
+          "cluster_field": "task_id",
+          "paired_difference": 0.00761904761904762,
+          "ci95": [
+            -0.02666666666666667,
+            0.04380952380952381
+          ],
+          "per_repeat": {
+            "0": {
+              "n": 175,
+              "gains": 6,
+              "losses": 5,
+              "base_passed": 26,
+              "target_passed": 27,
+              "exact_mcnemar_p": 1.0,
+              "paired_difference": 0.005714285714285714
+            },
+            "1": {
+              "n": 175,
+              "gains": 6,
+              "losses": 5,
+              "base_passed": 26,
+              "target_passed": 27,
+              "exact_mcnemar_p": 1.0,
+              "paired_difference": 0.005714285714285714
+            },
+            "2": {
+              "n": 175,
+              "gains": 5,
+              "losses": 3,
+              "base_passed": 25,
+              "target_passed": 27,
+              "exact_mcnemar_p": 0.7265625,
+              "paired_difference": 0.011428571428571429
+            }
+          }
+        }
+      ]
+    },
+    "qwen35/humanevalplus": {
+      "tasks": 157,
+      "rates": {
+        "nl_only": 0.8280254777070064,
+        "nl_tests": 0.8365180467091295,
+        "wrong_tests": 0.7409766454352441,
+        "inputs_only": 0.8237791932059448,
+        "unrelated_tests": 0.692144373673036
+      },
+      "contrasts": [
+        {
+          "base": "unrelated_tests",
+          "target": "nl_tests",
+          "num_tasks": 157,
+          "num_clusters": 157,
+          "repeats_per_task": 3,
+          "cluster_field": "task_id",
+          "paired_difference": 0.14437367303609341,
+          "ci95": [
+            0.07218683651804671,
+            0.21449044585987187
+          ],
+          "per_repeat": {
+            "0": {
+              "n": 157,
+              "gains": 30,
+              "losses": 6,
+              "base_passed": 108,
+              "target_passed": 132,
+              "exact_mcnemar_p": 6.960169412195683e-05,
+              "paired_difference": 0.15286624203821655
+            },
+            "1": {
+              "n": 157,
+              "gains": 29,
+              "losses": 9,
+              "base_passed": 109,
+              "target_passed": 129,
+              "exact_mcnemar_p": 0.0016580525261815637,
+              "paired_difference": 0.12738853503184713
+            },
+            "2": {
+              "n": 157,
+              "gains": 31,
+              "losses": 7,
+              "base_passed": 109,
+              "target_passed": 133,
+              "exact_mcnemar_p": 0.00011616700794547796,
+              "paired_difference": 0.15286624203821655
+            }
+          }
+        },
+        {
+          "base": "nl_only",
+          "target": "unrelated_tests",
+          "num_tasks": 157,
+          "num_clusters": 157,
+          "repeats_per_task": 3,
+          "cluster_field": "task_id",
+          "paired_difference": -0.13588110403397027,
+          "ci95": [
+            -0.2038216560509554,
+            -0.07218683651804671
+          ],
+          "per_repeat": {
+            "0": {
+              "n": 157,
+              "gains": 5,
+              "losses": 27,
+              "base_passed": 130,
+              "target_passed": 108,
+              "exact_mcnemar_p": 0.00011307420209050179,
+              "paired_difference": -0.14012738853503184
+            },
+            "1": {
+              "n": 157,
+              "gains": 5,
+              "losses": 25,
+              "base_passed": 129,
+              "target_passed": 109,
+              "exact_mcnemar_p": 0.0003249142318964005,
+              "paired_difference": -0.12738853503184713
+            },
+            "2": {
+              "n": 157,
+              "gains": 5,
+              "losses": 27,
+              "base_passed": 131,
+              "target_passed": 109,
+              "exact_mcnemar_p": 0.00011307420209050179,
+              "paired_difference": -0.14012738853503184
+            }
+          }
+        }
+      ]
+    },
+    "qwen35/mbppplus": {
+      "tasks": 378,
+      "rates": {
+        "nl_only": 0.6622574955908289,
+        "nl_tests": 0.7610229276895943,
+        "wrong_tests": 0.6181657848324515,
+        "inputs_only": 0.6860670194003528,
+        "unrelated_tests": 0.4973544973544973
+      },
+      "contrasts": [
+        {
+          "base": "unrelated_tests",
+          "target": "nl_tests",
+          "num_tasks": 378,
+          "num_clusters": 378,
+          "repeats_per_task": 3,
+          "cluster_field": "task_id",
+          "paired_difference": 0.26366843033509696,
+          "ci95": [
+            0.21781305114638447,
+            0.31216931216931215
+          ],
+          "per_repeat": {
+            "0": {
+              "n": 378,
+              "gains": 109,
+              "losses": 8,
+              "base_passed": 185,
+              "target_passed": 286,
+              "exact_mcnemar_p": 8.845133711853035e-24,
+              "paired_difference": 0.2671957671957672
+            },
+            "1": {
+              "n": 378,
+              "gains": 111,
+              "losses": 10,
+              "base_passed": 187,
+              "target_passed": 288,
+              "exact_mcnemar_p": 1.0441291263150128e-22,
+              "paired_difference": 0.2671957671957672
+            },
+            "2": {
+              "n": 378,
+              "gains": 106,
+              "losses": 9,
+              "base_passed": 192,
+              "target_passed": 289,
+              "exact_mcnemar_p": 3.693156969798353e-22,
+              "paired_difference": 0.2566137566137566
+            }
+          }
+        },
+        {
+          "base": "nl_only",
+          "target": "unrelated_tests",
+          "num_tasks": 378,
+          "num_clusters": 378,
+          "repeats_per_task": 3,
+          "cluster_field": "task_id",
+          "paired_difference": -0.16490299823633156,
+          "ci95": [
+            -0.2107583774250441,
+            -0.12257495590828923
+          ],
+          "per_repeat": {
+            "0": {
+              "n": 378,
+              "gains": 15,
+              "losses": 81,
+              "base_passed": 251,
+              "target_passed": 185,
+              "exact_mcnemar_p": 4.026516223148182e-12,
+              "paired_difference": -0.1746031746031746
+            },
+            "1": {
+              "n": 378,
+              "gains": 16,
+              "losses": 80,
+              "base_passed": 251,
+              "target_passed": 187,
+              "exact_mcnemar_p": 2.0744109143956072e-11,
+              "paired_difference": -0.1693121693121693
+            },
+            "2": {
+              "n": 378,
+              "gains": 17,
+              "losses": 74,
+              "base_passed": 249,
+              "target_passed": 192,
+              "exact_mcnemar_p": 1.1934080595966506e-09,
+              "paired_difference": -0.15079365079365079
+            }
+          }
+        }
+      ]
+    },
+    "qwen35/livecodebench": {
+      "tasks": 175,
+      "rates": {
+        "nl_only": 0.3942857142857143,
+        "nl_tests": 0.4,
+        "wrong_tests": 0.3352380952380952,
+        "inputs_only": 0.38857142857142857,
+        "unrelated_tests": 0.37142857142857144
+      },
+      "contrasts": [
+        {
+          "base": "unrelated_tests",
+          "target": "nl_tests",
+          "num_tasks": 175,
+          "num_clusters": 175,
+          "repeats_per_task": 3,
+          "cluster_field": "task_id",
+          "paired_difference": 0.028571428571428577,
+          "ci95": [
+            -0.013333333333333332,
+            0.07047619047619048
+          ],
+          "per_repeat": {
+            "0": {
+              "n": 175,
+              "gains": 16,
+              "losses": 12,
+              "base_passed": 65,
+              "target_passed": 69,
+              "exact_mcnemar_p": 0.5715881884098053,
+              "paired_difference": 0.022857142857142857
+            },
+            "1": {
+              "n": 175,
+              "gains": 16,
+              "losses": 12,
+              "base_passed": 66,
+              "target_passed": 70,
+              "exact_mcnemar_p": 0.5715881884098053,
+              "paired_difference": 0.022857142857142857
+            },
+            "2": {
+              "n": 175,
+              "gains": 17,
+              "losses": 10,
+              "base_passed": 64,
+              "target_passed": 71,
+              "exact_mcnemar_p": 0.24778856337070465,
+              "paired_difference": 0.04
+            }
+          }
+        },
+        {
+          "base": "nl_only",
+          "target": "unrelated_tests",
+          "num_tasks": 175,
+          "num_clusters": 175,
+          "repeats_per_task": 3,
+          "cluster_field": "task_id",
+          "paired_difference": -0.022857142857142854,
+          "ci95": [
+            -0.06857142857142857,
+            0.022857142857142854
+          ],
+          "per_repeat": {
+            "0": {
+              "n": 175,
+              "gains": 16,
+              "losses": 17,
+              "base_passed": 66,
+              "target_passed": 65,
+              "exact_mcnemar_p": 1.0,
+              "paired_difference": -0.005714285714285714
+            },
+            "1": {
+              "n": 175,
+              "gains": 12,
+              "losses": 13,
+              "base_passed": 67,
+              "target_passed": 66,
+              "exact_mcnemar_p": 1.0,
+              "paired_difference": -0.005714285714285714
+            },
+            "2": {
+              "n": 175,
+              "gains": 10,
+              "losses": 20,
+              "base_passed": 74,
+              "target_passed": 64,
+              "exact_mcnemar_p": 0.09873714670538905,
+              "paired_difference": -0.05714285714285714
+            }
+          }
+        }
+      ]
+    },
+    "qwen38/humanevalplus": {
+      "tasks": 157,
+      "rates": {
+        "nl_only": 0.8959660297239915,
+        "nl_tests": 0.9426751592356688,
+        "wrong_tests": 0.643312101910828,
+        "inputs_only": 0.910828025477707,
+        "unrelated_tests": 0.692144373673036
+      },
+      "contrasts": [
+        {
+          "base": "unrelated_tests",
+          "target": "nl_tests",
+          "num_tasks": 157,
+          "num_clusters": 157,
+          "repeats_per_task": 3,
+          "cluster_field": "task_id",
+          "paired_difference": 0.25053078556263264,
+          "ci95": [
+            0.1889596602972399,
+            0.3163481953290871
+          ],
+          "per_repeat": {
+            "0": {
+              "n": 157,
+              "gains": 39,
+              "losses": 2,
+              "base_passed": 112,
+              "target_passed": 149,
+              "exact_mcnemar_p": 7.839844329282641e-10,
+              "paired_difference": 0.2356687898089172
+            },
+            "1": {
+              "n": 157,
+              "gains": 42,
+              "losses": 1,
+              "base_passed": 107,
+              "target_passed": 148,
+              "exact_mcnemar_p": 1.000444171950221e-11,
+              "paired_difference": 0.2611464968152866
+            },
+            "2": {
+              "n": 157,
+              "gains": 41,
+              "losses": 1,
+              "base_passed": 107,
+              "target_passed": 147,
+              "exact_mcnemar_p": 1.9554136088117957e-11,
+              "paired_difference": 0.25477707006369427
+            }
+          }
+        },
+        {
+          "base": "nl_only",
+          "target": "unrelated_tests",
+          "num_tasks": 157,
+          "num_clusters": 157,
+          "repeats_per_task": 3,
+          "cluster_field": "task_id",
+          "paired_difference": -0.20382165605095542,
+          "ci95": [
+            -0.26963906581740976,
+            -0.14225053078556263
+          ],
+          "per_repeat": {
+            "0": {
+              "n": 157,
+              "gains": 4,
+              "losses": 33,
+              "base_passed": 141,
+              "target_passed": 112,
+              "exact_mcnemar_p": 1.0843941709026694e-06,
+              "paired_difference": -0.18471337579617833
+            },
+            "1": {
+              "n": 157,
+              "gains": 2,
+              "losses": 36,
+              "base_passed": 141,
+              "target_passed": 107,
+              "exact_mcnemar_p": 5.398760549724102e-09,
+              "paired_difference": -0.21656050955414013
+            },
+            "2": {
+              "n": 157,
+              "gains": 3,
+              "losses": 36,
+              "base_passed": 140,
+              "target_passed": 107,
+              "exact_mcnemar_p": 3.608874976634979e-08,
+              "paired_difference": -0.21019108280254778
+            }
+          }
+        }
+      ]
+    },
+    "qwen38/mbppplus": {
+      "tasks": 378,
+      "rates": {
+        "nl_only": 0.708994708994709,
+        "nl_tests": 0.7954144620811288,
+        "wrong_tests": 0.47442680776014107,
+        "inputs_only": 0.7451499118165785,
+        "unrelated_tests": 0.4056437389770723
+      },
+      "contrasts": [
+        {
+          "base": "unrelated_tests",
+          "target": "nl_tests",
+          "num_tasks": 378,
+          "num_clusters": 378,
+          "repeats_per_task": 3,
+          "cluster_field": "task_id",
+          "paired_difference": 0.38977072310405636,
+          "ci95": [
+            0.3403880070546737,
+            0.43827160493827166
+          ],
+          "per_repeat": {
+            "0": {
+              "n": 378,
+              "gains": 150,
+              "losses": 4,
+              "base_passed": 155,
+              "target_passed": 301,
+              "exact_mcnemar_p": 2.0268000885785706e-39,
+              "paired_difference": 0.3862433862433862
+            },
+            "1": {
+              "n": 378,
+              "gains": 155,
+              "losses": 5,
+              "base_passed": 153,
+              "target_passed": 303,
+              "exact_mcnemar_p": 1.1595761117962353e-39,
+              "paired_difference": 0.3968253968253968
+            },
+            "2": {
+              "n": 378,
+              "gains": 150,
+              "losses": 4,
+              "base_passed": 152,
+              "target_passed": 298,
+              "exact_mcnemar_p": 2.0268000885785706e-39,
+              "paired_difference": 0.3862433862433862
+            }
+          }
+        },
+        {
+          "base": "nl_only",
+          "target": "unrelated_tests",
+          "num_tasks": 378,
+          "num_clusters": 378,
+          "repeats_per_task": 3,
+          "cluster_field": "task_id",
+          "paired_difference": -0.30335097001763667,
+          "ci95": [
+            -0.3527336860670193,
+            -0.25485008818342153
+          ],
+          "per_repeat": {
+            "0": {
+              "n": 378,
+              "gains": 8,
+              "losses": 120,
+              "base_passed": 267,
+              "target_passed": 155,
+              "exact_mcnemar_p": 8.992106506585248e-27,
+              "paired_difference": -0.2962962962962963
+            },
+            "1": {
+              "n": 378,
+              "gains": 11,
+              "losses": 127,
+              "base_passed": 269,
+              "target_passed": 153,
+              "exact_mcnemar_p": 3.60917488644731e-26,
+              "paired_difference": -0.30687830687830686
+            },
+            "2": {
+              "n": 378,
+              "gains": 10,
+              "losses": 126,
+              "base_passed": 268,
+              "target_passed": 152,
+              "exact_mcnemar_p": 1.0585075973100591e-26,
+              "paired_difference": -0.30687830687830686
+            }
+          }
+        }
+      ]
+    },
+    "qwen38/livecodebench": {
+      "tasks": 175,
+      "rates": {
+        "nl_only": 0.5314285714285715,
+        "nl_tests": 0.540952380952381,
+        "wrong_tests": 0.4342857142857143,
+        "inputs_only": 0.5257142857142857,
+        "unrelated_tests": 0.45714285714285713
+      },
+      "contrasts": [
+        {
+          "base": "unrelated_tests",
+          "target": "nl_tests",
+          "num_tasks": 175,
+          "num_clusters": 175,
+          "repeats_per_task": 3,
+          "cluster_field": "task_id",
+          "paired_difference": 0.08380952380952382,
+          "ci95": [
+            0.039999999999999994,
+            0.13142857142857142
+          ],
+          "per_repeat": {
+            "0": {
+              "n": 175,
+              "gains": 30,
+              "losses": 9,
+              "base_passed": 77,
+              "target_passed": 98,
+              "exact_mcnemar_p": 0.0010650196345523,
+              "paired_difference": 0.12
+            },
+            "1": {
+              "n": 175,
+              "gains": 22,
+              "losses": 9,
+              "base_passed": 84,
+              "target_passed": 97,
+              "exact_mcnemar_p": 0.029449373483657837,
+              "paired_difference": 0.07428571428571429
+            },
+            "2": {
+              "n": 175,
+              "gains": 23,
+              "losses": 13,
+              "base_passed": 79,
+              "target_passed": 89,
+              "exact_mcnemar_p": 0.13249816396273675,
+              "paired_difference": 0.05714285714285714
+            }
+          }
+        },
+        {
+          "base": "nl_only",
+          "target": "unrelated_tests",
+          "num_tasks": 175,
+          "num_clusters": 175,
+          "repeats_per_task": 3,
+          "cluster_field": "task_id",
+          "paired_difference": -0.07428571428571429,
+          "ci95": [
+            -0.12571428571428572,
+            -0.022857142857142857
+          ],
+          "per_repeat": {
+            "0": {
+              "n": 175,
+              "gains": 9,
+              "losses": 27,
+              "base_passed": 95,
+              "target_passed": 77,
+              "exact_mcnemar_p": 0.00393317302223295,
+              "paired_difference": -0.10285714285714286
+            },
+            "1": {
+              "n": 175,
+              "gains": 14,
+              "losses": 19,
+              "base_passed": 89,
+              "target_passed": 84,
+              "exact_mcnemar_p": 0.48685024166479707,
+              "paired_difference": -0.02857142857142857
+            },
+            "2": {
+              "n": 175,
+              "gains": 11,
+              "losses": 27,
+              "base_passed": 95,
+              "target_passed": 79,
+              "exact_mcnemar_p": 0.013852965261321515,
+              "paired_difference": -0.09142857142857143
+            }
+          }
+        }
+      ]
+    }
+  }
+}

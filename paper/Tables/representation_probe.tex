@@ -1,0 +1,23 @@
+\begin{table}[!htbp]
+\centering
+\caption{Prediction error on unseen rule families. Const. uses the training-family median for MAE and mean for MSE; Text uses output-text features; Repr. uses prompt-state differences. Lower is better. The MAE difference is Repr. minus Const., computed before rounding.}
+\label{tab:representation-probe}
+\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{ccrrrr}
+\toprule
+Model & Metric & Const. & Text & Repr. & MAE difference \\
+\midrule
+\multirow{2}{*}{Qwen2.5-7B} & MAE & 0.111 & 0.243 & 0.191 & $0.080$ \\
+ & MSE & 0.111 & 0.139 & 0.120 &  \\
+\multirow{2}{*}{Qwen3.5-9B} & MAE & 0.242 & 0.414 & 0.326 & $0.084$ \\
+ & MSE & 0.180 & 0.257 & 0.222 &  \\
+\multirow{2}{*}{Qwen3.6-27B} & MAE & 0.394 & 0.490 & 0.437 & $0.042$ \\
+ & MSE & 0.237 & 0.307 & 0.253 &  \\
+\multirow{2}{*}{Qwen3.8-27B} & MAE & 0.342 & 0.479 & 0.451 & $0.109$ \\
+ & MSE & 0.232 & 0.299 & 0.252 &  \\
+\multirow{2}{*}{DeepSeek-6.7B} & MAE & 0.111 & 0.232 & 0.225 & $0.114$ \\
+ & MSE & 0.105 & 0.137 & 0.138 & \\
+\bottomrule
+\end{tabular}
+\end{table}

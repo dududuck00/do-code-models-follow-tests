@@ -69,7 +69,7 @@ def load_tasks(path: str | Path, dataset_name: str = "") -> list[CodeTask]:
         if row.get("protocol_version") == "semantic-tests-1":
             tasks.append(CodeTask(
                 task_id=row["task_id"], prompt=row["prompt"],
-                tests=row["condition_tests"].get("nl_tests", row["condition_tests"].get("tests_a", [])),
+                tests=row["condition_tests"].get("nl_tests", row["condition_tests"].get("tests_a", row["condition_tests"].get("unrelated_tests", []))),
                 entry_point=row.get("entry_point", ""), canonical_code=row.get("reference_code", ""),
                 signature=row.get("signature", ""), dataset_name="controlled_" + row["source_dataset"],
                 metadata={"condition_prompts": row["condition_prompts"], "condition_tests": row["condition_tests"]},

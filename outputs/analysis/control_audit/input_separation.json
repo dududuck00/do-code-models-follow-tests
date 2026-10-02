@@ -1,0 +1,4306 @@
+{
+  "main": {
+    "tasks": 535,
+    "residual_overlap": 0,
+    "removed_inputs": 1569,
+    "details": [
+      {
+        "task_id": "humanevalplus::HumanEval/0",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 1003
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/1",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 84
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/2",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 971
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/3",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 900
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/4",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 785
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/5",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 153
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/6",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 66
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/7",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 179
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/8",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 1002
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/9",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 959
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/10",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 781
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/11",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 404
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/12",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 932
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/13",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 987
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/14",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 902
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/15",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 132
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/16",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 1001
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/17",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 215
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/18",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 1001
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/19",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 128
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/20",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 997
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/21",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 1001
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/22",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 953
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/23",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 963
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/24",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 166
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/25",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 142
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/26",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 862
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/27",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 972
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/28",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 860
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/29",
+        "candidate_and_development_inputs": 2,
+        "removed_from_official": 2,
+        "heldout_inputs": 996
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/30",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 999
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/31",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 156
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/33",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 959
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/34",
+        "candidate_and_development_inputs": 1,
+        "removed_from_official": 1,
+        "heldout_inputs": 903
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/35",
+        "candidate_and_development_inputs": 2,
+        "removed_from_official": 2,
+        "heldout_inputs": 938
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/36",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 149
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/37",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 974
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/39",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 9
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/40",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 985
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/41",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 76
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/42",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 998
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/43",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 980
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/44",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 464
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/45",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 999
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/46",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 129
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/47",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 997
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/48",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 992
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/49",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 986
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/51",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 1000
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/52",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 422
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/53",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 966
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/54",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 1003
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/55",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 42
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/56",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 1007
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/57",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 976
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/58",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 986
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/59",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 173
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/60",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 157
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/61",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 1005
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/62",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 950
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/63",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 62
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/64",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 996
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/65",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 984
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/66",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 1004
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/67",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 344
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/68",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 1004
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/69",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 1022
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/70",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 980
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/71",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 1003
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/72",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 694
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/73",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 967
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/74",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 982
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/75",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 92
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/76",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 901
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/78",
+        "candidate_and_development_inputs": 1,
+        "removed_from_official": 1,
+        "heldout_inputs": 1006
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/79",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 197
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/80",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 946
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/81",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 1003
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/82",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 974
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/83",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 106
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/84",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 213
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/85",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 995
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/86",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 1003
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/87",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 209
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/88",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 1002
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/89",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 1000
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/90",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 824
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/91",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 1003
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/92",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 1007
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/93",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 1002
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/94",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 1006
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/96",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 177
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/98",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 1003
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/99",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 711
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/100",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 109
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/101",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 1002
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/102",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 947
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/103",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 947
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/104",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 1000
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/105",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 1000
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/106",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 101
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/107",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 169
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/108",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 1005
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/109",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 954
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/110",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 1004
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/111",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 657
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/112",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 1002
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/113",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 983
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/114",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 1009
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/115",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 803
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/116",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 725
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/118",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 1010
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/119",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 657
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/120",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 1008
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/121",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 1002
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/122",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 1002
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/123",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 136
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/124",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 997
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/125",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 808
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/126",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 1008
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/127",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 0,
+        "heldout_inputs": 587
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/128",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 999
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/129",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 194
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/130",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 112
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/131",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 232
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/132",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 1007
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/133",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 1007
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/134",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 996
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/135",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 971
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/136",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 1006
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/137",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 1003
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/138",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 110
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/139",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 124
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/140",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 1001
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/141",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 1023
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/142",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 1005
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/143",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 1004
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/144",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 1007
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/145",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 1003
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/146",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 990
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/147",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 112
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/148",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 972
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/149",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 983
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/150",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 1005
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/151",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 1002
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/152",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 1000
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/153",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 200
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/154",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 1003
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/155",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 252
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/156",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 209
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/157",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 1006
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/158",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 904
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/159",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 979
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/160",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 449
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/161",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 987
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/162",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 1000
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/163",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 983
+      },
+      {
+        "task_id": "mbppplus::2",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 108
+      },
+      {
+        "task_id": "mbppplus::3",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 105
+      },
+      {
+        "task_id": "mbppplus::4",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 106
+      },
+      {
+        "task_id": "mbppplus::6",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 111
+      },
+      {
+        "task_id": "mbppplus::7",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 102
+      },
+      {
+        "task_id": "mbppplus::8",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 103
+      },
+      {
+        "task_id": "mbppplus::9",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 101
+      },
+      {
+        "task_id": "mbppplus::11",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 103
+      },
+      {
+        "task_id": "mbppplus::12",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 106
+      },
+      {
+        "task_id": "mbppplus::14",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 108
+      },
+      {
+        "task_id": "mbppplus::16",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 113
+      },
+      {
+        "task_id": "mbppplus::17",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 101
+      },
+      {
+        "task_id": "mbppplus::18",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 104
+      },
+      {
+        "task_id": "mbppplus::19",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 102
+      },
+      {
+        "task_id": "mbppplus::20",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 101
+      },
+      {
+        "task_id": "mbppplus::56",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 122
+      },
+      {
+        "task_id": "mbppplus::57",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 92
+      },
+      {
+        "task_id": "mbppplus::58",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 106
+      },
+      {
+        "task_id": "mbppplus::59",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 98
+      },
+      {
+        "task_id": "mbppplus::61",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 102
+      },
+      {
+        "task_id": "mbppplus::62",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 101
+      },
+      {
+        "task_id": "mbppplus::63",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 121
+      },
+      {
+        "task_id": "mbppplus::64",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 116
+      },
+      {
+        "task_id": "mbppplus::65",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 112
+      },
+      {
+        "task_id": "mbppplus::66",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 107
+      },
+      {
+        "task_id": "mbppplus::67",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 99
+      },
+      {
+        "task_id": "mbppplus::68",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 102
+      },
+      {
+        "task_id": "mbppplus::69",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 102
+      },
+      {
+        "task_id": "mbppplus::70",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 118
+      },
+      {
+        "task_id": "mbppplus::71",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 105
+      },
+      {
+        "task_id": "mbppplus::72",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 101
+      },
+      {
+        "task_id": "mbppplus::74",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 117
+      },
+      {
+        "task_id": "mbppplus::75",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 106
+      },
+      {
+        "task_id": "mbppplus::77",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 116
+      },
+      {
+        "task_id": "mbppplus::79",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 102
+      },
+      {
+        "task_id": "mbppplus::80",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 98
+      },
+      {
+        "task_id": "mbppplus::82",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 105
+      },
+      {
+        "task_id": "mbppplus::84",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 107
+      },
+      {
+        "task_id": "mbppplus::85",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 105
+      },
+      {
+        "task_id": "mbppplus::86",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 101
+      },
+      {
+        "task_id": "mbppplus::87",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 0,
+        "heldout_inputs": 110
+      },
+      {
+        "task_id": "mbppplus::88",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 103
+      },
+      {
+        "task_id": "mbppplus::89",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 102
+      },
+      {
+        "task_id": "mbppplus::90",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 103
+      },
+      {
+        "task_id": "mbppplus::91",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 102
+      },
+      {
+        "task_id": "mbppplus::92",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 101
+      },
+      {
+        "task_id": "mbppplus::93",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 108
+      },
+      {
+        "task_id": "mbppplus::94",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 106
+      },
+      {
+        "task_id": "mbppplus::95",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 105
+      },
+      {
+        "task_id": "mbppplus::96",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 100
+      },
+      {
+        "task_id": "mbppplus::97",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 103
+      },
+      {
+        "task_id": "mbppplus::98",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 0,
+        "heldout_inputs": 113
+      },
+      {
+        "task_id": "mbppplus::99",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 104
+      },
+      {
+        "task_id": "mbppplus::100",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 101
+      },
+      {
+        "task_id": "mbppplus::101",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 104
+      },
+      {
+        "task_id": "mbppplus::102",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 110
+      },
+      {
+        "task_id": "mbppplus::103",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 98
+      },
+      {
+        "task_id": "mbppplus::104",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 0,
+        "heldout_inputs": 124
+      },
+      {
+        "task_id": "mbppplus::105",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 103
+      },
+      {
+        "task_id": "mbppplus::106",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 115
+      },
+      {
+        "task_id": "mbppplus::108",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 118
+      },
+      {
+        "task_id": "mbppplus::109",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 102
+      },
+      {
+        "task_id": "mbppplus::111",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 110
+      },
+      {
+        "task_id": "mbppplus::113",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 121
+      },
+      {
+        "task_id": "mbppplus::116",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 109
+      },
+      {
+        "task_id": "mbppplus::118",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 106
+      },
+      {
+        "task_id": "mbppplus::119",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 107
+      },
+      {
+        "task_id": "mbppplus::120",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 113
+      },
+      {
+        "task_id": "mbppplus::123",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 100
+      },
+      {
+        "task_id": "mbppplus::124",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 0,
+        "heldout_inputs": 112
+      },
+      {
+        "task_id": "mbppplus::125",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 102
+      },
+      {
+        "task_id": "mbppplus::126",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 107
+      },
+      {
+        "task_id": "mbppplus::127",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 104
+      },
+      {
+        "task_id": "mbppplus::128",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 104
+      },
+      {
+        "task_id": "mbppplus::129",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 104
+      },
+      {
+        "task_id": "mbppplus::130",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 102
+      },
+      {
+        "task_id": "mbppplus::131",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 102
+      },
+      {
+        "task_id": "mbppplus::132",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 102
+      },
+      {
+        "task_id": "mbppplus::133",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 108
+      },
+      {
+        "task_id": "mbppplus::135",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 100
+      },
+      {
+        "task_id": "mbppplus::137",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 111
+      },
+      {
+        "task_id": "mbppplus::138",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 101
+      },
+      {
+        "task_id": "mbppplus::139",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 100
+      },
+      {
+        "task_id": "mbppplus::140",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 0,
+        "heldout_inputs": 112
+      },
+      {
+        "task_id": "mbppplus::141",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 108
+      },
+      {
+        "task_id": "mbppplus::142",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 110
+      },
+      {
+        "task_id": "mbppplus::145",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 0,
+        "heldout_inputs": 109
+      },
+      {
+        "task_id": "mbppplus::160",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 103
+      },
+      {
+        "task_id": "mbppplus::161",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 115
+      },
+      {
+        "task_id": "mbppplus::162",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 105
+      },
+      {
+        "task_id": "mbppplus::165",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 107
+      },
+      {
+        "task_id": "mbppplus::166",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 106
+      },
+      {
+        "task_id": "mbppplus::167",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 110
+      },
+      {
+        "task_id": "mbppplus::168",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 102
+      },
+      {
+        "task_id": "mbppplus::170",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 107
+      },
+      {
+        "task_id": "mbppplus::171",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 105
+      },
+      {
+        "task_id": "mbppplus::172",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 103
+      },
+      {
+        "task_id": "mbppplus::222",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 127
+      },
+      {
+        "task_id": "mbppplus::223",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 101
+      },
+      {
+        "task_id": "mbppplus::224",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 99
+      },
+      {
+        "task_id": "mbppplus::226",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 104
+      },
+      {
+        "task_id": "mbppplus::227",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 105
+      },
+      {
+        "task_id": "mbppplus::230",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 104
+      },
+      {
+        "task_id": "mbppplus::232",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 103
+      },
+      {
+        "task_id": "mbppplus::233",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 100
+      },
+      {
+        "task_id": "mbppplus::234",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 101
+      },
+      {
+        "task_id": "mbppplus::235",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 101
+      },
+      {
+        "task_id": "mbppplus::237",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 111
+      },
+      {
+        "task_id": "mbppplus::238",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 102
+      },
+      {
+        "task_id": "mbppplus::239",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 104
+      },
+      {
+        "task_id": "mbppplus::240",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 115
+      },
+      {
+        "task_id": "mbppplus::242",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 103
+      },
+      {
+        "task_id": "mbppplus::244",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 109
+      },
+      {
+        "task_id": "mbppplus::245",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 101
+      },
+      {
+        "task_id": "mbppplus::247",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 104
+      },
+      {
+        "task_id": "mbppplus::250",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 112
+      },
+      {
+        "task_id": "mbppplus::251",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 104
+      },
+      {
+        "task_id": "mbppplus::252",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 0,
+        "heldout_inputs": 123
+      },
+      {
+        "task_id": "mbppplus::253",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 114
+      },
+      {
+        "task_id": "mbppplus::255",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 109
+      },
+      {
+        "task_id": "mbppplus::256",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 99
+      },
+      {
+        "task_id": "mbppplus::257",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 109
+      },
+      {
+        "task_id": "mbppplus::259",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 101
+      },
+      {
+        "task_id": "mbppplus::260",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 101
+      },
+      {
+        "task_id": "mbppplus::261",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 101
+      },
+      {
+        "task_id": "mbppplus::262",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 109
+      },
+      {
+        "task_id": "mbppplus::264",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 100
+      },
+      {
+        "task_id": "mbppplus::265",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 111
+      },
+      {
+        "task_id": "mbppplus::266",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 104
+      },
+      {
+        "task_id": "mbppplus::267",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 114
+      },
+      {
+        "task_id": "mbppplus::268",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 103
+      },
+      {
+        "task_id": "mbppplus::269",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 79
+      },
+      {
+        "task_id": "mbppplus::270",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 105
+      },
+      {
+        "task_id": "mbppplus::271",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 105
+      },
+      {
+        "task_id": "mbppplus::272",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 115
+      },
+      {
+        "task_id": "mbppplus::273",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 103
+      },
+      {
+        "task_id": "mbppplus::274",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 100
+      },
+      {
+        "task_id": "mbppplus::276",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 105
+      },
+      {
+        "task_id": "mbppplus::277",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 106
+      },
+      {
+        "task_id": "mbppplus::278",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 121
+      },
+      {
+        "task_id": "mbppplus::279",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 110
+      },
+      {
+        "task_id": "mbppplus::280",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 108
+      },
+      {
+        "task_id": "mbppplus::281",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 103
+      },
+      {
+        "task_id": "mbppplus::282",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 104
+      },
+      {
+        "task_id": "mbppplus::283",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 104
+      },
+      {
+        "task_id": "mbppplus::284",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 103
+      },
+      {
+        "task_id": "mbppplus::285",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 101
+      },
+      {
+        "task_id": "mbppplus::286",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 102
+      },
+      {
+        "task_id": "mbppplus::287",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 103
+      },
+      {
+        "task_id": "mbppplus::290",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 109
+      },
+      {
+        "task_id": "mbppplus::292",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 100
+      },
+      {
+        "task_id": "mbppplus::293",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 103
+      },
+      {
+        "task_id": "mbppplus::294",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 108
+      },
+      {
+        "task_id": "mbppplus::296",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 106
+      },
+      {
+        "task_id": "mbppplus::297",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 117
+      },
+      {
+        "task_id": "mbppplus::299",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 105
+      },
+      {
+        "task_id": "mbppplus::300",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 111
+      },
+      {
+        "task_id": "mbppplus::301",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 2,
+        "heldout_inputs": 111
+      },
+      {
+        "task_id": "mbppplus::305",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 107
+      },
+      {
+        "task_id": "mbppplus::306",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 101
+      },
+      {
+        "task_id": "mbppplus::308",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 101
+      },
+      {
+        "task_id": "mbppplus::309",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 109
+      },
+      {
+        "task_id": "mbppplus::310",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 112
+      },
+      {
+        "task_id": "mbppplus::311",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 107
+      },
+      {
+        "task_id": "mbppplus::312",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 108
+      },
+      {
+        "task_id": "mbppplus::388",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 101
+      },
+      {
+        "task_id": "mbppplus::389",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 33
+      },
+      {
+        "task_id": "mbppplus::390",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 105
+      },
+      {
+        "task_id": "mbppplus::391",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 104
+      },
+      {
+        "task_id": "mbppplus::392",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 105
+      },
+      {
+        "task_id": "mbppplus::394",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 49
+      },
+      {
+        "task_id": "mbppplus::395",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 101
+      },
+      {
+        "task_id": "mbppplus::397",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 106
+      },
+      {
+        "task_id": "mbppplus::398",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 105
+      },
+      {
+        "task_id": "mbppplus::404",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 123
+      },
+      {
+        "task_id": "mbppplus::405",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 107
+      },
+      {
+        "task_id": "mbppplus::406",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 104
+      },
+      {
+        "task_id": "mbppplus::409",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 111
+      },
+      {
+        "task_id": "mbppplus::410",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 104
+      },
+      {
+        "task_id": "mbppplus::412",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 109
+      },
+      {
+        "task_id": "mbppplus::413",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 105
+      },
+      {
+        "task_id": "mbppplus::414",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 104
+      },
+      {
+        "task_id": "mbppplus::415",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 113
+      },
+      {
+        "task_id": "mbppplus::418",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 110
+      },
+      {
+        "task_id": "mbppplus::419",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 107
+      },
+      {
+        "task_id": "mbppplus::420",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 102
+      },
+      {
+        "task_id": "mbppplus::421",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 112
+      },
+      {
+        "task_id": "mbppplus::422",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 100
+      },
+      {
+        "task_id": "mbppplus::424",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 120
+      },
+      {
+        "task_id": "mbppplus::425",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 108
+      },
+      {
+        "task_id": "mbppplus::426",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 103
+      },
+      {
+        "task_id": "mbppplus::427",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 112
+      },
+      {
+        "task_id": "mbppplus::428",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 103
+      },
+      {
+        "task_id": "mbppplus::429",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 113
+      },
+      {
+        "task_id": "mbppplus::430",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 102
+      },
+      {
+        "task_id": "mbppplus::432",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 106
+      },
+      {
+        "task_id": "mbppplus::433",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 103
+      },
+      {
+        "task_id": "mbppplus::435",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 102
+      },
+      {
+        "task_id": "mbppplus::436",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 111
+      },
+      {
+        "task_id": "mbppplus::437",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 103
+      },
+      {
+        "task_id": "mbppplus::439",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 104
+      },
+      {
+        "task_id": "mbppplus::440",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 103
+      },
+      {
+        "task_id": "mbppplus::441",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 121
+      },
+      {
+        "task_id": "mbppplus::445",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 107
+      },
+      {
+        "task_id": "mbppplus::446",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 104
+      },
+      {
+        "task_id": "mbppplus::447",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 105
+      },
+      {
+        "task_id": "mbppplus::448",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 100
+      },
+      {
+        "task_id": "mbppplus::450",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 105
+      },
+      {
+        "task_id": "mbppplus::451",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 109
+      },
+      {
+        "task_id": "mbppplus::453",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 104
+      },
+      {
+        "task_id": "mbppplus::454",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 103
+      },
+      {
+        "task_id": "mbppplus::455",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 10
+      },
+      {
+        "task_id": "mbppplus::456",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 106
+      },
+      {
+        "task_id": "mbppplus::457",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 121
+      },
+      {
+        "task_id": "mbppplus::458",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 103
+      },
+      {
+        "task_id": "mbppplus::459",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 103
+      },
+      {
+        "task_id": "mbppplus::460",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 120
+      },
+      {
+        "task_id": "mbppplus::462",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 104
+      },
+      {
+        "task_id": "mbppplus::463",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 105
+      },
+      {
+        "task_id": "mbppplus::465",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 110
+      },
+      {
+        "task_id": "mbppplus::468",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 110
+      },
+      {
+        "task_id": "mbppplus::470",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 109
+      },
+      {
+        "task_id": "mbppplus::471",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 101
+      },
+      {
+        "task_id": "mbppplus::472",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 101
+      },
+      {
+        "task_id": "mbppplus::473",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 108
+      },
+      {
+        "task_id": "mbppplus::474",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 104
+      },
+      {
+        "task_id": "mbppplus::475",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 111
+      },
+      {
+        "task_id": "mbppplus::476",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 101
+      },
+      {
+        "task_id": "mbppplus::477",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 110
+      },
+      {
+        "task_id": "mbppplus::478",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 104
+      },
+      {
+        "task_id": "mbppplus::479",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 103
+      },
+      {
+        "task_id": "mbppplus::554",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 104
+      },
+      {
+        "task_id": "mbppplus::555",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 100
+      },
+      {
+        "task_id": "mbppplus::556",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 103
+      },
+      {
+        "task_id": "mbppplus::557",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 102
+      },
+      {
+        "task_id": "mbppplus::558",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 137
+      },
+      {
+        "task_id": "mbppplus::559",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 109
+      },
+      {
+        "task_id": "mbppplus::560",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 129
+      },
+      {
+        "task_id": "mbppplus::562",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 106
+      },
+      {
+        "task_id": "mbppplus::563",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 106
+      },
+      {
+        "task_id": "mbppplus::564",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 109
+      },
+      {
+        "task_id": "mbppplus::565",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 109
+      },
+      {
+        "task_id": "mbppplus::566",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 113
+      },
+      {
+        "task_id": "mbppplus::567",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 105
+      },
+      {
+        "task_id": "mbppplus::568",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 98
+      },
+      {
+        "task_id": "mbppplus::569",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 104
+      },
+      {
+        "task_id": "mbppplus::572",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 106
+      },
+      {
+        "task_id": "mbppplus::573",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 101
+      },
+      {
+        "task_id": "mbppplus::576",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 110
+      },
+      {
+        "task_id": "mbppplus::577",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 105
+      },
+      {
+        "task_id": "mbppplus::578",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 110
+      },
+      {
+        "task_id": "mbppplus::579",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 129
+      },
+      {
+        "task_id": "mbppplus::580",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 104
+      },
+      {
+        "task_id": "mbppplus::581",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 103
+      },
+      {
+        "task_id": "mbppplus::583",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 15
+      },
+      {
+        "task_id": "mbppplus::585",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 102
+      },
+      {
+        "task_id": "mbppplus::586",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 104
+      },
+      {
+        "task_id": "mbppplus::587",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 112
+      },
+      {
+        "task_id": "mbppplus::588",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 101
+      },
+      {
+        "task_id": "mbppplus::589",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 103
+      },
+      {
+        "task_id": "mbppplus::590",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 101
+      },
+      {
+        "task_id": "mbppplus::591",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 105
+      },
+      {
+        "task_id": "mbppplus::592",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 100
+      },
+      {
+        "task_id": "mbppplus::593",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 101
+      },
+      {
+        "task_id": "mbppplus::594",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 106
+      },
+      {
+        "task_id": "mbppplus::596",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 2,
+        "heldout_inputs": 122
+      },
+      {
+        "task_id": "mbppplus::597",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 104
+      },
+      {
+        "task_id": "mbppplus::598",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 101
+      },
+      {
+        "task_id": "mbppplus::599",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 87
+      },
+      {
+        "task_id": "mbppplus::600",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 104
+      },
+      {
+        "task_id": "mbppplus::602",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 105
+      },
+      {
+        "task_id": "mbppplus::603",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 103
+      },
+      {
+        "task_id": "mbppplus::604",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 113
+      },
+      {
+        "task_id": "mbppplus::605",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 105
+      },
+      {
+        "task_id": "mbppplus::606",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 103
+      },
+      {
+        "task_id": "mbppplus::607",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 101
+      },
+      {
+        "task_id": "mbppplus::608",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 102
+      },
+      {
+        "task_id": "mbppplus::610",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 105
+      },
+      {
+        "task_id": "mbppplus::611",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 101
+      },
+      {
+        "task_id": "mbppplus::612",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 2,
+        "heldout_inputs": 105
+      },
+      {
+        "task_id": "mbppplus::614",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 110
+      },
+      {
+        "task_id": "mbppplus::615",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 147
+      },
+      {
+        "task_id": "mbppplus::616",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 105
+      },
+      {
+        "task_id": "mbppplus::618",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 103
+      },
+      {
+        "task_id": "mbppplus::619",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 104
+      },
+      {
+        "task_id": "mbppplus::620",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 106
+      },
+      {
+        "task_id": "mbppplus::622",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 111
+      },
+      {
+        "task_id": "mbppplus::623",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 107
+      },
+      {
+        "task_id": "mbppplus::624",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 109
+      },
+      {
+        "task_id": "mbppplus::626",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 103
+      },
+      {
+        "task_id": "mbppplus::628",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 117
+      },
+      {
+        "task_id": "mbppplus::629",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 103
+      },
+      {
+        "task_id": "mbppplus::630",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 120
+      },
+      {
+        "task_id": "mbppplus::631",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 106
+      },
+      {
+        "task_id": "mbppplus::632",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 106
+      },
+      {
+        "task_id": "mbppplus::633",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 103
+      },
+      {
+        "task_id": "mbppplus::635",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 1
+      },
+      {
+        "task_id": "mbppplus::637",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 103
+      },
+      {
+        "task_id": "mbppplus::638",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 102
+      },
+      {
+        "task_id": "mbppplus::639",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 111
+      },
+      {
+        "task_id": "mbppplus::641",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 100
+      },
+      {
+        "task_id": "mbppplus::643",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 103
+      },
+      {
+        "task_id": "mbppplus::644",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 102
+      },
+      {
+        "task_id": "mbppplus::720",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 106
+      },
+      {
+        "task_id": "mbppplus::721",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 102
+      },
+      {
+        "task_id": "mbppplus::722",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 109
+      },
+      {
+        "task_id": "mbppplus::723",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 2,
+        "heldout_inputs": 111
+      },
+      {
+        "task_id": "mbppplus::724",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 106
+      },
+      {
+        "task_id": "mbppplus::725",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 113
+      },
+      {
+        "task_id": "mbppplus::726",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 107
+      },
+      {
+        "task_id": "mbppplus::728",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 109
+      },
+      {
+        "task_id": "mbppplus::730",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 109
+      },
+      {
+        "task_id": "mbppplus::731",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 103
+      },
+      {
+        "task_id": "mbppplus::732",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 112
+      },
+      {
+        "task_id": "mbppplus::733",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 2,
+        "heldout_inputs": 103
+      },
+      {
+        "task_id": "mbppplus::734",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 1
+      },
+      {
+        "task_id": "mbppplus::735",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 108
+      },
+      {
+        "task_id": "mbppplus::736",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 104
+      },
+      {
+        "task_id": "mbppplus::737",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 107
+      },
+      {
+        "task_id": "mbppplus::739",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 100
+      },
+      {
+        "task_id": "mbppplus::740",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 66
+      },
+      {
+        "task_id": "mbppplus::741",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 101
+      },
+      {
+        "task_id": "mbppplus::742",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 104
+      },
+      {
+        "task_id": "mbppplus::743",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 115
+      },
+      {
+        "task_id": "mbppplus::744",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 128
+      },
+      {
+        "task_id": "mbppplus::745",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 104
+      },
+      {
+        "task_id": "mbppplus::748",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 110
+      },
+      {
+        "task_id": "mbppplus::749",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 104
+      },
+      {
+        "task_id": "mbppplus::750",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 102
+      },
+      {
+        "task_id": "mbppplus::751",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 105
+      },
+      {
+        "task_id": "mbppplus::752",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 102
+      },
+      {
+        "task_id": "mbppplus::753",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 103
+      },
+      {
+        "task_id": "mbppplus::754",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 116
+      },
+      {
+        "task_id": "mbppplus::755",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 104
+      },
+      {
+        "task_id": "mbppplus::757",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 110
+      },
+      {
+        "task_id": "mbppplus::758",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 113
+      },
+      {
+        "task_id": "mbppplus::759",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 111
+      },
+      {
+        "task_id": "mbppplus::760",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 105
+      },
+      {
+        "task_id": "mbppplus::762",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 10
+      },
+      {
+        "task_id": "mbppplus::763",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 101
+      },
+      {
+        "task_id": "mbppplus::764",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 105
+      },
+      {
+        "task_id": "mbppplus::765",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 106
+      },
+      {
+        "task_id": "mbppplus::766",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 112
+      },
+      {
+        "task_id": "mbppplus::767",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 104
+      },
+      {
+        "task_id": "mbppplus::769",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 109
+      },
+      {
+        "task_id": "mbppplus::770",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 98
+      },
+      {
+        "task_id": "mbppplus::771",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 103
+      },
+      {
+        "task_id": "mbppplus::772",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 106
+      },
+      {
+        "task_id": "mbppplus::773",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 102
+      },
+      {
+        "task_id": "mbppplus::775",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 102
+      },
+      {
+        "task_id": "mbppplus::777",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 110
+      },
+      {
+        "task_id": "mbppplus::778",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 107
+      },
+      {
+        "task_id": "mbppplus::780",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 120
+      },
+      {
+        "task_id": "mbppplus::781",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 112
+      },
+      {
+        "task_id": "mbppplus::782",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 105
+      },
+      {
+        "task_id": "mbppplus::784",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 102
+      },
+      {
+        "task_id": "mbppplus::785",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 118
+      },
+      {
+        "task_id": "mbppplus::786",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 103
+      },
+      {
+        "task_id": "mbppplus::787",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 102
+      },
+      {
+        "task_id": "mbppplus::788",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 101
+      },
+      {
+        "task_id": "mbppplus::790",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 111
+      },
+      {
+        "task_id": "mbppplus::791",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 109
+      },
+      {
+        "task_id": "mbppplus::792",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 115
+      },
+      {
+        "task_id": "mbppplus::793",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 2,
+        "heldout_inputs": 1
+      },
+      {
+        "task_id": "mbppplus::794",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 103
+      },
+      {
+        "task_id": "mbppplus::796",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 103
+      },
+      {
+        "task_id": "mbppplus::797",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 102
+      },
+      {
+        "task_id": "mbppplus::798",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 101
+      },
+      {
+        "task_id": "mbppplus::799",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 102
+      },
+      {
+        "task_id": "mbppplus::800",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 121
+      },
+      {
+        "task_id": "mbppplus::801",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 110
+      },
+      {
+        "task_id": "mbppplus::803",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 107
+      },
+      {
+        "task_id": "mbppplus::804",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 109
+      },
+      {
+        "task_id": "mbppplus::805",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 125
+      },
+      {
+        "task_id": "mbppplus::806",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 102
+      },
+      {
+        "task_id": "mbppplus::807",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 105
+      },
+      {
+        "task_id": "mbppplus::808",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 121
+      },
+      {
+        "task_id": "mbppplus::809",
+        "candidate_and_development_inputs": 3,
+        "removed_from_official": 3,
+        "heldout_inputs": 122
+      }
+    ]
+  },
+  "quality": {
+    "tasks": 180,
+    "residual_overlap": 0,
+    "removed_inputs": 991,
+    "details": [
+      {
+        "task_id": "humanevalplus::HumanEval/25",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 8,
+        "heldout_inputs": 137
+      },
+      {
+        "task_id": "mbppplus::101",
+        "candidate_and_development_inputs": 14,
+        "removed_from_official": 3,
+        "heldout_inputs": 104
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/57",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 8,
+        "heldout_inputs": 971
+      },
+      {
+        "task_id": "mbppplus::422",
+        "candidate_and_development_inputs": 14,
+        "removed_from_official": 13,
+        "heldout_inputs": 90
+      },
+      {
+        "task_id": "mbppplus::428",
+        "candidate_and_development_inputs": 14,
+        "removed_from_official": 4,
+        "heldout_inputs": 102
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/47",
+        "candidate_and_development_inputs": 14,
+        "removed_from_official": 3,
+        "heldout_inputs": 997
+      },
+      {
+        "task_id": "mbppplus::129",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 5,
+        "heldout_inputs": 102
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/89",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 9,
+        "heldout_inputs": 994
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/80",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 8,
+        "heldout_inputs": 941
+      },
+      {
+        "task_id": "mbppplus::74",
+        "candidate_and_development_inputs": 13,
+        "removed_from_official": 5,
+        "heldout_inputs": 115
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/104",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 4,
+        "heldout_inputs": 999
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/31",
+        "candidate_and_development_inputs": 12,
+        "removed_from_official": 7,
+        "heldout_inputs": 152
+      },
+      {
+        "task_id": "mbppplus::392",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 7,
+        "heldout_inputs": 101
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/46",
+        "candidate_and_development_inputs": 14,
+        "removed_from_official": 14,
+        "heldout_inputs": 118
+      },
+      {
+        "task_id": "mbppplus::583",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 15,
+        "heldout_inputs": 3
+      },
+      {
+        "task_id": "mbppplus::71",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 3,
+        "heldout_inputs": 105
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/144",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 4,
+        "heldout_inputs": 1006
+      },
+      {
+        "task_id": "mbppplus::256",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 10,
+        "heldout_inputs": 92
+      },
+      {
+        "task_id": "mbppplus::757",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 5,
+        "heldout_inputs": 108
+      },
+      {
+        "task_id": "mbppplus::453",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 10,
+        "heldout_inputs": 97
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/76",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 11,
+        "heldout_inputs": 893
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/88",
+        "candidate_and_development_inputs": 14,
+        "removed_from_official": 6,
+        "heldout_inputs": 999
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/120",
+        "candidate_and_development_inputs": 14,
+        "removed_from_official": 5,
+        "heldout_inputs": 1006
+      },
+      {
+        "task_id": "mbppplus::79",
+        "candidate_and_development_inputs": 14,
+        "removed_from_official": 4,
+        "heldout_inputs": 101
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/99",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 7,
+        "heldout_inputs": 707
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/65",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 5,
+        "heldout_inputs": 982
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/68",
+        "candidate_and_development_inputs": 14,
+        "removed_from_official": 8,
+        "heldout_inputs": 999
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/40",
+        "candidate_and_development_inputs": 14,
+        "removed_from_official": 7,
+        "heldout_inputs": 981
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/135",
+        "candidate_and_development_inputs": 14,
+        "removed_from_official": 8,
+        "heldout_inputs": 966
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/75",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 11,
+        "heldout_inputs": 84
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/108",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 5,
+        "heldout_inputs": 1003
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/163",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 8,
+        "heldout_inputs": 978
+      },
+      {
+        "task_id": "mbppplus::622",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 5,
+        "heldout_inputs": 109
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/49",
+        "candidate_and_development_inputs": 13,
+        "removed_from_official": 9,
+        "heldout_inputs": 980
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/13",
+        "candidate_and_development_inputs": 13,
+        "removed_from_official": 5,
+        "heldout_inputs": 985
+      },
+      {
+        "task_id": "mbppplus::806",
+        "candidate_and_development_inputs": 13,
+        "removed_from_official": 5,
+        "heldout_inputs": 100
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/138",
+        "candidate_and_development_inputs": 13,
+        "removed_from_official": 13,
+        "heldout_inputs": 100
+      },
+      {
+        "task_id": "mbppplus::426",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 3,
+        "heldout_inputs": 103
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/93",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 5,
+        "heldout_inputs": 1000
+      },
+      {
+        "task_id": "mbppplus::782",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 4,
+        "heldout_inputs": 104
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/150",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 4,
+        "heldout_inputs": 1004
+      },
+      {
+        "task_id": "mbppplus::162",
+        "candidate_and_development_inputs": 14,
+        "removed_from_official": 10,
+        "heldout_inputs": 98
+      },
+      {
+        "task_id": "mbppplus::20",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 3,
+        "heldout_inputs": 101
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/148",
+        "candidate_and_development_inputs": 14,
+        "removed_from_official": 8,
+        "heldout_inputs": 967
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/121",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 4,
+        "heldout_inputs": 1001
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/116",
+        "candidate_and_development_inputs": 14,
+        "removed_from_official": 5,
+        "heldout_inputs": 723
+      },
+      {
+        "task_id": "mbppplus::126",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 5,
+        "heldout_inputs": 105
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/87",
+        "candidate_and_development_inputs": 14,
+        "removed_from_official": 4,
+        "heldout_inputs": 208
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/67",
+        "candidate_and_development_inputs": 12,
+        "removed_from_official": 5,
+        "heldout_inputs": 342
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/160",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 3,
+        "heldout_inputs": 449
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/157",
+        "candidate_and_development_inputs": 13,
+        "removed_from_official": 6,
+        "heldout_inputs": 1003
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/73",
+        "candidate_and_development_inputs": 14,
+        "removed_from_official": 7,
+        "heldout_inputs": 963
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/128",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 6,
+        "heldout_inputs": 996
+      },
+      {
+        "task_id": "mbppplus::3",
+        "candidate_and_development_inputs": 13,
+        "removed_from_official": 9,
+        "heldout_inputs": 99
+      },
+      {
+        "task_id": "mbppplus::75",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 3,
+        "heldout_inputs": 106
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/43",
+        "candidate_and_development_inputs": 14,
+        "removed_from_official": 7,
+        "heldout_inputs": 976
+      },
+      {
+        "task_id": "mbppplus::470",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 5,
+        "heldout_inputs": 107
+      },
+      {
+        "task_id": "mbppplus::763",
+        "candidate_and_development_inputs": 14,
+        "removed_from_official": 3,
+        "heldout_inputs": 101
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/127",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 0,
+        "heldout_inputs": 587
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/131",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 11,
+        "heldout_inputs": 224
+      },
+      {
+        "task_id": "mbppplus::138",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 6,
+        "heldout_inputs": 98
+      },
+      {
+        "task_id": "mbppplus::244",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 8,
+        "heldout_inputs": 104
+      },
+      {
+        "task_id": "mbppplus::599",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 12,
+        "heldout_inputs": 78
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/62",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 4,
+        "heldout_inputs": 949
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/102",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 11,
+        "heldout_inputs": 939
+      },
+      {
+        "task_id": "mbppplus::166",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 4,
+        "heldout_inputs": 105
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/151",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 5,
+        "heldout_inputs": 1000
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/85",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 8,
+        "heldout_inputs": 990
+      },
+      {
+        "task_id": "mbppplus::765",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 15,
+        "heldout_inputs": 94
+      },
+      {
+        "task_id": "mbppplus::270",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 6,
+        "heldout_inputs": 102
+      },
+      {
+        "task_id": "mbppplus::406",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 9,
+        "heldout_inputs": 98
+      },
+      {
+        "task_id": "mbppplus::240",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 4,
+        "heldout_inputs": 114
+      },
+      {
+        "task_id": "mbppplus::803",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 4,
+        "heldout_inputs": 106
+      },
+      {
+        "task_id": "mbppplus::247",
+        "candidate_and_development_inputs": 13,
+        "removed_from_official": 3,
+        "heldout_inputs": 104
+      },
+      {
+        "task_id": "mbppplus::100",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 8,
+        "heldout_inputs": 96
+      },
+      {
+        "task_id": "mbppplus::412",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 4,
+        "heldout_inputs": 108
+      },
+      {
+        "task_id": "mbppplus::793",
+        "candidate_and_development_inputs": 12,
+        "removed_from_official": 2,
+        "heldout_inputs": 1
+      },
+      {
+        "task_id": "mbppplus::597",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 3,
+        "heldout_inputs": 104
+      },
+      {
+        "task_id": "mbppplus::223",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 3,
+        "heldout_inputs": 101
+      },
+      {
+        "task_id": "mbppplus::581",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 4,
+        "heldout_inputs": 102
+      },
+      {
+        "task_id": "mbppplus::790",
+        "candidate_and_development_inputs": 13,
+        "removed_from_official": 5,
+        "heldout_inputs": 109
+      },
+      {
+        "task_id": "mbppplus::804",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 3,
+        "heldout_inputs": 109
+      },
+      {
+        "task_id": "mbppplus::610",
+        "candidate_and_development_inputs": 13,
+        "removed_from_official": 3,
+        "heldout_inputs": 105
+      },
+      {
+        "task_id": "mbppplus::767",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 4,
+        "heldout_inputs": 103
+      },
+      {
+        "task_id": "mbppplus::755",
+        "candidate_and_development_inputs": 14,
+        "removed_from_official": 4,
+        "heldout_inputs": 103
+      },
+      {
+        "task_id": "mbppplus::472",
+        "candidate_and_development_inputs": 14,
+        "removed_from_official": 3,
+        "heldout_inputs": 101
+      },
+      {
+        "task_id": "mbppplus::448",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 9,
+        "heldout_inputs": 94
+      },
+      {
+        "task_id": "mbppplus::629",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 4,
+        "heldout_inputs": 102
+      },
+      {
+        "task_id": "mbppplus::264",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 14,
+        "heldout_inputs": 89
+      },
+      {
+        "task_id": "mbppplus::807",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 3,
+        "heldout_inputs": 105
+      },
+      {
+        "task_id": "mbppplus::77",
+        "candidate_and_development_inputs": 14,
+        "removed_from_official": 6,
+        "heldout_inputs": 113
+      },
+      {
+        "task_id": "mbppplus::784",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 3,
+        "heldout_inputs": 102
+      },
+      {
+        "task_id": "mbppplus::644",
+        "candidate_and_development_inputs": 12,
+        "removed_from_official": 3,
+        "heldout_inputs": 102
+      },
+      {
+        "task_id": "mbppplus::72",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 12,
+        "heldout_inputs": 92
+      },
+      {
+        "task_id": "mbppplus::602",
+        "candidate_and_development_inputs": 14,
+        "removed_from_official": 5,
+        "heldout_inputs": 103
+      },
+      {
+        "task_id": "mbppplus::753",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 3,
+        "heldout_inputs": 103
+      },
+      {
+        "task_id": "mbppplus::296",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 3,
+        "heldout_inputs": 106
+      },
+      {
+        "task_id": "mbppplus::589",
+        "candidate_and_development_inputs": 14,
+        "removed_from_official": 6,
+        "heldout_inputs": 100
+      },
+      {
+        "task_id": "mbppplus::775",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 3,
+        "heldout_inputs": 102
+      },
+      {
+        "task_id": "mbppplus::556",
+        "candidate_and_development_inputs": 14,
+        "removed_from_official": 5,
+        "heldout_inputs": 101
+      },
+      {
+        "task_id": "mbppplus::103",
+        "candidate_and_development_inputs": 14,
+        "removed_from_official": 14,
+        "heldout_inputs": 87
+      },
+      {
+        "task_id": "mbppplus::781",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 14,
+        "heldout_inputs": 101
+      },
+      {
+        "task_id": "mbppplus::463",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 3,
+        "heldout_inputs": 105
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/105",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 3,
+        "heldout_inputs": 1000
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/100",
+        "candidate_and_development_inputs": 13,
+        "removed_from_official": 13,
+        "heldout_inputs": 99
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/96",
+        "candidate_and_development_inputs": 11,
+        "removed_from_official": 11,
+        "heldout_inputs": 169
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/92",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 6,
+        "heldout_inputs": 1004
+      },
+      {
+        "task_id": "mbppplus::743",
+        "candidate_and_development_inputs": 14,
+        "removed_from_official": 4,
+        "heldout_inputs": 114
+      },
+      {
+        "task_id": "mbppplus::733",
+        "candidate_and_development_inputs": 13,
+        "removed_from_official": 3,
+        "heldout_inputs": 102
+      },
+      {
+        "task_id": "mbppplus::68",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 4,
+        "heldout_inputs": 101
+      },
+      {
+        "task_id": "mbppplus::69",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 5,
+        "heldout_inputs": 100
+      },
+      {
+        "task_id": "mbppplus::564",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 3,
+        "heldout_inputs": 109
+      },
+      {
+        "task_id": "mbppplus::450",
+        "candidate_and_development_inputs": 13,
+        "removed_from_official": 4,
+        "heldout_inputs": 104
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/140",
+        "candidate_and_development_inputs": 14,
+        "removed_from_official": 7,
+        "heldout_inputs": 997
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/159",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 8,
+        "heldout_inputs": 974
+      },
+      {
+        "task_id": "mbppplus::433",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 3,
+        "heldout_inputs": 103
+      },
+      {
+        "task_id": "mbppplus::631",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 4,
+        "heldout_inputs": 105
+      },
+      {
+        "task_id": "mbppplus::167",
+        "candidate_and_development_inputs": 13,
+        "removed_from_official": 8,
+        "heldout_inputs": 105
+      },
+      {
+        "task_id": "mbppplus::308",
+        "candidate_and_development_inputs": 14,
+        "removed_from_official": 3,
+        "heldout_inputs": 101
+      },
+      {
+        "task_id": "mbppplus::771",
+        "candidate_and_development_inputs": 13,
+        "removed_from_official": 3,
+        "heldout_inputs": 103
+      },
+      {
+        "task_id": "mbppplus::92",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 3,
+        "heldout_inputs": 101
+      },
+      {
+        "task_id": "mbppplus::119",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 3,
+        "heldout_inputs": 107
+      },
+      {
+        "task_id": "mbppplus::133",
+        "candidate_and_development_inputs": 14,
+        "removed_from_official": 4,
+        "heldout_inputs": 107
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/11",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 8,
+        "heldout_inputs": 399
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/64",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 7,
+        "heldout_inputs": 992
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/133",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 4,
+        "heldout_inputs": 1006
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/90",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 4,
+        "heldout_inputs": 823
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/141",
+        "candidate_and_development_inputs": 14,
+        "removed_from_official": 3,
+        "heldout_inputs": 1023
+      },
+      {
+        "task_id": "mbppplus::473",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 4,
+        "heldout_inputs": 107
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/152",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 4,
+        "heldout_inputs": 999
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/122",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 4,
+        "heldout_inputs": 1001
+      },
+      {
+        "task_id": "mbppplus::66",
+        "candidate_and_development_inputs": 14,
+        "removed_from_official": 4,
+        "heldout_inputs": 106
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/9",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 3,
+        "heldout_inputs": 959
+      },
+      {
+        "task_id": "mbppplus::576",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 7,
+        "heldout_inputs": 106
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/142",
+        "candidate_and_development_inputs": 12,
+        "removed_from_official": 4,
+        "heldout_inputs": 1004
+      },
+      {
+        "task_id": "mbppplus::281",
+        "candidate_and_development_inputs": 14,
+        "removed_from_official": 4,
+        "heldout_inputs": 102
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/69",
+        "candidate_and_development_inputs": 14,
+        "removed_from_official": 3,
+        "heldout_inputs": 1022
+      },
+      {
+        "task_id": "mbppplus::19",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 4,
+        "heldout_inputs": 101
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/158",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 5,
+        "heldout_inputs": 902
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/84",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 10,
+        "heldout_inputs": 206
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/12",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 4,
+        "heldout_inputs": 931
+      },
+      {
+        "task_id": "mbppplus::91",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 4,
+        "heldout_inputs": 101
+      },
+      {
+        "task_id": "mbppplus::760",
+        "candidate_and_development_inputs": 13,
+        "removed_from_official": 3,
+        "heldout_inputs": 105
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/111",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 4,
+        "heldout_inputs": 656
+      },
+      {
+        "task_id": "mbppplus::226",
+        "candidate_and_development_inputs": 14,
+        "removed_from_official": 4,
+        "heldout_inputs": 103
+      },
+      {
+        "task_id": "mbppplus::104",
+        "candidate_and_development_inputs": 14,
+        "removed_from_official": 3,
+        "heldout_inputs": 121
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/74",
+        "candidate_and_development_inputs": 14,
+        "removed_from_official": 5,
+        "heldout_inputs": 980
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/136",
+        "candidate_and_development_inputs": 13,
+        "removed_from_official": 4,
+        "heldout_inputs": 1005
+      },
+      {
+        "task_id": "mbppplus::130",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 3,
+        "heldout_inputs": 102
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/82",
+        "candidate_and_development_inputs": 14,
+        "removed_from_official": 9,
+        "heldout_inputs": 968
+      },
+      {
+        "task_id": "mbppplus::273",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 4,
+        "heldout_inputs": 102
+      },
+      {
+        "task_id": "mbppplus::394",
+        "candidate_and_development_inputs": 14,
+        "removed_from_official": 5,
+        "heldout_inputs": 47
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/98",
+        "candidate_and_development_inputs": 13,
+        "removed_from_official": 5,
+        "heldout_inputs": 1001
+      },
+      {
+        "task_id": "mbppplus::8",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 4,
+        "heldout_inputs": 102
+      },
+      {
+        "task_id": "mbppplus::623",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 4,
+        "heldout_inputs": 106
+      },
+      {
+        "task_id": "mbppplus::639",
+        "candidate_and_development_inputs": 8,
+        "removed_from_official": 4,
+        "heldout_inputs": 110
+      },
+      {
+        "task_id": "mbppplus::618",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 3,
+        "heldout_inputs": 103
+      },
+      {
+        "task_id": "mbppplus::142",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 4,
+        "heldout_inputs": 109
+      },
+      {
+        "task_id": "mbppplus::598",
+        "candidate_and_development_inputs": 14,
+        "removed_from_official": 5,
+        "heldout_inputs": 99
+      },
+      {
+        "task_id": "mbppplus::70",
+        "candidate_and_development_inputs": 13,
+        "removed_from_official": 4,
+        "heldout_inputs": 117
+      },
+      {
+        "task_id": "mbppplus::801",
+        "candidate_and_development_inputs": 14,
+        "removed_from_official": 4,
+        "heldout_inputs": 109
+      },
+      {
+        "task_id": "mbppplus::425",
+        "candidate_and_development_inputs": 14,
+        "removed_from_official": 3,
+        "heldout_inputs": 108
+      },
+      {
+        "task_id": "mbppplus::429",
+        "candidate_and_development_inputs": 13,
+        "removed_from_official": 4,
+        "heldout_inputs": 112
+      },
+      {
+        "task_id": "mbppplus::446",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 4,
+        "heldout_inputs": 103
+      },
+      {
+        "task_id": "mbppplus::282",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 3,
+        "heldout_inputs": 104
+      },
+      {
+        "task_id": "mbppplus::390",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 3,
+        "heldout_inputs": 105
+      },
+      {
+        "task_id": "mbppplus::259",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 3,
+        "heldout_inputs": 101
+      },
+      {
+        "task_id": "mbppplus::87",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 1,
+        "heldout_inputs": 109
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/161",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 6,
+        "heldout_inputs": 984
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/17",
+        "candidate_and_development_inputs": 9,
+        "removed_from_official": 8,
+        "heldout_inputs": 210
+      },
+      {
+        "task_id": "humanevalplus::HumanEval/19",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 8,
+        "heldout_inputs": 123
+      },
+      {
+        "task_id": "mbppplus::559",
+        "candidate_and_development_inputs": 12,
+        "removed_from_official": 3,
+        "heldout_inputs": 109
+      },
+      {
+        "task_id": "mbppplus::577",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 8,
+        "heldout_inputs": 100
+      },
+      {
+        "task_id": "mbppplus::57",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 3,
+        "heldout_inputs": 92
+      },
+      {
+        "task_id": "mbppplus::612",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 2,
+        "heldout_inputs": 105
+      },
+      {
+        "task_id": "mbppplus::475",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 4,
+        "heldout_inputs": 110
+      },
+      {
+        "task_id": "mbppplus::145",
+        "candidate_and_development_inputs": 14,
+        "removed_from_official": 1,
+        "heldout_inputs": 108
+      },
+      {
+        "task_id": "mbppplus::615",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 5,
+        "heldout_inputs": 145
+      },
+      {
+        "task_id": "mbppplus::749",
+        "candidate_and_development_inputs": 15,
+        "removed_from_official": 4,
+        "heldout_inputs": 103
+      },
+      {
+        "task_id": "mbppplus::120",
+        "candidate_and_development_inputs": 14,
+        "removed_from_official": 3,
+        "heldout_inputs": 113
+      }
+    ]
+  }
+}

@@ -35,6 +35,9 @@ def analyze(rows):
         for side in ['a','b']:
             for base in ['nl_only','inputs_only','explicit_'+side]:
                 output['contrasts'].append(paired_effect(rows,base,'tests_'+side,field='rule_'+side+'_passed',cluster_field='family_id'))
+    elif conditions == ['unrelated_tests']:
+        # Paired comparisons are computed with the saved main-condition records.
+        pass
     else:
         contrasts=([('nl_only','nl_tests'),('inputs_only','nl_tests'),('wrong_tests','nl_tests')]
                    if 'nl_tests' in conditions else [('quality_random','quality_high'),('quality_low','quality_high'),('nl_only','quality_high')])

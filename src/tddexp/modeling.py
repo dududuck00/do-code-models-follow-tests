@@ -24,6 +24,7 @@ class LocalCausalLM:
         trust_remote_code: bool = True,
         prompt_format: str = "raw",
         thinking: str = "auto",
+        tokenizer_path: str | None = None,
     ) -> None:
         try:
             import torch
@@ -62,7 +63,7 @@ class LocalCausalLM:
         else:
             self.processor = None
             self.tokenizer = AutoTokenizer.from_pretrained(
-                model_path,
+                tokenizer_path or model_path,
                 trust_remote_code=trust_remote_code,
                 local_files_only=True,
             )

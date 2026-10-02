@@ -1,0 +1,710 @@
+{"task_id": "humanevalplus::HumanEval/0", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/1", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/2", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/3", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/4", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/5", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/6", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/7", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/8", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/9", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/10", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/11", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/12", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/13", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/14", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/15", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/16", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/17", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/18", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/19", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/20", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/21", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/22", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/23", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/24", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/25", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/26", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/27", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/28", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/29", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/30", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/31", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/33", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/34", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/35", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/36", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/37", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/39", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/40", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/41", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/42", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/43", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/44", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/45", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/46", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/47", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/48", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/49", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/51", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/52", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/53", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/54", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/55", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/56", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/57", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/58", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/59", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/60", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/61", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/62", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/63", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/64", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/65", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/66", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/67", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/68", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/69", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/70", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/71", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/72", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/73", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/74", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/75", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/76", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/78", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/79", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/80", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/81", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/82", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/83", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/84", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/85", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/86", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/87", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/88", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/89", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/90", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/91", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/92", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/93", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/94", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/96", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/98", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/99", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/100", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/101", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/102", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/103", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/104", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/105", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/106", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/107", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/108", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/109", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/110", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/111", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/112", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/113", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/114", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/115", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/116", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/118", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/119", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/120", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/121", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/122", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/123", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/124", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/125", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/126", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/127", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/128", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/129", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/130", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/131", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/132", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/133", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/134", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/135", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/136", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/137", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/138", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/139", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/140", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/141", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/142", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/143", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/144", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/145", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/146", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/147", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/148", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/149", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/150", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/151", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/152", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/153", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/154", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/155", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/156", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/157", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/158", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/159", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/160", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/161", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/162", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "humanevalplus::HumanEval/163", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::2", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::3", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::4", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::6", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::7", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::8", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::9", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::11", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::12", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::14", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::16", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::17", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::18", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::19", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::20", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::56", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::57", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::58", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::59", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::61", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::62", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::63", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::64", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::65", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::66", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::67", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::68", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::69", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::70", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::71", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::72", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::74", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::75", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::77", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::79", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::80", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::82", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::84", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::85", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::86", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::87", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::88", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::89", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::90", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::91", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::92", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::93", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::94", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::95", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::96", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::97", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::98", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::99", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::100", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::101", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::102", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::103", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::104", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::105", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::106", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::108", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::109", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::111", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::113", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::116", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::118", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::119", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::120", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::123", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::124", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::125", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::126", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::127", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::128", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::129", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::130", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::131", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::132", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::133", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::135", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::137", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::138", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::139", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::140", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::141", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::142", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::145", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::160", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::161", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::162", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::165", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::166", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::167", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::168", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::170", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::171", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::172", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::222", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::223", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::224", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::226", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::227", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::230", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::232", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::233", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::234", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::235", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::237", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::238", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::239", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::240", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::242", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::244", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::245", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::247", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::250", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::251", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::252", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::253", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::255", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::256", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::257", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::259", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::260", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::261", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::262", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::264", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::265", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::266", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::267", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::268", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::269", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::270", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::271", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::272", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::273", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::274", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::276", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::277", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::278", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::279", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::280", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::281", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::282", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::283", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::284", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::285", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::286", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::287", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::290", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::292", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::293", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::294", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::296", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::297", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::299", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::300", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::301", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::305", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::306", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::308", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::309", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::310", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::311", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::312", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::388", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::389", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::390", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::391", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::392", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::394", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::395", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::397", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::398", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::404", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::405", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::406", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::409", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::410", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::412", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::413", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::414", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::415", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::418", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::419", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::420", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::421", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::422", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::424", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::425", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::426", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::427", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::428", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::429", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::430", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::432", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::433", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::435", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::436", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::437", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::439", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::440", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::441", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::445", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::446", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::447", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::448", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::450", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::451", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::453", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::454", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::455", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::456", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::457", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::458", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::459", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::460", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::462", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::463", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::465", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::468", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::470", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::471", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::472", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::473", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::474", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::475", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::476", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::477", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::478", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::479", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::554", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::555", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::556", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::557", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::558", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::559", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::560", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::562", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::563", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::564", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::565", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::566", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::567", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::568", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::569", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::572", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::573", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::576", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::577", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::578", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::579", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::580", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::581", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::583", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::585", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::586", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::587", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::588", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::589", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::590", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::591", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::592", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::593", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::594", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::596", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::597", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::598", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::599", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::600", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::602", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::603", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::604", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::605", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::606", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::607", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::608", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::610", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::611", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::612", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::614", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::615", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::616", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::618", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::619", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::620", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::622", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::623", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::624", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::626", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::628", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::629", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::630", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::631", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::632", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::633", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::635", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::637", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::638", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::639", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::641", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::643", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::644", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::720", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::721", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::722", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::723", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::724", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::725", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::726", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::728", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::730", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::731", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::732", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::733", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::734", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::735", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::736", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::737", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::739", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::740", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::741", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::742", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::743", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::744", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::745", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::748", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::749", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::750", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::751", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::752", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::753", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::754", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::755", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::757", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::758", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::759", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::760", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::762", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::763", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::764", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::765", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::766", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::767", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::769", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::770", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::771", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::772", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::773", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::775", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::777", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::778", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::780", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::781", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::782", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::784", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::785", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::786", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::787", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::788", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::790", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::791", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::792", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::793", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::794", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::796", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::797", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::798", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::799", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::800", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::801", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::803", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::804", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::805", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::806", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::807", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::808", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "mbppplus::809", "reference_available": true, "official_passed": true, "heldout_passed": true, "status": "passed"}
+{"task_id": "livecodebench::abc387_b", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc387_f", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc387_a", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc387_c", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc388_d", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc388_b", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc388_g", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc388_c", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc388_a", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc388_f", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc388_e", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc389_d", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc389_b", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc389_a", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc389_g", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc389_f", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc389_e", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc390_e", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc390_g", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc390_a", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc390_b", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc390_d", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc390_f", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc390_c", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc391_d", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc391_f", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc391_a", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc391_e", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc391_g", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc391_b", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc392_a", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc392_g", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc392_b", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc392_d", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc392_f", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc392_c", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc393_a", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc393_f", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc393_e", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc393_d", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc393_b", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc394_c", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc394_b", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc394_f", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc394_a", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc394_g", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc394_d", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc394_e", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc395_c", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc395_f", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc395_b", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc395_a", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc395_e", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc396_g", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc396_c", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc396_f", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc396_b", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc396_e", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc396_d", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc396_a", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc397_d", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc397_f", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc397_c", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc397_g", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc397_e", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc397_a", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc397_b", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc398_f", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc398_b", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc398_d", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc398_a", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc398_c", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc398_g", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc399_e", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc399_d", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc399_a", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc399_c", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc399_f", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc399_b", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc400_c", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc400_d", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc400_a", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc400_b", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc400_e", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::abc400_g", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::arc190_c", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::arc190_a", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::arc190_d", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::arc191_d", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::arc191_c", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::arc191_a", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::arc192_e", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::arc192_b", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::arc192_d", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::arc192_a", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::arc193_b", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::arc193_a", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::arc193_d", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::arc194_c", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::arc194_b", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::arc194_e", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::arc194_a", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::arc194_d", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::arc195_e", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::arc195_b", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::arc195_c", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::arc195_d", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::arc195_a", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::arc196_b", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::arc196_c", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::arc196_a", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::arc196_d", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::3708", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::3677", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::3720", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::3674", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::3731", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::3714", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::3737", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::3725", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::3704", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::3721", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::3751", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::3753", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::3754", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::3697", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::3748", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::3760", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::3696", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::3762", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::3709", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::3779", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::3771", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::3733", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::3768", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::3764", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::3781", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::3705", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::3786", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::3722", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::3770", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::3759", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::3791", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::3789", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::3788", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::3750", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::3795", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::3801", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::3817", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::3809", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::3794", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::3744", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::3832", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::3793", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::3717", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::3773", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::3777", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::3747", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::3687", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::3739", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::3736", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::3743", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::3701", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::3723", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::3763", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::3692", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::3778", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::3785", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::3776", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::3783", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::3799", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::3784", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::3811", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::3805", "status": "official_public_oracle", "reference_available": false}
+{"task_id": "livecodebench::3765", "status": "official_public_oracle", "reference_available": false}

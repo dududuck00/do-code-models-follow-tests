@@ -45,3 +45,13 @@ LCB high5 实际含五条测试的题目为 118；其余 57 题发生回退。�
 `run_controlled_experiments.py --generate-only` 执行 GPU 文本生成，`--evaluate-only` 在代码执行沙箱内评测和汇总。两者均可续跑。评测检查点按任务、条件、重复编号、生成代码和时间预算匹配缓存。DeepSeek 使用 `data/model_tokenizers/deepseek-coder-6.7b-instruct/` 中的原 ByteLevel 词表和通用 fast-tokenizer 加载器，保留 Python 空白与换行。
 
 `scripts/export_controlled_paper.py` 要求十五个模型/实验组合完整后导出正文及附录表格和 `outputs/analysis/controlled_results.json`；`scripts/write_controlled_report.py` 生成中文结果报告。`scripts/analyze_semantic_families.py` 导出家族结果与模型配对比较。执行 `bash scripts/build_paper.sh` 编译论文，`scripts/package_results.py` 打包结果与源码。
+
+## 主实验补充条件：来自其他任务的测试
+
+在原 710 题上增加 `unrelated_tests`，五个模型各运行三次，共新增 10,650 次生成。协议为 `configs/unrelated.yaml`，冻结数据为 `data/controlled/unrelated/tasks.jsonl`。自然语言描述、生成预算和隐藏评测保持与主实验相同；原四条件的生成和评测直接复用。
+
+候选来源为其他基准任务的正确公开测试。函数测试改用当前任务的函数名，参数数量严格相同；优先匹配输入结构类型、输出结构类型，再按文本长度差与描述词汇相似度选择。LCB 保持 stdin 或函数调用方式一致。每个目标提示的测试数量与正确 I/O 条件相同，测试可来自多个来源任务。唯一四参数接口的 MBPP 306 和 LCB 3743 分别使用独立编写的“前缀区间计数”和“两列表加权求和”来源任务，参考实现与候选测试保存在 `supplemental_donors.jsonl`。
+
+共展示 2,062 条测试，其中输入结构类型完全匹配 1,817 条，输出结构类型完全匹配 1,715 条。每条来源输入都避开当前任务的官方评测输入和原可见输入，因此四个已有条件与新增条件使用同一隐藏评测集。来源映射固定用于所有模型与重复运行，逐条来源、长度比和类型匹配情况保存在 `donor_mapping.jsonl`。
+
+`audit_unrelated_protocol.py` 验证选中的来源函数断言，并记录它们在目标参考实现上的正确、输出冲突和运行错误情况。来源测试在目标任务上恰好正确的情况保留。主要对比为“正确 I/O − 来自其他任务的测试”和“来自其他任务的测试 − NL-only”；三次配对差值先在任务内平均，再按任务 bootstrap 5,000 次，逐次效果另列。

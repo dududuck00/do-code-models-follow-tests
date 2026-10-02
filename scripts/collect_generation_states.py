@@ -21,6 +21,7 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument("--generations", required=True)
     parser.add_argument("--model-path", required=True)
+    parser.add_argument("--tokenizer-path", default=None)
     parser.add_argument("--output-dir", required=True)
     parser.add_argument("--states-dir", default=None)
     parser.add_argument("--num-shards", type=int, default=1)
@@ -72,6 +73,7 @@ def main() -> None:
             dtype=args.dtype,
             prompt_format=args.prompt_format,
             thinking=args.thinking,
+            tokenizer_path=args.tokenizer_path,
         )
 
     for row in tqdm(selected, desc="state prompts"):
@@ -101,6 +103,7 @@ def main() -> None:
 
         updated["state_path"] = str(state_path)
         updated["state_backend"] = "transformers"
+        updated["state_tokenizer_path"] = args.tokenizer_path or args.model_path
         updated["state_backend_version"] = transformers_version
         updated["state_prompt_token_hash"] = actual_hash
         updated["state_prompt_token_count"] = len(token_ids)

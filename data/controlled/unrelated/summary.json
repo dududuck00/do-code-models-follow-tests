@@ -1,0 +1,20 @@
+{
+  "tasks": 710,
+  "conditions": [
+    "unrelated_tests"
+  ],
+  "repeats": 3,
+  "models": 5,
+  "expected_generations": 10650,
+  "tests": 2062,
+  "input_profile_matched": 1817,
+  "output_profile_matched": 1715,
+  "supplemental_targets": [
+    "livecodebench::3743",
+    "mbppplus::306"
+  ],
+  "evaluation_input_overlap": 0,
+  "source": "Other benchmark tasks plus two authored four-argument donor tasks; original main evaluators retained.",
+  "length_ratio_median": 1.0,
+  "length_within_15_percent": 1729
+}

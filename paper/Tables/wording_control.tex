@@ -1,0 +1,23 @@
+\begin{table}[!htbp]
+\centering
+\caption{Mean final-layer different-rule minus same-rule distances under two equivalent prompt variants. Entries are multiplied by $10^3$. Positive values indicate a larger average response to changing rule outputs than to the specified wording change.}
+\label{tab:wording-control}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{clrr}
+\toprule
+Model & Variant & Cosine difference & Relative L2 difference \\
+\midrule
+\multirow{2}{*}{Qwen2.5-7B} & Parentheses & $0.415$ & $6.204$ \\
+ & Reversed & $0.401$ & $7.073$ \\
+\multirow{2}{*}{Qwen3.5-9B} & Parentheses & $8.661$ & $40.340$ \\
+ & Reversed & $5.775$ & $24.265$ \\
+\multirow{2}{*}{Qwen3.6-27B} & Parentheses & $42.694$ & $148.644$ \\
+ & Reversed & $35.906$ & $110.533$ \\
+\multirow{2}{*}{Qwen3.8-27B} & Parentheses & $29.695$ & $130.815$ \\
+ & Reversed & $26.126$ & $103.096$ \\
+\multirow{2}{*}{DeepSeek-6.7B} & Parentheses & $0.050$ & $-4.268$ \\
+ & Reversed & $0.480$ & $5.542$ \\
+\bottomrule
+\end{tabular}
+\end{table}

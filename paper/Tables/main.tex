@@ -1,0 +1,31 @@
+\begin{table}[!htbp]
+\centering
+\caption{Held-out pass rates (\%), averaged over three runs. Exposed inputs are removed from the evaluation suite. Each task contributes one mean correctness value.}
+\label{tab:main}
+\small
+\begin{tabular}{clrrrr}
+\toprule
+Model & Dataset & NL-only & Correct I/O & Wrong I/O & Inputs-only \\
+\midrule
+\multirow{3}{*}{Qwen2.5-7B} & HumanEval+ & 82.8 & 81.5 & 70.1 & 82.4 \\
+& MBPP+ & 66.3 & 73.7 & 63.9 & 69.0 \\
+& LCB v6-new & 23.4 & 21.9 & 19.4 & 20.6 \\
+\addlinespace[2pt]
+\multirow{3}{*}{Qwen3.5-9B} & HumanEval+ & 82.8 & 83.7 & 74.1 & 82.4 \\
+& MBPP+ & 66.2 & 76.1 & 61.8 & 68.6 \\
+& LCB v6-new & 39.4 & 40.0 & 33.5 & 38.9 \\
+\addlinespace[2pt]
+\multirow{3}{*}{Qwen3.6-27B} & HumanEval+ & 91.5 & 94.1 & 68.8 & 92.1 \\
+& MBPP+ & 72.2 & 79.7 & 48.6 & 76.2 \\
+& LCB v6-new & 56.4 & 54.3 & 51.2 & 56.6 \\
+\addlinespace[2pt]
+\multirow{3}{*}{Qwen3.8-27B} & HumanEval+ & 89.6 & 94.3 & 64.3 & 91.1 \\
+& MBPP+ & 70.9 & 79.5 & 47.4 & 74.5 \\
+& LCB v6-new & 53.1 & 54.1 & 43.4 & 52.6 \\
+\addlinespace[2pt]
+\multirow{3}{*}{DeepSeek-6.7B} & HumanEval+ & 72.8 & 72.2 & 64.1 & 69.0 \\
+& MBPP+ & 60.4 & 69.3 & 60.8 & 64.0 \\
+& LCB v6-new & 14.7 & 14.1 & 13.1 & 16.4 \\
+\bottomrule
+\end{tabular}
+\end{table}

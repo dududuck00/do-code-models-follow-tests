@@ -1,0 +1,1320 @@
+{
+  "complete": true,
+  "target": "three_run_mean_paired_switching",
+  "tasks_per_model": 120,
+  "outer_folds": 5,
+  "inner_folds": 4,
+  "families": 20,
+  "models": {
+    "qwen25": {
+      "metrics": {
+        "mean": {
+          "mae": 0.20833333333333334,
+          "mae_ci95": [
+            0.14235821759259257,
+            0.2936429398148147
+          ],
+          "mse": 0.11062885802469134
+        },
+        "median": {
+          "mae": 0.11111111111111112,
+          "mae_ci95": [
+            0.02777777777777778,
+            0.21944444444444441
+          ],
+          "mse": 0.10925925925925925
+        },
+        "output_text": {
+          "mae": 0.2426872905470198,
+          "mae_ci95": [
+            0.16192227575143472,
+            0.34039674747941306
+          ],
+          "mse": 0.138725929647955
+        },
+        "representation": {
+          "mae": 0.19142612596015376,
+          "mae_ci95": [
+            0.11158204502097471,
+            0.28536771066452365
+          ],
+          "mse": 0.11977228663156332
+        }
+      },
+      "contrasts": {
+        "representation_minus_mean": {
+          "mae_difference": -0.016907207373179536,
+          "ci95": [
+            -0.0645999223341197,
+            0.037850327311980486
+          ]
+        },
+        "representation_minus_median": {
+          "mae_difference": 0.08031501484904266,
+          "ci95": [
+            0.02369025070586979,
+            0.1439246133301487
+          ]
+        },
+        "representation_minus_output_text": {
+          "mae_difference": -0.051261164586865963,
+          "ci95": [
+            -0.10156096041740112,
+            0.0034664957038377936
+          ]
+        }
+      },
+      "fold_selection": [
+        {
+          "fold": 0,
+          "test_families": [
+            "graph_direction",
+            "topk_ties",
+            "integer_rounding",
+            "duplicate_policy"
+          ],
+          "training_families": [
+            "argmax_tie",
+            "dedup_order",
+            "empty_segments",
+            "group_count",
+            "interval_boundary",
+            "median_choice",
+            "merge_touching",
+            "normalization",
+            "partial_chunk",
+            "remainder_sign",
+            "search_index",
+            "sort_ties",
+            "space_fields",
+            "substring_case",
+            "substring_overlap",
+            "threshold_boundary"
+          ],
+          "selected": {
+            "output_text": {
+              "layer": null,
+              "alpha": 100.0,
+              "inner_mae": 0.22806940881298363
+            },
+            "representation": {
+              "layer": 28,
+              "alpha": 0.0001,
+              "inner_mae": 0.17600142658576887
+            }
+          }
+        },
+        {
+          "fold": 1,
+          "test_families": [
+            "search_index",
+            "substring_case",
+            "empty_segments",
+            "partial_chunk"
+          ],
+          "training_families": [
+            "argmax_tie",
+            "dedup_order",
+            "duplicate_policy",
+            "graph_direction",
+            "group_count",
+            "integer_rounding",
+            "interval_boundary",
+            "median_choice",
+            "merge_touching",
+            "normalization",
+            "remainder_sign",
+            "sort_ties",
+            "space_fields",
+            "substring_overlap",
+            "threshold_boundary",
+            "topk_ties"
+          ],
+          "selected": {
+            "output_text": {
+              "layer": null,
+              "alpha": 100.0,
+              "inner_mae": 0.06765205136623649
+            },
+            "representation": {
+              "layer": 7,
+              "alpha": 0.0001,
+              "inner_mae": 0.05862095045787998
+            }
+          }
+        },
+        {
+          "fold": 2,
+          "test_families": [
+            "normalization",
+            "median_choice",
+            "argmax_tie",
+            "remainder_sign"
+          ],
+          "training_families": [
+            "dedup_order",
+            "duplicate_policy",
+            "empty_segments",
+            "graph_direction",
+            "group_count",
+            "integer_rounding",
+            "interval_boundary",
+            "merge_touching",
+            "partial_chunk",
+            "search_index",
+            "sort_ties",
+            "space_fields",
+            "substring_case",
+            "substring_overlap",
+            "threshold_boundary",
+            "topk_ties"
+          ],
+          "selected": {
+            "output_text": {
+              "layer": null,
+              "alpha": 100.0,
+              "inner_mae": 0.24300748028666752
+            },
+            "representation": {
+              "layer": 21,
+              "alpha": 0.0001,
+              "inner_mae": 0.19505653486717525
+            }
+          }
+        },
+        {
+          "fold": 3,
+          "test_families": [
+            "interval_boundary",
+            "group_count",
+            "threshold_boundary",
+            "substring_overlap"
+          ],
+          "training_families": [
+            "argmax_tie",
+            "dedup_order",
+            "duplicate_policy",
+            "empty_segments",
+            "graph_direction",
+            "integer_rounding",
+            "median_choice",
+            "merge_touching",
+            "normalization",
+            "partial_chunk",
+            "remainder_sign",
+            "search_index",
+            "sort_ties",
+            "space_fields",
+            "substring_case",
+            "topk_ties"
+          ],
+          "selected": {
+            "output_text": {
+              "layer": null,
+              "alpha": 100.0,
+              "inner_mae": 0.22235462124801178
+            },
+            "representation": {
+              "layer": 21,
+              "alpha": 0.0001,
+              "inner_mae": 0.18100166379627922
+            }
+          }
+        },
+        {
+          "fold": 4,
+          "test_families": [
+            "sort_ties",
+            "merge_touching",
+            "dedup_order",
+            "space_fields"
+          ],
+          "training_families": [
+            "argmax_tie",
+            "duplicate_policy",
+            "empty_segments",
+            "graph_direction",
+            "group_count",
+            "integer_rounding",
+            "interval_boundary",
+            "median_choice",
+            "normalization",
+            "partial_chunk",
+            "remainder_sign",
+            "search_index",
+            "substring_case",
+            "substring_overlap",
+            "threshold_boundary",
+            "topk_ties"
+          ],
+          "selected": {
+            "output_text": {
+              "layer": null,
+              "alpha": 1.0,
+              "inner_mae": 0.22715540206356608
+            },
+            "representation": {
+              "layer": 28,
+              "alpha": 0.0001,
+              "inner_mae": 0.2035391950194501
+            }
+          }
+        }
+      ],
+      "candidate_layers": [
+        7,
+        14,
+        21,
+        28
+      ]
+    },
+    "qwen36": {
+      "metrics": {
+        "mean": {
+          "mae": 0.4724537037037037,
+          "mae_ci95": [
+            0.4376157407407407,
+            0.5106481481481482
+          ],
+          "mse": 0.23740837191358022
+        },
+        "median": {
+          "mae": 0.39444444444444443,
+          "mae_ci95": [
+            0.2333333333333333,
+            0.5694444444444444
+          ],
+          "mse": 0.38888888888888895
+        },
+        "output_text": {
+          "mae": 0.4896370783873229,
+          "mae_ci95": [
+            0.39767861868140525,
+            0.577042245259107
+          ],
+          "mse": 0.3072558216890104
+        },
+        "representation": {
+          "mae": 0.4365443889488679,
+          "mae_ci95": [
+            0.35268977459866957,
+            0.5182735742117058
+          ],
+          "mse": 0.25254008629466884
+        }
+      },
+      "contrasts": {
+        "representation_minus_mean": {
+          "mae_difference": -0.03590931475483578,
+          "ci95": [
+            -0.12121868323677377,
+            0.05163301490966982
+          ]
+        },
+        "representation_minus_median": {
+          "mae_difference": 0.042099944504423475,
+          "ci95": [
+            -0.13731552197459237,
+            0.2154436260725531
+          ]
+        },
+        "representation_minus_output_text": {
+          "mae_difference": -0.053092689438455,
+          "ci95": [
+            -0.16393232229759094,
+            0.06378000839811662
+          ]
+        }
+      },
+      "fold_selection": [
+        {
+          "fold": 0,
+          "test_families": [
+            "graph_direction",
+            "topk_ties",
+            "integer_rounding",
+            "duplicate_policy"
+          ],
+          "training_families": [
+            "argmax_tie",
+            "dedup_order",
+            "empty_segments",
+            "group_count",
+            "interval_boundary",
+            "median_choice",
+            "merge_touching",
+            "normalization",
+            "partial_chunk",
+            "remainder_sign",
+            "search_index",
+            "sort_ties",
+            "space_fields",
+            "substring_case",
+            "substring_overlap",
+            "threshold_boundary"
+          ],
+          "selected": {
+            "output_text": {
+              "layer": null,
+              "alpha": 100.0,
+              "inner_mae": 0.4710171264585788
+            },
+            "representation": {
+              "layer": 48,
+              "alpha": 1.0,
+              "inner_mae": 0.4034721888285799
+            }
+          }
+        },
+        {
+          "fold": 1,
+          "test_families": [
+            "search_index",
+            "substring_case",
+            "empty_segments",
+            "partial_chunk"
+          ],
+          "training_families": [
+            "argmax_tie",
+            "dedup_order",
+            "duplicate_policy",
+            "graph_direction",
+            "group_count",
+            "integer_rounding",
+            "interval_boundary",
+            "median_choice",
+            "merge_touching",
+            "normalization",
+            "remainder_sign",
+            "sort_ties",
+            "space_fields",
+            "substring_overlap",
+            "threshold_boundary",
+            "topk_ties"
+          ],
+          "selected": {
+            "output_text": {
+              "layer": null,
+              "alpha": 100.0,
+              "inner_mae": 0.47863257988580904
+            },
+            "representation": {
+              "layer": 48,
+              "alpha": 0.01,
+              "inner_mae": 0.4126416595429958
+            }
+          }
+        },
+        {
+          "fold": 2,
+          "test_families": [
+            "normalization",
+            "median_choice",
+            "argmax_tie",
+            "remainder_sign"
+          ],
+          "training_families": [
+            "dedup_order",
+            "duplicate_policy",
+            "empty_segments",
+            "graph_direction",
+            "group_count",
+            "integer_rounding",
+            "interval_boundary",
+            "merge_touching",
+            "partial_chunk",
+            "search_index",
+            "sort_ties",
+            "space_fields",
+            "substring_case",
+            "substring_overlap",
+            "threshold_boundary",
+            "topk_ties"
+          ],
+          "selected": {
+            "output_text": {
+              "layer": null,
+              "alpha": 0.01,
+              "inner_mae": 0.4631904656047601
+            },
+            "representation": {
+              "layer": 48,
+              "alpha": 0.0001,
+              "inner_mae": 0.4050516803963311
+            }
+          }
+        },
+        {
+          "fold": 3,
+          "test_families": [
+            "interval_boundary",
+            "group_count",
+            "threshold_boundary",
+            "substring_overlap"
+          ],
+          "training_families": [
+            "argmax_tie",
+            "dedup_order",
+            "duplicate_policy",
+            "empty_segments",
+            "graph_direction",
+            "integer_rounding",
+            "median_choice",
+            "merge_touching",
+            "normalization",
+            "partial_chunk",
+            "remainder_sign",
+            "search_index",
+            "sort_ties",
+            "space_fields",
+            "substring_case",
+            "topk_ties"
+          ],
+          "selected": {
+            "output_text": {
+              "layer": null,
+              "alpha": 1.0,
+              "inner_mae": 0.47114379419250146
+            },
+            "representation": {
+              "layer": 48,
+              "alpha": 0.01,
+              "inner_mae": 0.4304789968054741
+            }
+          }
+        },
+        {
+          "fold": 4,
+          "test_families": [
+            "sort_ties",
+            "merge_touching",
+            "dedup_order",
+            "space_fields"
+          ],
+          "training_families": [
+            "argmax_tie",
+            "duplicate_policy",
+            "empty_segments",
+            "graph_direction",
+            "group_count",
+            "integer_rounding",
+            "interval_boundary",
+            "median_choice",
+            "normalization",
+            "partial_chunk",
+            "remainder_sign",
+            "search_index",
+            "substring_case",
+            "substring_overlap",
+            "threshold_boundary",
+            "topk_ties"
+          ],
+          "selected": {
+            "output_text": {
+              "layer": null,
+              "alpha": 0.01,
+              "inner_mae": 0.4227711492718214
+            },
+            "representation": {
+              "layer": 48,
+              "alpha": 1.0,
+              "inner_mae": 0.43429922012737227
+            }
+          }
+        }
+      ],
+      "candidate_layers": [
+        16,
+        32,
+        48,
+        64
+      ]
+    },
+    "qwen35": {
+      "metrics": {
+        "mean": {
+          "mae": 0.3603009259259259,
+          "mae_ci95": [
+            0.2876157407407407,
+            0.4436458333333332
+          ],
+          "mse": 0.17981770833333333
+        },
+        "median": {
+          "mae": 0.24166666666666667,
+          "mae_ci95": [
+            0.10277777777777777,
+            0.4
+          ],
+          "mse": 0.2361111111111111
+        },
+        "output_text": {
+          "mae": 0.414168084809089,
+          "mae_ci95": [
+            0.3146771207703592,
+            0.5170558319177528
+          ],
+          "mse": 0.25697433979750955
+        },
+        "representation": {
+          "mae": 0.3257892621030294,
+          "mae_ci95": [
+            0.22868069135440747,
+            0.4367113298606246
+          ],
+          "mse": 0.22169894282599317
+        }
+      },
+      "contrasts": {
+        "representation_minus_mean": {
+          "mae_difference": -0.03451166382289657,
+          "ci95": [
+            -0.06768462918530131,
+            -0.0006718594689018996
+          ]
+        },
+        "representation_minus_median": {
+          "mae_difference": 0.08412259543636269,
+          "ci95": [
+            0.02377607267563844,
+            0.14240604526465317
+          ]
+        },
+        "representation_minus_output_text": {
+          "mae_difference": -0.08837882270605973,
+          "ci95": [
+            -0.1486251304327613,
+            -0.030457580678566173
+          ]
+        }
+      },
+      "fold_selection": [
+        {
+          "fold": 0,
+          "test_families": [
+            "graph_direction",
+            "topk_ties",
+            "integer_rounding",
+            "duplicate_policy"
+          ],
+          "training_families": [
+            "argmax_tie",
+            "dedup_order",
+            "empty_segments",
+            "group_count",
+            "interval_boundary",
+            "median_choice",
+            "merge_touching",
+            "normalization",
+            "partial_chunk",
+            "remainder_sign",
+            "search_index",
+            "sort_ties",
+            "space_fields",
+            "substring_case",
+            "substring_overlap",
+            "threshold_boundary"
+          ],
+          "selected": {
+            "output_text": {
+              "layer": null,
+              "alpha": 0.0001,
+              "inner_mae": 0.35207046721539254
+            },
+            "representation": {
+              "layer": 16,
+              "alpha": 0.0001,
+              "inner_mae": 0.27506803913230343
+            }
+          }
+        },
+        {
+          "fold": 1,
+          "test_families": [
+            "search_index",
+            "substring_case",
+            "empty_segments",
+            "partial_chunk"
+          ],
+          "training_families": [
+            "argmax_tie",
+            "dedup_order",
+            "duplicate_policy",
+            "graph_direction",
+            "group_count",
+            "integer_rounding",
+            "interval_boundary",
+            "median_choice",
+            "merge_touching",
+            "normalization",
+            "remainder_sign",
+            "sort_ties",
+            "space_fields",
+            "substring_overlap",
+            "threshold_boundary",
+            "topk_ties"
+          ],
+          "selected": {
+            "output_text": {
+              "layer": null,
+              "alpha": 100.0,
+              "inner_mae": 0.4041572604952089
+            },
+            "representation": {
+              "layer": 32,
+              "alpha": 0.0001,
+              "inner_mae": 0.3566836178561032
+            }
+          }
+        },
+        {
+          "fold": 2,
+          "test_families": [
+            "normalization",
+            "median_choice",
+            "argmax_tie",
+            "remainder_sign"
+          ],
+          "training_families": [
+            "dedup_order",
+            "duplicate_policy",
+            "empty_segments",
+            "graph_direction",
+            "group_count",
+            "integer_rounding",
+            "interval_boundary",
+            "merge_touching",
+            "partial_chunk",
+            "search_index",
+            "sort_ties",
+            "space_fields",
+            "substring_case",
+            "substring_overlap",
+            "threshold_boundary",
+            "topk_ties"
+          ],
+          "selected": {
+            "output_text": {
+              "layer": null,
+              "alpha": 100.0,
+              "inner_mae": 0.3650713520406153
+            },
+            "representation": {
+              "layer": 24,
+              "alpha": 0.0001,
+              "inner_mae": 0.33115978447978806
+            }
+          }
+        },
+        {
+          "fold": 3,
+          "test_families": [
+            "interval_boundary",
+            "group_count",
+            "threshold_boundary",
+            "substring_overlap"
+          ],
+          "training_families": [
+            "argmax_tie",
+            "dedup_order",
+            "duplicate_policy",
+            "empty_segments",
+            "graph_direction",
+            "integer_rounding",
+            "median_choice",
+            "merge_touching",
+            "normalization",
+            "partial_chunk",
+            "remainder_sign",
+            "search_index",
+            "sort_ties",
+            "space_fields",
+            "substring_case",
+            "topk_ties"
+          ],
+          "selected": {
+            "output_text": {
+              "layer": null,
+              "alpha": 1.0,
+              "inner_mae": 0.3287634182261166
+            },
+            "representation": {
+              "layer": 24,
+              "alpha": 0.0001,
+              "inner_mae": 0.29312642064550054
+            }
+          }
+        },
+        {
+          "fold": 4,
+          "test_families": [
+            "sort_ties",
+            "merge_touching",
+            "dedup_order",
+            "space_fields"
+          ],
+          "training_families": [
+            "argmax_tie",
+            "duplicate_policy",
+            "empty_segments",
+            "graph_direction",
+            "group_count",
+            "integer_rounding",
+            "interval_boundary",
+            "median_choice",
+            "normalization",
+            "partial_chunk",
+            "remainder_sign",
+            "search_index",
+            "substring_case",
+            "substring_overlap",
+            "threshold_boundary",
+            "topk_ties"
+          ],
+          "selected": {
+            "output_text": {
+              "layer": null,
+              "alpha": 0.0001,
+              "inner_mae": 0.32602524362888546
+            },
+            "representation": {
+              "layer": 32,
+              "alpha": 0.01,
+              "inner_mae": 0.3053151146988828
+            }
+          }
+        }
+      ],
+      "candidate_layers": [
+        8,
+        16,
+        24,
+        32
+      ]
+    },
+    "qwen38": {
+      "metrics": {
+        "mean": {
+          "mae": 0.45190972222222214,
+          "mae_ci95": [
+            0.3953125,
+            0.5137196180555555
+          ],
+          "mse": 0.23174189814814816
+        },
+        "median": {
+          "mae": 0.3416666666666667,
+          "mae_ci95": [
+            0.16944444444444445,
+            0.525
+          ],
+          "mse": 0.3342592592592592
+        },
+        "output_text": {
+          "mae": 0.4788366323416927,
+          "mae_ci95": [
+            0.3747040373546823,
+            0.5812563065152831
+          ],
+          "mse": 0.2985660019696781
+        },
+        "representation": {
+          "mae": 0.45072960217840935,
+          "mae_ci95": [
+            0.379560560052363,
+            0.5223182398480969
+          ],
+          "mse": 0.25221019508282455
+        }
+      },
+      "contrasts": {
+        "representation_minus_mean": {
+          "mae_difference": -0.0011801200438128832,
+          "ci95": [
+            -0.05654987134905496,
+            0.044166550684518135
+          ]
+        },
+        "representation_minus_median": {
+          "mae_difference": 0.10906293551174269,
+          "ci95": [
+            -0.031235138389043376,
+            0.24144377787266522
+          ]
+        },
+        "representation_minus_output_text": {
+          "mae_difference": -0.0281070301632834,
+          "ci95": [
+            -0.10884583373387369,
+            0.04881687362098467
+          ]
+        }
+      },
+      "fold_selection": [
+        {
+          "fold": 0,
+          "test_families": [
+            "graph_direction",
+            "topk_ties",
+            "integer_rounding",
+            "duplicate_policy"
+          ],
+          "training_families": [
+            "argmax_tie",
+            "dedup_order",
+            "empty_segments",
+            "group_count",
+            "interval_boundary",
+            "median_choice",
+            "merge_touching",
+            "normalization",
+            "partial_chunk",
+            "remainder_sign",
+            "search_index",
+            "sort_ties",
+            "space_fields",
+            "substring_case",
+            "substring_overlap",
+            "threshold_boundary"
+          ],
+          "selected": {
+            "output_text": {
+              "layer": null,
+              "alpha": 100.0,
+              "inner_mae": 0.4797541826192617
+            },
+            "representation": {
+              "layer": 48,
+              "alpha": 0.0001,
+              "inner_mae": 0.39362061338086374
+            }
+          }
+        },
+        {
+          "fold": 1,
+          "test_families": [
+            "search_index",
+            "substring_case",
+            "empty_segments",
+            "partial_chunk"
+          ],
+          "training_families": [
+            "argmax_tie",
+            "dedup_order",
+            "duplicate_policy",
+            "graph_direction",
+            "group_count",
+            "integer_rounding",
+            "interval_boundary",
+            "median_choice",
+            "merge_touching",
+            "normalization",
+            "remainder_sign",
+            "sort_ties",
+            "space_fields",
+            "substring_overlap",
+            "threshold_boundary",
+            "topk_ties"
+          ],
+          "selected": {
+            "output_text": {
+              "layer": null,
+              "alpha": 100.0,
+              "inner_mae": 0.4160053495105074
+            },
+            "representation": {
+              "layer": 16,
+              "alpha": 100.0,
+              "inner_mae": 0.413579866936917
+            }
+          }
+        },
+        {
+          "fold": 2,
+          "test_families": [
+            "normalization",
+            "median_choice",
+            "argmax_tie",
+            "remainder_sign"
+          ],
+          "training_families": [
+            "dedup_order",
+            "duplicate_policy",
+            "empty_segments",
+            "graph_direction",
+            "group_count",
+            "integer_rounding",
+            "interval_boundary",
+            "merge_touching",
+            "partial_chunk",
+            "search_index",
+            "sort_ties",
+            "space_fields",
+            "substring_case",
+            "substring_overlap",
+            "threshold_boundary",
+            "topk_ties"
+          ],
+          "selected": {
+            "output_text": {
+              "layer": null,
+              "alpha": 1.0,
+              "inner_mae": 0.4367927914318579
+            },
+            "representation": {
+              "layer": 16,
+              "alpha": 1.0,
+              "inner_mae": 0.4343901768859209
+            }
+          }
+        },
+        {
+          "fold": 3,
+          "test_families": [
+            "interval_boundary",
+            "group_count",
+            "threshold_boundary",
+            "substring_overlap"
+          ],
+          "training_families": [
+            "argmax_tie",
+            "dedup_order",
+            "duplicate_policy",
+            "empty_segments",
+            "graph_direction",
+            "integer_rounding",
+            "median_choice",
+            "merge_touching",
+            "normalization",
+            "partial_chunk",
+            "remainder_sign",
+            "search_index",
+            "sort_ties",
+            "space_fields",
+            "substring_case",
+            "topk_ties"
+          ],
+          "selected": {
+            "output_text": {
+              "layer": null,
+              "alpha": 100.0,
+              "inner_mae": 0.4314950980884196
+            },
+            "representation": {
+              "layer": 16,
+              "alpha": 0.0001,
+              "inner_mae": 0.3616565999718811
+            }
+          }
+        },
+        {
+          "fold": 4,
+          "test_families": [
+            "sort_ties",
+            "merge_touching",
+            "dedup_order",
+            "space_fields"
+          ],
+          "training_families": [
+            "argmax_tie",
+            "duplicate_policy",
+            "empty_segments",
+            "graph_direction",
+            "group_count",
+            "integer_rounding",
+            "interval_boundary",
+            "median_choice",
+            "normalization",
+            "partial_chunk",
+            "remainder_sign",
+            "search_index",
+            "substring_case",
+            "substring_overlap",
+            "threshold_boundary",
+            "topk_ties"
+          ],
+          "selected": {
+            "output_text": {
+              "layer": null,
+              "alpha": 0.01,
+              "inner_mae": 0.41014525845632194
+            },
+            "representation": {
+              "layer": 48,
+              "alpha": 1.0,
+              "inner_mae": 0.42853105827938903
+            }
+          }
+        }
+      ],
+      "candidate_layers": [
+        16,
+        32,
+        48,
+        64
+      ]
+    },
+    "deepseek": {
+      "metrics": {
+        "mean": {
+          "mae": 0.203125,
+          "mae_ci95": [
+            0.13958333333333334,
+            0.2846657986111111
+          ],
+          "mse": 0.10476948302469134
+        },
+        "median": {
+          "mae": 0.1111111111111111,
+          "mae_ci95": [
+            0.03055555555555555,
+            0.21111111111111117
+          ],
+          "mse": 0.10925925925925925
+        },
+        "output_text": {
+          "mae": 0.2315646857862154,
+          "mae_ci95": [
+            0.15125281922768957,
+            0.3287578740401871
+          ],
+          "mse": 0.13743958461490496
+        },
+        "representation": {
+          "mae": 0.2252568235436808,
+          "mae_ci95": [
+            0.14151826207394416,
+            0.3261037833016675
+          ],
+          "mse": 0.13831972990520763
+        }
+      },
+      "contrasts": {
+        "representation_minus_mean": {
+          "mae_difference": 0.022131823543680793,
+          "ci95": [
+            -0.029709431648917796,
+            0.0966362841393057
+          ]
+        },
+        "representation_minus_median": {
+          "mae_difference": 0.11414571243256967,
+          "ci95": [
+            0.054617096434250584,
+            0.19630141434583462
+          ]
+        },
+        "representation_minus_output_text": {
+          "mae_difference": -0.006307862242534589,
+          "ci95": [
+            -0.04955487825090699,
+            0.04290142213405124
+          ]
+        }
+      },
+      "fold_selection": [
+        {
+          "fold": 0,
+          "test_families": [
+            "graph_direction",
+            "topk_ties",
+            "integer_rounding",
+            "duplicate_policy"
+          ],
+          "training_families": [
+            "argmax_tie",
+            "dedup_order",
+            "empty_segments",
+            "group_count",
+            "interval_boundary",
+            "median_choice",
+            "merge_touching",
+            "normalization",
+            "partial_chunk",
+            "remainder_sign",
+            "search_index",
+            "sort_ties",
+            "space_fields",
+            "substring_case",
+            "substring_overlap",
+            "threshold_boundary"
+          ],
+          "selected": {
+            "output_text": {
+              "layer": null,
+              "alpha": 100.0,
+              "inner_mae": 0.24947437964340946
+            },
+            "representation": {
+              "layer": 32,
+              "alpha": 1.0,
+              "inner_mae": 0.2328491275133057
+            }
+          }
+        },
+        {
+          "fold": 1,
+          "test_families": [
+            "search_index",
+            "substring_case",
+            "empty_segments",
+            "partial_chunk"
+          ],
+          "training_families": [
+            "argmax_tie",
+            "dedup_order",
+            "duplicate_policy",
+            "graph_direction",
+            "group_count",
+            "integer_rounding",
+            "interval_boundary",
+            "median_choice",
+            "merge_touching",
+            "normalization",
+            "remainder_sign",
+            "sort_ties",
+            "space_fields",
+            "substring_overlap",
+            "threshold_boundary",
+            "topk_ties"
+          ],
+          "selected": {
+            "output_text": {
+              "layer": null,
+              "alpha": 1.0,
+              "inner_mae": 0.11055920523261258
+            },
+            "representation": {
+              "layer": 32,
+              "alpha": 1.0,
+              "inner_mae": 0.10232823867288254
+            }
+          }
+        },
+        {
+          "fold": 2,
+          "test_families": [
+            "normalization",
+            "median_choice",
+            "argmax_tie",
+            "remainder_sign"
+          ],
+          "training_families": [
+            "dedup_order",
+            "duplicate_policy",
+            "empty_segments",
+            "graph_direction",
+            "group_count",
+            "integer_rounding",
+            "interval_boundary",
+            "merge_touching",
+            "partial_chunk",
+            "search_index",
+            "sort_ties",
+            "space_fields",
+            "substring_case",
+            "substring_overlap",
+            "threshold_boundary",
+            "topk_ties"
+          ],
+          "selected": {
+            "output_text": {
+              "layer": null,
+              "alpha": 1.0,
+              "inner_mae": 0.1915591429726311
+            },
+            "representation": {
+              "layer": 24,
+              "alpha": 100.0,
+              "inner_mae": 0.1946027093964464
+            }
+          }
+        },
+        {
+          "fold": 3,
+          "test_families": [
+            "interval_boundary",
+            "group_count",
+            "threshold_boundary",
+            "substring_overlap"
+          ],
+          "training_families": [
+            "argmax_tie",
+            "dedup_order",
+            "duplicate_policy",
+            "empty_segments",
+            "graph_direction",
+            "integer_rounding",
+            "median_choice",
+            "merge_touching",
+            "normalization",
+            "partial_chunk",
+            "remainder_sign",
+            "search_index",
+            "sort_ties",
+            "space_fields",
+            "substring_case",
+            "topk_ties"
+          ],
+          "selected": {
+            "output_text": {
+              "layer": null,
+              "alpha": 1.0,
+              "inner_mae": 0.22180273873737813
+            },
+            "representation": {
+              "layer": 32,
+              "alpha": 0.0001,
+              "inner_mae": 0.20216747780815267
+            }
+          }
+        },
+        {
+          "fold": 4,
+          "test_families": [
+            "sort_ties",
+            "merge_touching",
+            "dedup_order",
+            "space_fields"
+          ],
+          "training_families": [
+            "argmax_tie",
+            "duplicate_policy",
+            "empty_segments",
+            "graph_direction",
+            "group_count",
+            "integer_rounding",
+            "interval_boundary",
+            "median_choice",
+            "normalization",
+            "partial_chunk",
+            "remainder_sign",
+            "search_index",
+            "substring_case",
+            "substring_overlap",
+            "threshold_boundary",
+            "topk_ties"
+          ],
+          "selected": {
+            "output_text": {
+              "layer": null,
+              "alpha": 0.0001,
+              "inner_mae": 0.15689859256989058
+            },
+            "representation": {
+              "layer": 8,
+              "alpha": 1.0,
+              "inner_mae": 0.19800318906874748
+            }
+          }
+        }
+      ],
+      "candidate_layers": [
+        8,
+        16,
+        24,
+        32
+      ]
+    }
+  }
+}

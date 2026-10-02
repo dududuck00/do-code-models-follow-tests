@@ -1,0 +1,63 @@
+{
+  "model": "DeepSeek-Coder-6.7B-Instruct",
+  "overall": [
+    0.123,
+    -0.138,
+    0.348
+  ],
+  "within_family": [
+    0.089,
+    -0.119,
+    0.293
+  ],
+  "length_adjusted": [
+    0.1,
+    -0.08,
+    0.282
+  ],
+  "representation_mae": 0.225,
+  "median_baseline_mae": 0.111,
+  "mae_difference": [
+    0.114,
+    0.055,
+    0.196
+  ],
+  "peak_layer": "17/32",
+  "text_mae": 0.231565,
+  "mse": {
+    "mean_baseline": 0.104769,
+    "text": 0.13744,
+    "representation": 0.13832
+  },
+  "behavior_counts": {
+    "target": 349,
+    "other": 259,
+    "neither": 112
+  },
+  "diagnosis": {
+    "initialization": 0,
+    "runtime": 26,
+    "timeout": 11,
+    "shared_input_mismatch": 33,
+    "remaining": 42
+  },
+  "protocol_details_confirmed": true,
+  "source": "Author-provided summary and protocol confirmation in conversation; raw files not inspected and intervals not recomputed.",
+  "prompts": 240,
+  "behavior_records": 720,
+  "instances": 120,
+  "families": 20,
+  "outer_folds": 5,
+  "inner_folds": 4,
+  "fold_seed": 0,
+  "candidate_layers": [
+    8,
+    16,
+    24,
+    32
+  ],
+  "reported_layer": 32,
+  "token_replay_matches": true,
+  "tokenizer": "Saved original-experiment tokenizer",
+  "diagnostic_labels_changed": 0
+}

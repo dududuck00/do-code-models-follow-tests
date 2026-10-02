@@ -1,0 +1,32 @@
+{
+  "selection": {
+    "programs": 1088,
+    "sources": {
+      "reference_mutation": 926,
+      "historical_qwen25": 162
+    },
+    "pool_size_counts": {
+      "6": 11,
+      "5": 29,
+      "8": 74,
+      "3": 24,
+      "4": 27,
+      "7": 15
+    }
+  },
+  "validation": {
+    "programs": 1236,
+    "sources": {
+      "reference_mutation": 1232,
+      "deepseek_main": 4
+    },
+    "pool_size_counts": {
+      "8": 119,
+      "4": 18,
+      "6": 11,
+      "5": 11,
+      "3": 14,
+      "7": 7
+    }
+  }
+}

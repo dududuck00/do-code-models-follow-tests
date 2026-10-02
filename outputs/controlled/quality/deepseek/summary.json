@@ -1,0 +1,220 @@
+[
+  {
+    "model_path": "deepseek-ai/deepseek-coder-6.7b-instruct",
+    "experiment": "quality",
+    "dataset": "mbppplus",
+    "conditions": {
+      "nl_only": {
+        "observations": 112,
+        "tasks": 112,
+        "passed": 0.5357142857142857,
+        "official_passed": 0.5267857142857143,
+        "heldout_passed": 0.5357142857142857
+      },
+      "quality_high": {
+        "observations": 112,
+        "tasks": 112,
+        "passed": 0.6517857142857143,
+        "official_passed": 0.6339285714285714,
+        "heldout_passed": 0.6517857142857143
+      },
+      "quality_low": {
+        "observations": 112,
+        "tasks": 112,
+        "passed": 0.6428571428571429,
+        "official_passed": 0.6160714285714286,
+        "heldout_passed": 0.6428571428571429
+      },
+      "quality_random": {
+        "observations": 112,
+        "tasks": 112,
+        "passed": 0.6517857142857143,
+        "official_passed": 0.625,
+        "heldout_passed": 0.6517857142857143
+      }
+    },
+    "contrasts": [
+      {
+        "base": "quality_random",
+        "target": "quality_high",
+        "num_tasks": 112,
+        "num_clusters": 112,
+        "repeats_per_task": 1,
+        "cluster_field": "task_id",
+        "paired_difference": 0.0,
+        "ci95": [
+          -0.044642857142857144,
+          0.044642857142857144
+        ],
+        "per_repeat": {
+          "0": {
+            "n": 112,
+            "gains": 3,
+            "losses": 3,
+            "base_passed": 73,
+            "target_passed": 73,
+            "exact_mcnemar_p": 1.0,
+            "paired_difference": 0.0
+          }
+        }
+      },
+      {
+        "base": "quality_low",
+        "target": "quality_high",
+        "num_tasks": 112,
+        "num_clusters": 112,
+        "repeats_per_task": 1,
+        "cluster_field": "task_id",
+        "paired_difference": 0.008928571428571428,
+        "ci95": [
+          -0.03571428571428571,
+          0.05357142857142857
+        ],
+        "per_repeat": {
+          "0": {
+            "n": 112,
+            "gains": 4,
+            "losses": 3,
+            "base_passed": 72,
+            "target_passed": 73,
+            "exact_mcnemar_p": 1.0,
+            "paired_difference": 0.008928571428571428
+          }
+        }
+      },
+      {
+        "base": "nl_only",
+        "target": "quality_high",
+        "num_tasks": 112,
+        "num_clusters": 112,
+        "repeats_per_task": 1,
+        "cluster_field": "task_id",
+        "paired_difference": 0.11607142857142858,
+        "ci95": [
+          0.05357142857142857,
+          0.1875
+        ],
+        "per_repeat": {
+          "0": {
+            "n": 112,
+            "gains": 15,
+            "losses": 2,
+            "base_passed": 60,
+            "target_passed": 73,
+            "exact_mcnemar_p": 0.002349853515625,
+            "paired_difference": 0.11607142857142858
+          }
+        }
+      }
+    ]
+  },
+  {
+    "model_path": "deepseek-ai/deepseek-coder-6.7b-instruct",
+    "experiment": "quality",
+    "dataset": "humanevalplus",
+    "conditions": {
+      "nl_only": {
+        "observations": 68,
+        "tasks": 68,
+        "passed": 0.7352941176470589,
+        "official_passed": 0.7205882352941176,
+        "heldout_passed": 0.7352941176470589
+      },
+      "quality_high": {
+        "observations": 68,
+        "tasks": 68,
+        "passed": 0.6764705882352942,
+        "official_passed": 0.6617647058823529,
+        "heldout_passed": 0.6764705882352942
+      },
+      "quality_low": {
+        "observations": 68,
+        "tasks": 68,
+        "passed": 0.6911764705882353,
+        "official_passed": 0.6617647058823529,
+        "heldout_passed": 0.6911764705882353
+      },
+      "quality_random": {
+        "observations": 68,
+        "tasks": 68,
+        "passed": 0.6911764705882353,
+        "official_passed": 0.6764705882352942,
+        "heldout_passed": 0.6911764705882353
+      }
+    },
+    "contrasts": [
+      {
+        "base": "quality_random",
+        "target": "quality_high",
+        "num_tasks": 68,
+        "num_clusters": 68,
+        "repeats_per_task": 1,
+        "cluster_field": "task_id",
+        "paired_difference": -0.014705882352941176,
+        "ci95": [
+          -0.07352941176470588,
+          0.04411764705882353
+        ],
+        "per_repeat": {
+          "0": {
+            "n": 68,
+            "gains": 2,
+            "losses": 3,
+            "base_passed": 47,
+            "target_passed": 46,
+            "exact_mcnemar_p": 1.0,
+            "paired_difference": -0.014705882352941176
+          }
+        }
+      },
+      {
+        "base": "quality_low",
+        "target": "quality_high",
+        "num_tasks": 68,
+        "num_clusters": 68,
+        "repeats_per_task": 1,
+        "cluster_field": "task_id",
+        "paired_difference": -0.014705882352941176,
+        "ci95": [
+          -0.08823529411764706,
+          0.058823529411764705
+        ],
+        "per_repeat": {
+          "0": {
+            "n": 68,
+            "gains": 3,
+            "losses": 4,
+            "base_passed": 47,
+            "target_passed": 46,
+            "exact_mcnemar_p": 1.0,
+            "paired_difference": -0.014705882352941176
+          }
+        }
+      },
+      {
+        "base": "nl_only",
+        "target": "quality_high",
+        "num_tasks": 68,
+        "num_clusters": 68,
+        "repeats_per_task": 1,
+        "cluster_field": "task_id",
+        "paired_difference": -0.058823529411764705,
+        "ci95": [
+          -0.16176470588235295,
+          0.04411764705882353
+        ],
+        "per_repeat": {
+          "0": {
+            "n": 68,
+            "gains": 5,
+            "losses": 9,
+            "base_passed": 50,
+            "target_passed": 46,
+            "exact_mcnemar_p": 0.4239501953125,
+            "paired_difference": -0.058823529411764705
+          }
+        }
+      }
+    ]
+  }
+]

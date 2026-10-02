@@ -68,3 +68,17 @@ Thumbs.db
 *.ckpt
 *.npy
 *.npz
+
+# FSE review artifact: current manuscript, task-level records and derived analyses.
+!/paper/
+!/outputs/
+/outputs/*
+!/outputs/controlled/
+!/outputs/analysis/
+!/outputs/semantic_representation/
+!/outputs/semantic_surface/
+!/outputs/semantic_visible/
+!/outputs/semantic_cases/
+**/states/
+!/artifact_manifest.json
+!/checksums.sha256

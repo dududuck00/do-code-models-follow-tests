@@ -9,7 +9,7 @@ ROOT = Path(__file__).resolve().parents[1]
 PAPER = ROOT / 'aaai/AuthorKit27/AuthorKit27'
 README = '''# 论文 LaTeX 源码
 
-主文件：`paper.tex`。三组实验均包含 Qwen2.5-Coder-7B、DeepSeek-Coder-6.7B、Qwen3.6-27B、Qwen3.5-9B、Qwen3.8-27B。主实验与语义实验各执行三次，质量实验各执行一次。
+主文件：`paper.tex`。三组实验均包含 Qwen2.5-Coder-7B、DeepSeek-Coder-6.7B、Qwen3.6-27B、Qwen3.5-9B、Qwen3.8-27B。主实验与语义实验各执行三次，质量实验各执行一次。主实验还包含五模型、三次运行的“来自其他任务的测试”补充对照。LCB 探索性附录已补齐 Qwen3.6 high3 结果。
 
 - `paper.bib`：参考文献。
 - `aaai2027.sty`、`aaai2027.bst`：AAAI 模板和参考文献样式。

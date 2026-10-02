@@ -1,0 +1,2285 @@
+{
+  "description": "Visible assertions executed from each saved generation prompt using isolated Python subprocesses with a 15s timeout matching the original semantic evaluator; 11 DeepSeek timeouts were rechecked at that budget. No completions were regenerated.",
+  "source_checks": {
+    "models": [
+      "qwen25",
+      "qwen35",
+      "qwen36",
+      "qwen38",
+      "deepseek"
+    ],
+    "tasks": 120,
+    "generations_per_model": 2160,
+    "exact_prompt_and_visible_test_match": true,
+    "evaluated_A_B_records": 3600,
+    "task_repeats_nested": true,
+    "families": 20,
+    "local_python": "3.12.14",
+    "original_evaluator_python": "3.12.13"
+  },
+  "by_model": {
+    "qwen25": {
+      "directions": {
+        "tests_a": {
+          "n_task_runs": 360,
+          "visible_pass": 266,
+          "visible_pass_pct": 73.88888888888889,
+          "hidden_target_pass": 266,
+          "hidden_target_pass_pct": 73.88888888888889,
+          "visible_and_hidden_pass": 266,
+          "visible_and_hidden_pct": 73.88888888888889,
+          "visible_only": 0,
+          "hidden_only": 0,
+          "neither": 94,
+          "other_rule_hidden_pass": 43,
+          "visible_pass_then_other_rule": 0,
+          "execution_error": 94,
+          "timeout": 0
+        },
+        "tests_b": {
+          "n_task_runs": 360,
+          "visible_pass": 90,
+          "visible_pass_pct": 25.0,
+          "hidden_target_pass": 76,
+          "hidden_target_pass_pct": 21.11111111111111,
+          "visible_and_hidden_pass": 76,
+          "visible_and_hidden_pct": 21.11111111111111,
+          "visible_only": 14,
+          "hidden_only": 0,
+          "neither": 270,
+          "other_rule_hidden_pass": 234,
+          "visible_pass_then_other_rule": 0,
+          "execution_error": 270,
+          "timeout": 0
+        }
+      },
+      "families": {
+        "argmax_tie": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 0.0,
+            "hidden_target_rate": 0.0,
+            "both_rate": 0.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "dedup_order": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 0.0,
+            "hidden_target_rate": 0.0,
+            "both_rate": 0.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 0.0,
+            "hidden_target_rate": 0.0,
+            "both_rate": 0.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "duplicate_policy": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 0.0,
+            "hidden_target_rate": 0.0,
+            "both_rate": 0.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "empty_segments": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 0.8333333333333334,
+            "hidden_target_rate": 0.8333333333333334,
+            "both_rate": 0.8333333333333334,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "graph_direction": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 0.0,
+            "hidden_target_rate": 0.0,
+            "both_rate": 0.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 0.2222222222222222,
+            "both_rate": 0.2222222222222222,
+            "visible_only_rate": 0.7777777777777778,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "group_count": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 0.6111111111111112,
+            "hidden_target_rate": 0.6111111111111112,
+            "both_rate": 0.6111111111111112,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 0.0,
+            "hidden_target_rate": 0.0,
+            "both_rate": 0.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "integer_rounding": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 0.0,
+            "hidden_target_rate": 0.0,
+            "both_rate": 0.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "interval_boundary": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 0.0,
+            "hidden_target_rate": 0.0,
+            "both_rate": 0.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "median_choice": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 0.0,
+            "hidden_target_rate": 0.0,
+            "both_rate": 0.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 0.0,
+            "hidden_target_rate": 0.0,
+            "both_rate": 0.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "merge_touching": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 0.0,
+            "hidden_target_rate": 0.0,
+            "both_rate": 0.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "normalization": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 0.0,
+            "hidden_target_rate": 0.0,
+            "both_rate": 0.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "partial_chunk": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 0.5,
+            "hidden_target_rate": 0.5,
+            "both_rate": 0.5,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "remainder_sign": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 0.0,
+            "hidden_target_rate": 0.0,
+            "both_rate": 0.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "search_index": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 0.3333333333333333,
+            "hidden_target_rate": 0.3333333333333333,
+            "both_rate": 0.3333333333333333,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "sort_ties": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 0.0,
+            "hidden_target_rate": 0.0,
+            "both_rate": 0.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "space_fields": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 0.0,
+            "hidden_target_rate": 0.0,
+            "both_rate": 0.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "substring_case": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 0.0,
+            "hidden_target_rate": 0.0,
+            "both_rate": 0.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "substring_overlap": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 0.0,
+            "hidden_target_rate": 0.0,
+            "both_rate": 0.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "threshold_boundary": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 0.3333333333333333,
+            "hidden_target_rate": 0.3333333333333333,
+            "both_rate": 0.3333333333333333,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "topk_ties": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 0.3333333333333333,
+            "hidden_target_rate": 0.3333333333333333,
+            "both_rate": 0.3333333333333333,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 0.8333333333333334,
+            "hidden_target_rate": 0.8333333333333334,
+            "both_rate": 0.8333333333333334,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        }
+      }
+    },
+    "qwen35": {
+      "directions": {
+        "tests_a": {
+          "n_task_runs": 360,
+          "visible_pass": 320,
+          "visible_pass_pct": 88.88888888888889,
+          "hidden_target_pass": 317,
+          "hidden_target_pass_pct": 88.05555555555556,
+          "visible_and_hidden_pass": 317,
+          "visible_and_hidden_pct": 88.05555555555556,
+          "visible_only": 3,
+          "hidden_only": 0,
+          "neither": 40,
+          "other_rule_hidden_pass": 3,
+          "visible_pass_then_other_rule": 0,
+          "execution_error": 40,
+          "timeout": 0
+        },
+        "tests_b": {
+          "n_task_runs": 360,
+          "visible_pass": 117,
+          "visible_pass_pct": 32.5,
+          "hidden_target_pass": 117,
+          "hidden_target_pass_pct": 32.5,
+          "visible_and_hidden_pass": 117,
+          "visible_and_hidden_pct": 32.5,
+          "visible_only": 0,
+          "hidden_only": 0,
+          "neither": 243,
+          "other_rule_hidden_pass": 230,
+          "visible_pass_then_other_rule": 0,
+          "execution_error": 243,
+          "timeout": 0
+        }
+      },
+      "families": {
+        "argmax_tie": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 0.0,
+            "hidden_target_rate": 0.0,
+            "both_rate": 0.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "dedup_order": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "duplicate_policy": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 0.16666666666666666,
+            "hidden_target_rate": 0.16666666666666666,
+            "both_rate": 0.16666666666666666,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "empty_segments": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 0.8333333333333334,
+            "hidden_target_rate": 0.8333333333333334,
+            "both_rate": 0.8333333333333334,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 0.7222222222222222,
+            "hidden_target_rate": 0.7222222222222222,
+            "both_rate": 0.7222222222222222,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "graph_direction": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 0.8333333333333334,
+            "hidden_target_rate": 0.8333333333333334,
+            "both_rate": 0.8333333333333334,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 0.16666666666666666,
+            "hidden_target_rate": 0.16666666666666666,
+            "both_rate": 0.16666666666666666,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "group_count": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 0.6666666666666666,
+            "hidden_target_rate": 0.6666666666666666,
+            "both_rate": 0.6666666666666666,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "integer_rounding": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 0.16666666666666666,
+            "hidden_target_rate": 0.16666666666666666,
+            "both_rate": 0.16666666666666666,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "interval_boundary": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 0.0,
+            "hidden_target_rate": 0.0,
+            "both_rate": 0.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "median_choice": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 0.2222222222222222,
+            "hidden_target_rate": 0.05555555555555555,
+            "both_rate": 0.05555555555555555,
+            "visible_only_rate": 0.16666666666666666,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 0.2777777777777778,
+            "hidden_target_rate": 0.2777777777777778,
+            "both_rate": 0.2777777777777778,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "merge_touching": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 0.0,
+            "hidden_target_rate": 0.0,
+            "both_rate": 0.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "normalization": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "partial_chunk": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 0.0,
+            "hidden_target_rate": 0.0,
+            "both_rate": 0.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "remainder_sign": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 0.0,
+            "hidden_target_rate": 0.0,
+            "both_rate": 0.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "search_index": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 0.0,
+            "hidden_target_rate": 0.0,
+            "both_rate": 0.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "sort_ties": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 0.0,
+            "hidden_target_rate": 0.0,
+            "both_rate": 0.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "space_fields": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 0.2222222222222222,
+            "hidden_target_rate": 0.2222222222222222,
+            "both_rate": 0.2222222222222222,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "substring_case": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 0.0,
+            "hidden_target_rate": 0.0,
+            "both_rate": 0.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "substring_overlap": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 0.0,
+            "hidden_target_rate": 0.0,
+            "both_rate": 0.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "threshold_boundary": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 0.16666666666666666,
+            "hidden_target_rate": 0.16666666666666666,
+            "both_rate": 0.16666666666666666,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "topk_ties": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 0.8333333333333334,
+            "hidden_target_rate": 0.8333333333333334,
+            "both_rate": 0.8333333333333334,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        }
+      }
+    },
+    "qwen36": {
+      "directions": {
+        "tests_a": {
+          "n_task_runs": 360,
+          "visible_pass": 333,
+          "visible_pass_pct": 92.5,
+          "hidden_target_pass": 333,
+          "hidden_target_pass_pct": 92.5,
+          "visible_and_hidden_pass": 333,
+          "visible_and_hidden_pct": 92.5,
+          "visible_only": 0,
+          "hidden_only": 0,
+          "neither": 27,
+          "other_rule_hidden_pass": 24,
+          "visible_pass_then_other_rule": 0,
+          "execution_error": 27,
+          "timeout": 0
+        },
+        "tests_b": {
+          "n_task_runs": 360,
+          "visible_pass": 244,
+          "visible_pass_pct": 67.77777777777777,
+          "hidden_target_pass": 241,
+          "hidden_target_pass_pct": 66.94444444444444,
+          "visible_and_hidden_pass": 241,
+          "visible_and_hidden_pct": 66.94444444444444,
+          "visible_only": 3,
+          "hidden_only": 0,
+          "neither": 116,
+          "other_rule_hidden_pass": 115,
+          "visible_pass_then_other_rule": 0,
+          "execution_error": 116,
+          "timeout": 0
+        }
+      },
+      "families": {
+        "argmax_tie": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "dedup_order": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "duplicate_policy": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 0.5,
+            "hidden_target_rate": 0.5,
+            "both_rate": 0.5,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "empty_segments": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "graph_direction": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 0.6666666666666666,
+            "hidden_target_rate": 0.6666666666666666,
+            "both_rate": 0.6666666666666666,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 0.8333333333333334,
+            "hidden_target_rate": 0.8333333333333334,
+            "both_rate": 0.8333333333333334,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "group_count": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "integer_rounding": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 0.0,
+            "hidden_target_rate": 0.0,
+            "both_rate": 0.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 0.8333333333333334,
+            "hidden_target_rate": 0.8333333333333334,
+            "both_rate": 0.8333333333333334,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "interval_boundary": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 0.0,
+            "hidden_target_rate": 0.0,
+            "both_rate": 0.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "median_choice": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 0.8888888888888888,
+            "hidden_target_rate": 0.8888888888888888,
+            "both_rate": 0.8888888888888888,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 0.9444444444444444,
+            "hidden_target_rate": 0.9444444444444444,
+            "both_rate": 0.9444444444444444,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "merge_touching": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 0.0,
+            "hidden_target_rate": 0.0,
+            "both_rate": 0.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "normalization": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "partial_chunk": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 0.8333333333333334,
+            "hidden_target_rate": 0.6666666666666666,
+            "both_rate": 0.6666666666666666,
+            "visible_only_rate": 0.16666666666666666,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "remainder_sign": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 0.0,
+            "hidden_target_rate": 0.0,
+            "both_rate": 0.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "search_index": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 0.3333333333333333,
+            "hidden_target_rate": 0.3333333333333333,
+            "both_rate": 0.3333333333333333,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "sort_ties": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 0.6666666666666666,
+            "hidden_target_rate": 0.6666666666666666,
+            "both_rate": 0.6666666666666666,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "space_fields": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "substring_case": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 0.3333333333333333,
+            "hidden_target_rate": 0.3333333333333333,
+            "both_rate": 0.3333333333333333,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "substring_overlap": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 0.9444444444444444,
+            "hidden_target_rate": 0.9444444444444444,
+            "both_rate": 0.9444444444444444,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 0.4444444444444444,
+            "hidden_target_rate": 0.4444444444444444,
+            "both_rate": 0.4444444444444444,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "threshold_boundary": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "topk_ties": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 0.8333333333333334,
+            "hidden_target_rate": 0.8333333333333334,
+            "both_rate": 0.8333333333333334,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        }
+      }
+    },
+    "qwen38": {
+      "directions": {
+        "tests_a": {
+          "n_task_runs": 360,
+          "visible_pass": 344,
+          "visible_pass_pct": 95.55555555555556,
+          "hidden_target_pass": 344,
+          "hidden_target_pass_pct": 95.55555555555556,
+          "visible_and_hidden_pass": 344,
+          "visible_and_hidden_pct": 95.55555555555556,
+          "visible_only": 0,
+          "hidden_only": 0,
+          "neither": 16,
+          "other_rule_hidden_pass": 15,
+          "visible_pass_then_other_rule": 0,
+          "execution_error": 16,
+          "timeout": 0
+        },
+        "tests_b": {
+          "n_task_runs": 360,
+          "visible_pass": 253,
+          "visible_pass_pct": 70.27777777777777,
+          "hidden_target_pass": 253,
+          "hidden_target_pass_pct": 70.27777777777777,
+          "visible_and_hidden_pass": 253,
+          "visible_and_hidden_pct": 70.27777777777777,
+          "visible_only": 0,
+          "hidden_only": 0,
+          "neither": 107,
+          "other_rule_hidden_pass": 104,
+          "visible_pass_then_other_rule": 0,
+          "execution_error": 107,
+          "timeout": 0
+        }
+      },
+      "families": {
+        "argmax_tie": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "dedup_order": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "duplicate_policy": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 0.5,
+            "hidden_target_rate": 0.5,
+            "both_rate": 0.5,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "empty_segments": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "graph_direction": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 0.3333333333333333,
+            "hidden_target_rate": 0.3333333333333333,
+            "both_rate": 0.3333333333333333,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 0.9444444444444444,
+            "hidden_target_rate": 0.9444444444444444,
+            "both_rate": 0.9444444444444444,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "group_count": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 0.9444444444444444,
+            "hidden_target_rate": 0.9444444444444444,
+            "both_rate": 0.9444444444444444,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "integer_rounding": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 0.8333333333333334,
+            "hidden_target_rate": 0.8333333333333334,
+            "both_rate": 0.8333333333333334,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 0.8888888888888888,
+            "hidden_target_rate": 0.8888888888888888,
+            "both_rate": 0.8888888888888888,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "interval_boundary": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 0.0,
+            "hidden_target_rate": 0.0,
+            "both_rate": 0.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "median_choice": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "merge_touching": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 0.0,
+            "hidden_target_rate": 0.0,
+            "both_rate": 0.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "normalization": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "partial_chunk": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 0.8333333333333334,
+            "hidden_target_rate": 0.8333333333333334,
+            "both_rate": 0.8333333333333334,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "remainder_sign": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 0.6666666666666666,
+            "hidden_target_rate": 0.6666666666666666,
+            "both_rate": 0.6666666666666666,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "search_index": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 0.16666666666666666,
+            "hidden_target_rate": 0.16666666666666666,
+            "both_rate": 0.16666666666666666,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "sort_ties": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "space_fields": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "substring_case": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 0.0,
+            "hidden_target_rate": 0.0,
+            "both_rate": 0.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "substring_overlap": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 0.05555555555555555,
+            "hidden_target_rate": 0.05555555555555555,
+            "both_rate": 0.05555555555555555,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "threshold_boundary": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "topk_ties": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        }
+      }
+    },
+    "deepseek": {
+      "directions": {
+        "tests_a": {
+          "n_task_runs": 360,
+          "visible_pass": 238,
+          "visible_pass_pct": 66.11111111111111,
+          "hidden_target_pass": 235,
+          "hidden_target_pass_pct": 65.27777777777777,
+          "visible_and_hidden_pass": 235,
+          "visible_and_hidden_pct": 65.27777777777777,
+          "visible_only": 3,
+          "hidden_only": 0,
+          "neither": 122,
+          "other_rule_hidden_pass": 66,
+          "visible_pass_then_other_rule": 0,
+          "execution_error": 122,
+          "timeout": 3
+        },
+        "tests_b": {
+          "n_task_runs": 360,
+          "visible_pass": 126,
+          "visible_pass_pct": 35.0,
+          "hidden_target_pass": 114,
+          "hidden_target_pass_pct": 31.666666666666668,
+          "visible_and_hidden_pass": 114,
+          "visible_and_hidden_pct": 31.666666666666668,
+          "visible_only": 12,
+          "hidden_only": 0,
+          "neither": 234,
+          "other_rule_hidden_pass": 193,
+          "visible_pass_then_other_rule": 0,
+          "execution_error": 234,
+          "timeout": 8
+        }
+      },
+      "families": {
+        "argmax_tie": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 0.0,
+            "hidden_target_rate": 0.0,
+            "both_rate": 0.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "dedup_order": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 0.3333333333333333,
+            "hidden_target_rate": 0.3333333333333333,
+            "both_rate": 0.3333333333333333,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 0.16666666666666666,
+            "hidden_target_rate": 0.16666666666666666,
+            "both_rate": 0.16666666666666666,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "duplicate_policy": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 0.0,
+            "hidden_target_rate": 0.0,
+            "both_rate": 0.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "empty_segments": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 0.8333333333333334,
+            "hidden_target_rate": 0.8333333333333334,
+            "both_rate": 0.8333333333333334,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "graph_direction": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 0.0,
+            "hidden_target_rate": 0.0,
+            "both_rate": 0.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 0.3333333333333333,
+            "both_rate": 0.3333333333333333,
+            "visible_only_rate": 0.6666666666666666,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "group_count": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 0.0,
+            "hidden_target_rate": 0.0,
+            "both_rate": 0.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "integer_rounding": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 0.0,
+            "hidden_target_rate": 0.0,
+            "both_rate": 0.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "interval_boundary": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 0.0,
+            "hidden_target_rate": 0.0,
+            "both_rate": 0.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "median_choice": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 0.16666666666666666,
+            "hidden_target_rate": 0.0,
+            "both_rate": 0.0,
+            "visible_only_rate": 0.16666666666666666,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 0.0,
+            "hidden_target_rate": 0.0,
+            "both_rate": 0.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "merge_touching": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 0.0,
+            "hidden_target_rate": 0.0,
+            "both_rate": 0.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "normalization": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 0.5,
+            "hidden_target_rate": 0.5,
+            "both_rate": 0.5,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "partial_chunk": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 0.16666666666666666,
+            "hidden_target_rate": 0.16666666666666666,
+            "both_rate": 0.16666666666666666,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "remainder_sign": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 0.0,
+            "hidden_target_rate": 0.0,
+            "both_rate": 0.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "search_index": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 0.3333333333333333,
+            "hidden_target_rate": 0.3333333333333333,
+            "both_rate": 0.3333333333333333,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "sort_ties": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 0.0,
+            "hidden_target_rate": 0.0,
+            "both_rate": 0.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "space_fields": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 0.0,
+            "hidden_target_rate": 0.0,
+            "both_rate": 0.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "substring_case": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 0.0,
+            "hidden_target_rate": 0.0,
+            "both_rate": 0.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "substring_overlap": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 0.2222222222222222,
+            "hidden_target_rate": 0.2222222222222222,
+            "both_rate": 0.2222222222222222,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 0.8333333333333334,
+            "hidden_target_rate": 0.8333333333333334,
+            "both_rate": 0.8333333333333334,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "threshold_boundary": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 0.6666666666666666,
+            "hidden_target_rate": 0.6666666666666666,
+            "both_rate": 0.6666666666666666,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 0.0,
+            "hidden_target_rate": 0.0,
+            "both_rate": 0.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        },
+        "topk_ties": {
+          "tests_a": {
+            "n": 18,
+            "visible_pass_rate": 1.0,
+            "hidden_target_rate": 1.0,
+            "both_rate": 1.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          },
+          "tests_b": {
+            "n": 18,
+            "visible_pass_rate": 0.0,
+            "hidden_target_rate": 0.0,
+            "both_rate": 0.0,
+            "visible_only_rate": 0.0,
+            "hidden_only_rate": 0.0
+          }
+        }
+      }
+    }
+  },
+  "nl_default_to_test_behavior_transitions": {
+    "qwen25": {
+      "tests_a": {
+        "A": {
+          "A": 233,
+          "B": 22,
+          "both": 0,
+          "neither": 0
+        },
+        "B": {
+          "A": 18,
+          "B": 18,
+          "both": 0,
+          "neither": 0
+        },
+        "both": {
+          "A": 0,
+          "B": 0,
+          "both": 0,
+          "neither": 0
+        },
+        "neither": {
+          "A": 15,
+          "B": 3,
+          "both": 0,
+          "neither": 51
+        }
+      },
+      "tests_b": {
+        "A": {
+          "A": 201,
+          "B": 54,
+          "both": 0,
+          "neither": 0
+        },
+        "B": {
+          "A": 18,
+          "B": 18,
+          "both": 0,
+          "neither": 0
+        },
+        "both": {
+          "A": 0,
+          "B": 0,
+          "both": 0,
+          "neither": 0
+        },
+        "neither": {
+          "A": 15,
+          "B": 4,
+          "both": 0,
+          "neither": 50
+        }
+      }
+    },
+    "qwen35": {
+      "tests_a": {
+        "A": {
+          "A": 310,
+          "B": 3,
+          "both": 0,
+          "neither": 8
+        },
+        "B": {
+          "A": 6,
+          "B": 0,
+          "both": 0,
+          "neither": 15
+        },
+        "both": {
+          "A": 0,
+          "B": 0,
+          "both": 0,
+          "neither": 0
+        },
+        "neither": {
+          "A": 1,
+          "B": 0,
+          "both": 0,
+          "neither": 17
+        }
+      },
+      "tests_b": {
+        "A": {
+          "A": 230,
+          "B": 91,
+          "both": 0,
+          "neither": 0
+        },
+        "B": {
+          "A": 0,
+          "B": 21,
+          "both": 0,
+          "neither": 0
+        },
+        "both": {
+          "A": 0,
+          "B": 0,
+          "both": 0,
+          "neither": 0
+        },
+        "neither": {
+          "A": 0,
+          "B": 5,
+          "both": 0,
+          "neither": 13
+        }
+      }
+    },
+    "qwen36": {
+      "tests_a": {
+        "A": {
+          "A": 251,
+          "B": 0,
+          "both": 0,
+          "neither": 1
+        },
+        "B": {
+          "A": 66,
+          "B": 24,
+          "both": 0,
+          "neither": 0
+        },
+        "both": {
+          "A": 0,
+          "B": 0,
+          "both": 0,
+          "neither": 0
+        },
+        "neither": {
+          "A": 16,
+          "B": 0,
+          "both": 0,
+          "neither": 2
+        }
+      },
+      "tests_b": {
+        "A": {
+          "A": 106,
+          "B": 143,
+          "both": 0,
+          "neither": 3
+        },
+        "B": {
+          "A": 9,
+          "B": 81,
+          "both": 0,
+          "neither": 0
+        },
+        "both": {
+          "A": 0,
+          "B": 0,
+          "both": 0,
+          "neither": 0
+        },
+        "neither": {
+          "A": 0,
+          "B": 17,
+          "both": 0,
+          "neither": 1
+        }
+      }
+    },
+    "qwen38": {
+      "tests_a": {
+        "A": {
+          "A": 292,
+          "B": 0,
+          "both": 0,
+          "neither": 1
+        },
+        "B": {
+          "A": 38,
+          "B": 15,
+          "both": 0,
+          "neither": 0
+        },
+        "both": {
+          "A": 0,
+          "B": 0,
+          "both": 0,
+          "neither": 0
+        },
+        "neither": {
+          "A": 14,
+          "B": 0,
+          "both": 0,
+          "neither": 0
+        }
+      },
+      "tests_b": {
+        "A": {
+          "A": 101,
+          "B": 189,
+          "both": 0,
+          "neither": 3
+        },
+        "B": {
+          "A": 3,
+          "B": 50,
+          "both": 0,
+          "neither": 0
+        },
+        "both": {
+          "A": 0,
+          "B": 0,
+          "both": 0,
+          "neither": 0
+        },
+        "neither": {
+          "A": 0,
+          "B": 14,
+          "both": 0,
+          "neither": 0
+        }
+      }
+    },
+    "deepseek": {
+      "tests_a": {
+        "A": {
+          "A": 207,
+          "B": 36,
+          "both": 0,
+          "neither": 9
+        },
+        "B": {
+          "A": 4,
+          "B": 11,
+          "both": 0,
+          "neither": 6
+        },
+        "both": {
+          "A": 0,
+          "B": 0,
+          "both": 0,
+          "neither": 0
+        },
+        "neither": {
+          "A": 24,
+          "B": 19,
+          "both": 0,
+          "neither": 44
+        }
+      },
+      "tests_b": {
+        "A": {
+          "A": 184,
+          "B": 63,
+          "both": 0,
+          "neither": 5
+        },
+        "B": {
+          "A": 0,
+          "B": 16,
+          "both": 0,
+          "neither": 5
+        },
+        "both": {
+          "A": 0,
+          "B": 0,
+          "both": 0,
+          "neither": 0
+        },
+        "neither": {
+          "A": 9,
+          "B": 35,
+          "both": 0,
+          "neither": 43
+        }
+      }
+    }
+  },
+  "metric_note": "Counts are task-run records; family bootstrap should be used for inferential intervals. Visible pass requires all three displayed assertions."
+}

@@ -32,6 +32,9 @@ def main():
     p=argparse.ArgumentParser();p.add_argument('--partial',action='store_true');a=p.parse_args()
     out=ROOT/'aaai/AuthorKit27/AuthorKit27/Tables';out.mkdir(exist_ok=True)
     config=yaml.safe_load((ROOT/'configs/controlled.yaml').read_text())
+    extension_path=ROOT/'outputs/analysis/unrelated_results.json'
+    extension=json.loads(extension_path.read_text()) if extension_path.exists() else None
+    if extension and not extension['complete']:raise ValueError('Incomplete other-task extension.')
     records={}; missing=[]
     for exp,spec in config['experiments'].items():
         models=spec['models']
@@ -50,12 +53,17 @@ def main():
     for (exp,model),rows in records.items():
         summary[f'{exp}/{model}']=analyze(rows)
         if exp=='main':
+            other_rows=read_jsonl(ROOT/f'outputs/controlled/unrelated/{model}/eval_results.jsonl') if extension else []
             for dataset,label in DATASETS.items():
                 group=[r for r in rows if r['source_dataset']==dataset];result=analyze(group)
                 summary[f'{exp}/{model}/{dataset}']=result
                 n=len({r['task_id'] for r in group})
                 main_rows.append([MODELS[model],label,n]+[percent(result['conditions'][c]['passed']) for c in CONDITIONS[exp]])
                 official_rows.append([MODELS[model],label,n]+[percent(result['conditions'][c]['official_passed']) for c in CONDITIONS[exp]])
+                if extension:
+                    main_rows[-1].append(percent(extension['results'][f'{model}/{dataset}']['rates']['unrelated_tests']))
+                    other_group=[r for r in other_rows if r['source_dataset']==dataset]
+                    official_rows[-1].append(percent(sum(r['official_passed'] for r in other_group)/len(other_group)))
                 effects.append([MODELS[model],label]+[interval(r) for r in result['contrasts']])
                 for effect in result['contrasts']:
                     base={'nl_only':'NL','inputs_only':'Inputs','wrong_tests':'Wrong'}[effect['base']]
@@ -82,11 +90,11 @@ def main():
             **{f'Quality{s.title()}Kill':percent(v) for s,v in qs['independent_validation_mean_kill_rate'].items()}}
     (out/'values.tex').write_text('\n'.join('\\newcommand{\\'+k+'}{'+str(v)+'}' for k,v in values.items())+'\n')
     for name,columns,headers,rows,caption,label in [
-      ('main','llrrrrr',['Model','Dataset','$n$','NL-only','Correct I/O','Wrong I/O','Inputs-only'],main_rows,
+      ('main','llrrrrrr' if extension else 'llrrrrr',['Model','Dataset','$n$','NL-only','Correct I/O','Wrong I/O','Inputs-only']+(['Other-task'] if extension else []),main_rows,
        'Held-out pass rates (\\%), averaged over three runs. Exposed inputs are removed from the evaluation suite. Each task contributes one mean correctness value.','main'),
       ('main_effects','lllll',['Model','Dataset','Correct $-$ NL','Correct $-$ Inputs','Correct $-$ Wrong'],effects,
        'Paired differences in percentage points with task-bootstrap 95\\% intervals. Repeated runs are averaged within tasks before resampling.','main-effects'),
-      ('official','llrrrrr',['Model','Dataset','$n$','NL-only','Correct I/O','Wrong I/O','Inputs-only'],official_rows,
+      ('official','llrrrrrr' if extension else 'llrrrrr',['Model','Dataset','$n$','NL-only','Correct I/O','Wrong I/O','Inputs-only']+(['Other-task'] if extension else []),official_rows,
        'Complete official-suite pass rates (\\%), averaged over three runs. These include public inputs and are secondary to held-out performance.','official'),
       ('repeats','lllrrr',['Model','Dataset','Contrast','Run 1','Run 2','Run 3'],repeats,
        'Per-run paired held-out differences in percentage points. Task-level gains, losses, and exact McNemar tests are retained in the accompanying machine-readable summaries.','repeats'),
@@ -98,7 +106,7 @@ def main():
        'Rule adherence and paired switching (\\%) averaged over three runs of 120 paired instances from 20 specification families. Tests A/B and Explicit A/B are scored against their assigned rule. NL-only columns report the default rule distribution. Switching requires both test-conditioned programs to follow their respective rules. Paired outcomes are averaged within instances before resampling the 20 families.','semantic')]:
         (out/(name+'.tex')).write_text(table(columns,headers,rows,caption,label))
     dest=ROOT/'outputs/analysis/controlled_results.json';dest.parent.mkdir(exist_ok=True)
-    dest.write_text(json.dumps({'complete':not missing,'missing_evaluations':missing,'quality_dataset':qs,'results':summary},indent=2)+'\n')
+    dest.write_text(json.dumps({'complete':not missing,'missing_evaluations':missing,'quality_dataset':qs,'results':summary,'other_task_extension':{'file':'unrelated_results.json','added_generations':extension['added_generations']} if extension else None},indent=2)+'\n')
     print(json.dumps({'complete':not missing,'missing_evaluations':missing,'tables':str(out)}))
 
 if __name__=='__main__':main()

@@ -1,0 +1,71 @@
+{
+  "observations": 3600,
+  "pairs": 600,
+  "unique_diagnostic_programs": 77,
+  "models": {
+    "qwen25": {
+      "outcomes": {
+        "target_rule": 342,
+        "alternative_rule": 277,
+        "neither_rule": 101
+      },
+      "diagnostics": {
+        "common_case_mismatch": 36,
+        "per_test_runtime_error": 29,
+        "neither_rule_output_mismatch": 36
+      },
+      "diagnostic_label_changes": 0
+    },
+    "qwen36": {
+      "outcomes": {
+        "target_rule": 574,
+        "alternative_rule": 139,
+        "neither_rule": 7
+      },
+      "diagnostics": {
+        "common_case_mismatch": 3,
+        "neither_rule_output_mismatch": 3,
+        "initialization_error": 1
+      },
+      "diagnostic_label_changes": 0
+    },
+    "qwen35": {
+      "outcomes": {
+        "alternative_rule": 233,
+        "target_rule": 434,
+        "neither_rule": 53
+      },
+      "diagnostics": {
+        "common_case_mismatch": 19,
+        "neither_rule_output_mismatch": 34
+      },
+      "diagnostic_label_changes": 0
+    },
+    "qwen38": {
+      "outcomes": {
+        "target_rule": 597,
+        "alternative_rule": 119,
+        "neither_rule": 4
+      },
+      "diagnostics": {
+        "neither_rule_output_mismatch": 3,
+        "common_case_mismatch": 1
+      },
+      "diagnostic_label_changes": 0
+    },
+    "deepseek": {
+      "outcomes": {
+        "alternative_rule": 259,
+        "target_rule": 349,
+        "neither_rule": 112
+      },
+      "diagnostics": {
+        "timeout": 11,
+        "per_test_runtime_error": 26,
+        "neither_rule_output_mismatch": 42,
+        "common_case_mismatch": 33
+      },
+      "diagnostic_label_changes": 0
+    }
+  }
+}

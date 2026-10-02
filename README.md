@@ -1,257 +1,95 @@
-# TDD Interpretability Experiments
+# Do Code Language Models Follow Tests? Paired Interventions on Program Behavior
 
-This repository studies how visible tests constrain code generation and change internal representations.
+Replication artifact for the FSE 2027 submission. The current manuscript is [paper/paper_fse2027.pdf](paper/paper_fse2027.pdf); editable sources, twelve tables, and three figures are in [paper/](paper/).
 
-## Repository contents
+## What is included
 
-Git tracks source code, scripts, tests, configuration, dependency files, frozen experiment datasets, source benchmarks, tokenizer assets, and synthetic-test candidate pools. Runtime outputs, model weights, virtual environments, temporary files, manuscript files, release archives, and duplicated synthetic benchmark variants stay local. The complete results archive contains the experiment outputs and manuscript.
+- Five models: Qwen2.5-Coder-7B-Instruct, Qwen3.5-9B, Qwen3.6-27B, Qwen3.8-27B, and DeepSeek-Coder-6.7B-Instruct.
+- Frozen tasks, condition prompts, evaluators, donor mappings, and fixed test-selection pools under `data/controlled/`.
+- All **67,650 generated-program records**, compressed individually as `outputs/controlled/{experiment}/{model}/generations.jsonl.gz`, and their task-level `eval_results.jsonl` files.
+- Representation and equivalent-wording analyses: prompt inventories, per-instance/per-layer distances, behavioral labels, grouped folds, held-out predictions, and summaries. The actual activation tensors and model weights are not included.
+- Visible-assertion replay records and failure examples underlying the manuscript's failure analysis.
 
-The original LiveCodeBench source dataset is stored as `data/livecodebench_release_v6_minus_v5.jsonl.gz`. To restore the JSONL path used by data-preparation and historical-experiment scripts, run:
+| Experiment | Tasks or instances | Conditions | Runs | Models | Generations |
+|---|---:|---:|---:|---:|---:|
+| Matched benchmark controls | 710 | 4 | 3 | 5 | 42,600 |
+| Other-task test extension | 710 | 1 | 3 | 5 | 10,650 |
+| Paired semantics and capability controls | 120 | 6 | 3 | 5 | 10,800 |
+| Fixed three-test selection | 180 | 4 | 1 | 5 | 3,600 |
+| **Total** | | | | | **67,650** |
 
-```bash
-gzip -dk data/livecodebench_release_v6_minus_v5.jsonl.gz
-```
+The benchmark experiment including the extension has 53,250 generations. Representation analysis reuses existing generated programs: 1,200 original prompt states and 2,400 equivalent-wording states were collected, with no additional code generations. Repeated generations are grouped within tasks; the twenty semantic families remain the family-level analysis units.
 
-The frozen three-experiment datasets are available directly under `data/controlled/`.
+## Recheck results without a GPU
 
-## Controlled experiments
-
-The active protocol is in [experiment_design.md](experiment_design.md), with executable settings in `configs/controlled.yaml`. It includes matched I/O controls, paired semantic rules, and fixed-size suites selected by independently validated fault detection.
+Python 3.10+ is sufficient for the release verifier; it uses the standard library and does not execute generated code.
 
 ```bash
 mkdir -p .tmp
 export TMPDIR="$PWD/.tmp" TMP="$PWD/.tmp" TEMP="$PWD/.tmp"
-.venv/bin/python -m unittest discover -s tests -v
-.venv/bin/python scripts/audit_controls.py
-.venv/bin/python scripts/run_controlled_experiments.py --model qwen25 --gpu 0 --experiments semantic --generate-only
-# Run evaluation inside the code-execution sandbox.
-.venv/bin/python scripts/run_controlled_experiments.py --model qwen25 --gpu 0 --experiments semantic --evaluate-only
+python scripts/verify_release.py
 ```
 
-Frozen tasks are in `data/controlled/`; generated programs, task-level grades, and paired summaries are in `outputs/controlled/`. Existing tasks remain paired across three main and semantic runs. Semantic outcomes are paired within each run, averaged within instances, and bootstrapped by specification family. Quality evaluation excludes every candidate-pool input, including candidates that were not selected for display.
+This checks unique task/condition/run keys, matching generation/evaluation coverage, all 67,650 records, and the frozen manuscript's behavioral point estimates. It recomputes semantic switching, other-task contrasts' underlying rates, held-out probe MAE/MSE and constant baselines, and the visible-versus-hidden failure count. Results are written to `.tmp/release_verification.json`.
 
-All three experiments cover Qwen2.5-Coder-7B, DeepSeek-Coder-6.7B, Qwen3.6-27B, Qwen3.5-9B, and Qwen3.8-27B. Model keys and local paths are listed in `configs/controlled.yaml`. Qwen3.8 main generation uses two replicas with two GPUs each. Its `protocol.json` records all generation commands, fixed request ranges, GPU IDs, and the merge command; set `CUDA_VISIBLE_DEVICES` to the IDs for each replica. `execution_overrides` supplies its tensor-parallel configuration. Other model/experiment combinations use one GPU.
-
-The frozen task files contain the official and held-out evaluators; `evaluate_controlled.py` reads those evaluators by task ID.
-
-The official LiveCodeBench checkout is configured by `evaluation.lcb_root`. The checker runs in timed child processes using pipes. DeepSeek uses the original ByteLevel tokenizer assets with a generic fast-tokenizer loader under `data/model_tokenizers/` to preserve whitespace on Transformers 5.
-
-## Results and manuscript
-
-After all evaluations finish, regenerate the result tables and report, then compile with the AAAI template's required pdfLaTeX engine:
+Figure rebuilding uses only the included table values and plot inputs:
 
 ```bash
-.venv/bin/python -B scripts/export_controlled_paper.py
-.venv/bin/python -B scripts/analyze_semantic_families.py
-.venv/bin/python -B scripts/write_controlled_report.py
-bash scripts/build_paper.sh
-.venv/bin/python -B scripts/package_results.py
+pip install -r paper/Figures/requirements.txt
+python paper/Figures/build_figures.py
 ```
 
-The export requires all fifteen experiment/model result files. The report is `outputs/analysis/controlled_report.md`; the PDF is `aaai/AuthorKit27/AuthorKit27/paper.pdf`. The build script uses the project-local TinyTeX installation when available, or the system pdfLaTeX and BibTeX tools.
+Open `paper/paper.tex` in Overleaf with XeLaTeX, or compile it locally with XeLaTeX/BibTeX or Tectonic. The included PDF is the checked submission build. Current table sources are maintained in `paper/Tables/`; older `export_*paper.py` scripts preserve the historical export format and are not the current FSE typesetting pipeline.
 
-## Environment
+## Evidence map
 
-The project-local virtual environment is `.venv`.
+| Paper material | Saved evidence and entry points |
+|---|---|
+| Figure 1 and Table 1: intervention and rule families | `data/controlled/semantic/tasks.jsonl`, `src/tddexp/semantic_tasks.py`, `paper/Figures/build_figures.py` |
+| Tables 2–3 and Figure 2: rule adoption, repeats, family profiles | `outputs/controlled/semantic/`, `outputs/analysis/semantic_families.json`, `scripts/analyze_controlled.py`, `scripts/analyze_semantic_families.py` |
+| Visible adherence, default-rule transitions and program examples | `outputs/semantic_visible/`, `outputs/semantic_cases/`, `scripts/semantic_visible/` |
+| Table 4: failed-program diagnoses | `outputs/semantic_representation/behavior_labels.jsonl`, `label_summary.json`, `scripts/label_semantic_representation.py` |
+| Tables 5–8 and Figure 3: matched benchmark conditions, repeats, other-task tests | `outputs/controlled/main/`, `outputs/controlled/unrelated/`, `outputs/analysis/unrelated_results.json`, `data/controlled/unrelated/donor_mapping.jsonl` |
+| Table 9: fixed-size test selection | `data/controlled/quality/`, `outputs/controlled/quality/`, `outputs/analysis/control_audit/quality_detection.json` |
+| Table 10: equivalent wording | `outputs/semantic_surface/analysis.json`, `pair_layer_metrics.csv`, `scripts/analyze_semantic_surface.py` |
+| Table 11: representation–behavior association | `outputs/semantic_representation/representation_analysis.json`, `pair_layer_metrics.csv`, `scripts/analyze_semantic_representation.py` |
+| Table 12: held-out-family prediction | `outputs/semantic_representation/family_probe.json`, `family_probe_predictions.jsonl`, `family_folds.json`, `scripts/probe_semantic_representation.py` |
+
+The manuscript's frozen, compact evidence snapshots are also under `paper/Results/`. Original statistical analysis outputs are retained there; the current paper displays point estimates and repeated-run results.
+
+## Rerun generation, evaluation, or representation extraction
+
+Install dependencies in a new virtual environment; choose a PyTorch build suitable for the machine before installing model dependencies:
 
 ```bash
+python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
-```
-
-For real local-model generation, install the model dependencies on a machine with the right PyTorch build:
-
-```bash
 pip install -r requirements-model.txt
 ```
 
-On GPU nodes, prefer the PyTorch command matching the node's CUDA version from the official PyTorch selector, then install `accelerate`.
-
-The default model identifier is:
-
-```text
-Qwen/Qwen2.5-Coder-7B-Instruct
-```
-
-## Quick Smoke Test
-
-This does not load the 7B model. It uses reference code to verify dataset loading, prompt construction, and test execution.
+`configs/controlled.yaml` contains public model identifiers accepted by the model loaders. Replace these values with local checkpoint directories if desired. The original DeepSeek tokenizer is included under `data/model_tokenizers/`. `configs/unrelated.yaml`, `configs/semantic_representation.yaml`, and `configs/semantic_surface.yaml` define the extensions. Model-specific optional requirements are retained in the other requirements files.
 
 ```bash
-source .venv/bin/activate
-python scripts/run_smoke.py --limit 3
+python scripts/run_controlled_experiments.py --model qwen25 --gpu 0 --experiments semantic --generate-only
+# Evaluate generated programs inside an isolated code-execution environment.
+python scripts/run_controlled_experiments.py --model qwen25 --gpu 0 --experiments semantic --evaluate-only
 ```
 
-## First Real Generation Run
+To use the included generations with tools expecting uncompressed JSONL:
 
 ```bash
-source .venv/bin/activate
-python scripts/run_generation.py \
-  --dataset data/humaneval.jsonl \
-  --dataset-name humaneval \
-  --model-path Qwen/Qwen2.5-Coder-7B-Instruct \
-  --conditions nl_only nl_tests shuffled_tests irrelevant_tests \
-  --limit 20 \
-  --visible-tests 3 \
-  --max-new-tokens 256 \
-  --collect-states \
-  --output-dir outputs/humaneval_qwen_mvp
+find outputs/controlled -name 'generations.jsonl.gz' -exec gzip -dk {} \;
 ```
 
-Then evaluate and train probes:
+Do this before running the visible-replay scripts or the original representation preparation/collection scripts. `scripts/semantic_visible/summarize_visible_hidden.py` recomputes visible/hidden summaries from saved evaluations without re-executing model code. `analyze_visible.py` executes the generated programs and should be run in an isolated environment. `reevaluate_timeouts.py` is the retained historical repair of eleven provisional timeout records, not a step required for the final saved records.
 
-```bash
-python scripts/evaluate_generations.py \
-  --generations outputs/humaneval_qwen_mvp/generations.jsonl \
-  --output outputs/humaneval_qwen_mvp/eval_results.jsonl
+Representation/probe refitting requires regenerating the omitted activation tensors using the provided `prepare_*`, `run_*`, and `collect_generation_states.py` scripts; the CPU verifier checks saved predictions and metrics without those tensors. The probe is linear ridge regression in kernel form, selected by inner family-held-out MAE and evaluated on outer held-out families.
 
-python scripts/train_probe.py \
-  --eval-results outputs/humaneval_qwen_mvp/eval_results.jsonl \
-  --states-dir outputs/humaneval_qwen_mvp/states \
-  --output outputs/humaneval_qwen_mvp/probe_results.json
-```
+LiveCodeBench execution uses the official `run_test` implementation. Configure its checkout with `evaluation.lcb_root`; the default is `.tmp/LiveCodeBench`. The frozen benchmark tasks and official/held-out test inputs are included. Restore the original source dataset for historical preparation scripts with `gzip -dk data/livecodebench_release_v6_minus_v5.jsonl.gz`.
 
-## LiveCodeBench Run
+## Provenance and exclusions
 
-Install data-loading dependencies:
+This release contains copies of saved experiment artifacts. Machine-specific paths in configurations and provenance strings were replaced by public model identifiers or relative/redacted local paths. The experiment outcomes and numerical values were preserved. `artifact_manifest.json` records coverage; `checksums.sha256` records the released file hashes.
 
-```bash
-source .venv/bin/activate
-pip install -r requirements-data.txt
-```
-
-Download/convert LiveCodeBench code generation lite. For the main experiment, prefer the newest tasks added in `release_v6` relative to `release_v5`:
-
-```bash
-make prepare-lcb-v6-new
-```
-
-By default, this also strips sample/example tests from `question_content` and stores the result in `question_content_no_public_tests`. The raw `public_test_cases` field is kept separately and is only injected in test-conditioned prompts such as `nl_tests`.
-
-Run the first LiveCodeBench generation experiment:
-
-```bash
-make generate-lcb-v6-new
-```
-
-For LiveCodeBench, omitting `--visible-tests` uses all `public_test_cases` attached to
-each problem. Pass `--visible-tests N` only when you intentionally want to truncate the
-visible tests for an ablation.
-
-Export generations in the format expected by the official LiveCodeBench custom evaluator:
-
-```bash
-make export-lcb-nl-tests
-make export-lcb-nl-only
-make export-lcb-shuffled
-make export-lcb-irrelevant
-```
-
-Then evaluate these JSON files with the official LiveCodeBench runner, using its custom evaluator. The exported files have this shape:
-
-```json
-[
-  {"question_id": "question-id", "code_list": ["...python code..."]}
-]
-```
-
-We intentionally do not use `scripts/evaluate_generations.py` for LiveCodeBench because LiveCodeBench mixes stdin-style and platform-style code tasks. The official runner should provide the pass/fail labels; after that, those labels can be joined back with `outputs/livecodebench_qwen_mvp/states/*.npz` for probing.
-
-## Qwen3.6-27B LiveCodeBench Robustness Run
-
-Qwen3.6 uses a multimodal conditional-generation architecture and requires a
-recent Transformers release. Create the environment with Python 3.10 or 3.11:
-
-```bash
-python3.10 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements-qwen36.txt
-```
-
-The experiment uses the model chat template and thinking mode, with greedy
-decoding so paired prompt-condition comparisons remain deterministic. First
-verify that one A800 can load a BF16 model replica:
-
-```bash
-make smoke-lcb-qwen36
-```
-
-For faster generation, keep vLLM in a separate environment so its compiled
-Torch dependencies do not modify the Transformers environment:
-
-```bash
-uv venv .venv-vllm --python 3.12 --seed
-uv pip install --python .venv-vllm/bin/python vllm --torch-backend=auto
-```
-
-The accelerated pipeline uses vLLM only for batched autoregressive generation,
-then replays the exact prompt with Transformers to collect the final prompt
-token's hidden state from every layer. A SHA-256 hash of the prompt token IDs is
-checked across both stages. The finalized Qwen3.6 robustness protocol uses
-greedy decoding with thinking disabled and at most 8192 new tokens. Thinking
-enabled was rejected for the main run because most generations exhausted the
-output budget before closing the reasoning segment. Run the two-stage smoke
-test:
-
-```bash
-make smoke-lcb-qwen36-vllm
-```
-
-Then run both stages of the original-public-test experiment on eight GPUs:
-
-```bash
-make run-lcb-qwen36-vllm-mgpu GPUS=0,1,2,3,4,5,6,7
-```
-
-The first stage writes `generations_vllm.jsonl`; the second writes the final
-`generations.jsonl` plus `states/*.npz`. The original Transformers-only target
-`generate-lcb-qwen36-mgpu` remains available as a reference implementation.
-
-After restoring the official LiveCodeBench repository, evaluate and analyze:
-
-```bash
-make evaluate-lcb-qwen36 LCB_ROOT=/path/to/LiveCodeBench
-make analyze-lcb-qwen36-behavior
-make analyze-lcb-qwen36-hidden-shift
-```
-
-The synthetic high5 robustness condition is:
-
-```bash
-make run-lcb-qwen36-synth-high5-vllm-mgpu GPUS=0,1,2,3,4,5,6,7
-make evaluate-lcb-qwen36-synth-high5 LCB_ROOT=/path/to/LiveCodeBench
-make analyze-lcb-qwen36-synth-high5-behavior
-make analyze-lcb-qwen36-synth-high5-hidden-shift
-```
-
-## Repair Datasets
-
-For QuixBugs, clone or download the benchmark into `data/QuixBugs`, then run:
-
-```bash
-make prepare-quixbugs
-```
-
-This writes:
-
-```text
-data/quixbugs_repair.jsonl
-```
-
-For BugsInPy, place the checkout at `data/BugsInPy`, then run:
-
-```bash
-make prepare-bugsinpy
-```
-
-This creates a manifest for later curation:
-
-```text
-data/bugsinpy_manifest.jsonl
-```
-
-## Notes
-
-- `visible_tests` are put into the prompt. For LiveCodeBench, the default is all public tests per task.
-- `hidden_tests` are used as the correctness label.
-- If the dataset has only a few tests, hidden tests fall back to all tests, which is acceptable for a smoke test but not for final reporting.
+Model weights, activation tensor caches, runtime environments, machine logs, and exploratory runs that do not enter the current paper are omitted. The generation records, prompt token hashes, prompts, candidate programs, task-level grades, diagnostic outcomes, and derived numerical records needed to inspect the reported behavior are included. Rerunning model inference or tensor-level probes therefore requires downloading the models and recomputing the omitted states.

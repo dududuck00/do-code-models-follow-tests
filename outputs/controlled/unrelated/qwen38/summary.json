@@ -1,0 +1,47 @@
+[
+  {
+    "model_path": "Qwen/Qwen3.8-27B",
+    "experiment": "unrelated",
+    "dataset": "mbppplus",
+    "conditions": {
+      "unrelated_tests": {
+        "observations": 1134,
+        "tasks": 378,
+        "passed": 0.4056437389770723,
+        "official_passed": 0.40476190476190477,
+        "heldout_passed": 0.4056437389770723
+      }
+    },
+    "contrasts": []
+  },
+  {
+    "model_path": "Qwen/Qwen3.8-27B",
+    "experiment": "unrelated",
+    "dataset": "humanevalplus",
+    "conditions": {
+      "unrelated_tests": {
+        "observations": 471,
+        "tasks": 157,
+        "passed": 0.692144373673036,
+        "official_passed": 0.692144373673036,
+        "heldout_passed": 0.692144373673036
+      }
+    },
+    "contrasts": []
+  },
+  {
+    "model_path": "Qwen/Qwen3.8-27B",
+    "experiment": "unrelated",
+    "dataset": "livecodebench",
+    "conditions": {
+      "unrelated_tests": {
+        "observations": 525,
+        "tasks": 175,
+        "passed": 0.45714285714285713,
+        "official_passed": 0.4533333333333333,
+        "heldout_passed": 0.45714285714285713
+      }
+    },
+    "contrasts": []
+  }
+]

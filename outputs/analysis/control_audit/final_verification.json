@@ -1,0 +1,26 @@
+{
+  "all_experiments_complete": true,
+  "evaluated_rows": {
+    "main/qwen25": 8520,
+    "main/deepseek": 8520,
+    "main/qwen36": 8520,
+    "semantic/qwen25": 720,
+    "semantic/qwen36": 720,
+    "quality/qwen25": 720,
+    "quality/qwen36": 720
+  },
+  "total_evaluated_rows": 28440,
+  "protocol_regression_checks_passed": 14,
+  "reference_validated_function_tasks": 535,
+  "quality_tasks": 180,
+  "semantic_instances": 120,
+  "semantic_families": 20,
+  "main_tasks": 710,
+  "lcb_evaluation_protocol": 3,
+  "lcb_memory_limit_bytes": 4294967296,
+  "pdf_pages": 9,
+  "pdf_overfull_boxes": 0,
+  "pdf_undefined_references": 0,
+  "pdf_visual_check": "title, main and semantic tables, quality results, and final layout checked",
+  "manuscript_em_dash_count": 0
+}

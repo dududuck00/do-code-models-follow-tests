@@ -1,0 +1,235 @@
+{
+  "provenance": "Author-supplied summary in conversation. Raw states, per-layer measurements, folds and predictions have not been inspected locally. All supplied intervals are preserved, not recomputed.",
+  "unique_model_prompt_forwards": 1200,
+  "linked_behavior_records": 3600,
+  "instances_per_model": 120,
+  "families": 20,
+  "runs_per_prompt": 3,
+  "bootstrap_replicates": 5000,
+  "qwen25_defined_bootstrap_replicates": 4987,
+  "diagnostic_unique_programs": null,
+  "rows": [
+    {
+      "model": "Qwen2.5-7B",
+      "peak": "28/28",
+      "overall": [
+        0.222,
+        -0.032,
+        0.421
+      ],
+      "within": [
+        0.053,
+        -0.159,
+        0.228
+      ],
+      "adjusted": [
+        0.051,
+        -0.176,
+        0.204
+      ],
+      "mae": [
+        0.111,
+        0.243,
+        0.191
+      ],
+      "delta": [
+        0.08,
+        0.024,
+        0.144
+      ],
+      "mse": [
+        0.111,
+        0.139,
+        0.12
+      ],
+      "behavior": [
+        342,
+        277,
+        101
+      ],
+      "diagnosis": [
+        29,
+        36,
+        36
+      ]
+    },
+    {
+      "model": "Qwen3.5-9B",
+      "peak": "30/32",
+      "overall": [
+        0.295,
+        0.079,
+        0.469
+      ],
+      "within": [
+        0.079,
+        -0.095,
+        0.27
+      ],
+      "adjusted": [
+        0.027,
+        -0.204,
+        0.296
+      ],
+      "mae": [
+        0.242,
+        0.414,
+        0.326
+      ],
+      "delta": [
+        0.084,
+        0.024,
+        0.142
+      ],
+      "mse": [
+        0.18,
+        0.257,
+        0.222
+      ],
+      "behavior": [
+        434,
+        233,
+        53
+      ],
+      "diagnosis": [
+        0,
+        19,
+        34
+      ]
+    },
+    {
+      "model": "Qwen3.6-27B",
+      "peak": "64/64",
+      "overall": [
+        0.263,
+        -0.022,
+        0.523
+      ],
+      "within": [
+        0.183,
+        -0.116,
+        0.456
+      ],
+      "adjusted": [
+        0.16,
+        -0.13,
+        0.421
+      ],
+      "mae": [
+        0.394,
+        0.49,
+        0.437
+      ],
+      "delta": [
+        0.042,
+        -0.137,
+        0.215
+      ],
+      "mse": [
+        0.237,
+        0.307,
+        0.253
+      ],
+      "behavior": [
+        574,
+        139,
+        7
+      ],
+      "diagnosis": [
+        1,
+        3,
+        3
+      ]
+    },
+    {
+      "model": "Qwen3.8-27B",
+      "peak": "60/64",
+      "overall": [
+        0.165,
+        -0.138,
+        0.45
+      ],
+      "within": [
+        0.194,
+        0.007,
+        0.376
+      ],
+      "adjusted": [
+        0.162,
+        -0.015,
+        0.339
+      ],
+      "mae": [
+        0.342,
+        0.479,
+        0.451
+      ],
+      "delta": [
+        0.109,
+        -0.031,
+        0.241
+      ],
+      "mse": [
+        0.232,
+        0.299,
+        0.252
+      ],
+      "behavior": [
+        597,
+        119,
+        4
+      ],
+      "diagnosis": [
+        0,
+        1,
+        3
+      ]
+    },
+    {
+      "model": "DeepSeek-6.7B",
+      "peak": "17/32",
+      "overall": [
+        0.123,
+        -0.138,
+        0.348
+      ],
+      "within": [
+        0.089,
+        -0.119,
+        0.293
+      ],
+      "adjusted": [
+        0.1,
+        -0.08,
+        0.282
+      ],
+      "mae": [
+        0.111,
+        0.231565,
+        0.225
+      ],
+      "delta": [
+        0.114,
+        0.055,
+        0.196
+      ],
+      "mse": [
+        0.104769,
+        0.13744,
+        0.13832
+      ],
+      "behavior": [
+        349,
+        259,
+        112
+      ],
+      "diagnosis": [
+        37,
+        33,
+        42
+      ]
+    }
+  ],
+  "diagnostic_unique_programs_qwen_only": 52,
+  "neither_behavior_records": 277
+}

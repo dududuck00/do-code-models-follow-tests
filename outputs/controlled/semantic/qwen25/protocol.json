@@ -1,0 +1,19 @@
+{
+  "experiment": "semantic",
+  "model": "qwen25",
+  "model_path": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "config": {
+    "dtype": "bfloat16",
+    "prompt_format": "chat",
+    "thinking": "disabled",
+    "temperature": 0.0,
+    "seed": 0,
+    "order_seed": 0,
+    "max_new_tokens": 8192,
+    "max_model_len": 16384,
+    "batch_size": 1024,
+    "max_num_seqs": 32
+  },
+  "repeats": 3,
+  "dataset": "data/controlled/semantic/tasks.jsonl"
+}

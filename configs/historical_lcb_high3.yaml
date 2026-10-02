@@ -1,0 +1,37 @@
+experiment: historical_lcb_high3
+model: qwen36
+model_path: Qwen/Qwen3.6-27B
+dataset: data/controlled/historical_lcb_high3/tasks.jsonl
+prompt_source: outputs/livecodebench_v6_new_qwen_synthetic_high3/generations.jsonl
+output_dir: outputs/livecodebench_v6_new_qwen36_27b_synth_high3_nothink
+conditions: [nl_only, nl_tests, shuffled_tests, irrelevant_tests]
+repeats: 1
+generation:
+  dtype: bfloat16
+  prompt_format: chat
+  thinking: disabled
+  max_new_tokens: 8192
+  temperature: 0.0
+  top_p: 1.0
+  seed: 0
+  batch_size: 32
+  max_num_seqs: 8
+  max_num_batched_tokens: 2048
+  max_model_len: 16384
+  tensor_parallel_size: 1
+  gpu_memory_utilization: 0.9
+  enable_prefix_caching: true
+execution:
+  replicas: 1
+  gpu: '1'
+evaluation:
+  script: scripts/evaluate_lcb_subset.py
+  dataset: data/livecodebench_release_v6_minus_v5.jsonl
+  livecodebench_root: .tmp/LiveCodeBench
+  timeout: 10
+  num_process_evaluate: 8
+  worker_transport: pipes
+  memory_limit_bytes: null
+  test_split: official_public_and_private
+  candidate_extraction: src/tddexp/historical_code_utils.py (2026-07-25 archive)
+  timeout_provenance: default of historical evaluation wrapper; historical command line not retained

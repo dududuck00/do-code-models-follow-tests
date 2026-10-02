@@ -1,0 +1,31 @@
+{
+  "source": "Read-only remote CPU recomputation from all saved prompt-end states; no model generation or remote file writes.",
+  "models": {
+    "qwen25": [
+      29,
+      3584
+    ],
+    "qwen35": [
+      33,
+      4096
+    ],
+    "qwen36": [
+      65,
+      5120
+    ],
+    "qwen38": [
+      65,
+      5120
+    ],
+    "deepseek": [
+      33,
+      4096
+    ]
+  },
+  "states_read_per_model": 720,
+  "total_states_read": 3600,
+  "original_states_per_model": 240,
+  "new_states_per_model": 480,
+  "all_final_metric_means_match": true,
+  "new_prompt_records_match_saved_prompts": true
+}

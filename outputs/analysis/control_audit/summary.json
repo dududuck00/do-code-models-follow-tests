@@ -1,0 +1,56 @@
+{
+  "mbppplus": {
+    "tasks": 378,
+    "unchanged_test_set": 160,
+    "identical_prompt": 0,
+    "parsed_paired_outputs": 1086,
+    "changed_outputs": 518,
+    "irrelevant_call_interface_changed": 378,
+    "original_reference_correct_suites": 378,
+    "shuffled_reference_correct_suites": 160
+  },
+  "humanevalplus": {
+    "tasks": 164,
+    "unchanged_test_set": 26,
+    "identical_prompt": 8,
+    "parsed_paired_outputs": 452,
+    "changed_outputs": 319,
+    "irrelevant_call_interface_changed": 164,
+    "original_reference_correct_suites": 161,
+    "shuffled_reference_correct_suites": 25
+  },
+  "lcb_7b": {
+    "tasks": 175,
+    "unchanged_test_set": 9,
+    "identical_prompt": 9,
+    "parsed_paired_outputs": 463,
+    "changed_outputs": 395,
+    "irrelevant_call_interface_changed": 0
+  },
+  "lcb_27b": {
+    "tasks": 175,
+    "unchanged_test_set": 9,
+    "identical_prompt": 9,
+    "parsed_paired_outputs": 463,
+    "changed_outputs": 395,
+    "irrelevant_call_interface_changed": 0
+  },
+  "lcb_27b_high5": {
+    "tasks": 175,
+    "unchanged_test_set": 8,
+    "identical_prompt": 8,
+    "parsed_paired_outputs": 737,
+    "changed_outputs": 540,
+    "irrelevant_call_interface_changed": 0
+  },
+  "high5_coverage": {
+    "actual_test_counts": {
+      "5": 118,
+      "3": 27,
+      "2": 18,
+      "4": 6,
+      "1": 6
+    },
+    "fallback_tasks": 57
+  }
+}

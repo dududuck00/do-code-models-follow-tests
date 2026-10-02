@@ -1,0 +1,26 @@
+{
+  "seed": 0,
+  "outer_fold_by_family": {
+    "graph_direction": 0,
+    "topk_ties": 0,
+    "integer_rounding": 0,
+    "duplicate_policy": 0,
+    "search_index": 1,
+    "substring_case": 1,
+    "empty_segments": 1,
+    "partial_chunk": 1,
+    "normalization": 2,
+    "median_choice": 2,
+    "argmax_tie": 2,
+    "remainder_sign": 2,
+    "interval_boundary": 3,
+    "group_count": 3,
+    "threshold_boundary": 3,
+    "substring_overlap": 3,
+    "sort_ties": 4,
+    "merge_touching": 4,
+    "dedup_order": 4,
+    "space_fields": 4
+  },
+  "inner_folds": 4
+}

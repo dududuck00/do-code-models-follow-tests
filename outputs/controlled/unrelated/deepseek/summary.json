@@ -1,0 +1,47 @@
+[
+  {
+    "model_path": "deepseek-ai/deepseek-coder-6.7b-instruct",
+    "experiment": "unrelated",
+    "dataset": "mbppplus",
+    "conditions": {
+      "unrelated_tests": {
+        "observations": 1134,
+        "tasks": 378,
+        "passed": 0.5343915343915344,
+        "official_passed": 0.5291005291005291,
+        "heldout_passed": 0.5343915343915344
+      }
+    },
+    "contrasts": []
+  },
+  {
+    "model_path": "deepseek-ai/deepseek-coder-6.7b-instruct",
+    "experiment": "unrelated",
+    "dataset": "humanevalplus",
+    "conditions": {
+      "unrelated_tests": {
+        "observations": 471,
+        "tasks": 157,
+        "passed": 0.5902335456475584,
+        "official_passed": 0.5902335456475584,
+        "heldout_passed": 0.5902335456475584
+      }
+    },
+    "contrasts": []
+  },
+  {
+    "model_path": "deepseek-ai/deepseek-coder-6.7b-instruct",
+    "experiment": "unrelated",
+    "dataset": "livecodebench",
+    "conditions": {
+      "unrelated_tests": {
+        "observations": 525,
+        "tasks": 175,
+        "passed": 0.15428571428571428,
+        "official_passed": 0.15428571428571428,
+        "heldout_passed": 0.15428571428571428
+      }
+    },
+    "contrasts": []
+  }
+]

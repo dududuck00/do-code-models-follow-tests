@@ -1,0 +1,46 @@
+{
+  "complete": true,
+  "models": {
+    "qwen25": {
+      "new_states": 480,
+      "reused_states": 240,
+      "tasks": 120,
+      "families": 20,
+      "variant_pairs_per_task": 2,
+      "final_metrics_recomputed": true
+    },
+    "qwen36": {
+      "new_states": 480,
+      "reused_states": 240,
+      "tasks": 120,
+      "families": 20,
+      "variant_pairs_per_task": 2,
+      "final_metrics_recomputed": true
+    },
+    "qwen35": {
+      "new_states": 480,
+      "reused_states": 240,
+      "tasks": 120,
+      "families": 20,
+      "variant_pairs_per_task": 2,
+      "final_metrics_recomputed": true
+    },
+    "qwen38": {
+      "new_states": 480,
+      "reused_states": 240,
+      "tasks": 120,
+      "families": 20,
+      "variant_pairs_per_task": 2,
+      "final_metrics_recomputed": true
+    },
+    "deepseek": {
+      "new_states": 480,
+      "reused_states": 240,
+      "tasks": 120,
+      "families": 20,
+      "variant_pairs_per_task": 2,
+      "final_metrics_recomputed": true
+    }
+  },
+  "new_code_generations": 0
+}

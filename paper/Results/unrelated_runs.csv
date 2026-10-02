@@ -1,0 +1,31 @@
+model,dataset,contrast,run_1_pp,run_2_pp,run_3_pp
+Qwen2.5-7B,HumanEval+,correct_minus_other,9.6,8.9,10.2
+Qwen2.5-7B,HumanEval+,other_minus_nl,-10.8,-10.8,-10.8
+Qwen2.5-7B,MBPP+,correct_minus_other,19.8,19.8,19.8
+Qwen2.5-7B,MBPP+,other_minus_nl,-12.4,-12.4,-12.4
+Qwen2.5-7B,LCB v6-new,correct_minus_other,0.0,2.3,0.6
+Qwen2.5-7B,LCB v6-new,other_minus_nl,-1.1,-2.9,-3.4
+Qwen3.5-9B,HumanEval+,correct_minus_other,15.3,12.7,15.3
+Qwen3.5-9B,HumanEval+,other_minus_nl,-14.0,-12.7,-14.0
+Qwen3.5-9B,MBPP+,correct_minus_other,26.7,26.7,25.7
+Qwen3.5-9B,MBPP+,other_minus_nl,-17.5,-16.9,-15.1
+Qwen3.5-9B,LCB v6-new,correct_minus_other,2.3,2.3,4.0
+Qwen3.5-9B,LCB v6-new,other_minus_nl,-0.6,-0.6,-5.7
+Qwen3.6-27B,HumanEval+,correct_minus_other,19.1,16.6,17.2
+Qwen3.6-27B,HumanEval+,other_minus_nl,-16.6,-14.6,-14.0
+Qwen3.6-27B,MBPP+,correct_minus_other,37.0,36.0,37.0
+Qwen3.6-27B,MBPP+,other_minus_nl,-29.6,-28.6,-29.4
+Qwen3.6-27B,LCB v6-new,correct_minus_other,2.3,0.6,-1.1
+Qwen3.6-27B,LCB v6-new,other_minus_nl,-8.0,-0.6,0.6
+Qwen3.8-27B,HumanEval+,correct_minus_other,23.6,26.1,25.5
+Qwen3.8-27B,HumanEval+,other_minus_nl,-18.5,-21.7,-21.0
+Qwen3.8-27B,MBPP+,correct_minus_other,38.6,39.7,38.6
+Qwen3.8-27B,MBPP+,other_minus_nl,-29.6,-30.7,-30.7
+Qwen3.8-27B,LCB v6-new,correct_minus_other,12.0,7.4,5.7
+Qwen3.8-27B,LCB v6-new,other_minus_nl,-10.3,-2.9,-9.1
+DeepSeek-6.7B,HumanEval+,correct_minus_other,12.7,14.0,12.7
+DeepSeek-6.7B,HumanEval+,other_minus_nl,-14.0,-14.0,-13.4
+DeepSeek-6.7B,MBPP+,correct_minus_other,16.1,16.1,15.3
+DeepSeek-6.7B,MBPP+,other_minus_nl,-7.1,-7.1,-6.6
+DeepSeek-6.7B,LCB v6-new,correct_minus_other,-1.1,-1.7,-1.1
+DeepSeek-6.7B,LCB v6-new,other_minus_nl,0.6,0.6,1.1
